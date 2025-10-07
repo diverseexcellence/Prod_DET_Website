@@ -620,7 +620,7 @@ const AboutPage = () => (
           </p>
         </div>
       </section>
-
+      
       {/* Who We Are */}
       <section className="py-20 px-8 bg-white">
         <div className="max-w-6xl mx-auto">
