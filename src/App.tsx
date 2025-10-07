@@ -1227,10 +1227,10 @@ const AboutPage = () => (
               </div>
               <div className="p-8">
                 <h2 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
-                  IT Infrastructure Assessment & Strategic Roadmap
+                  Technology Assessment & Strategic Roadmap
                 </h2>
                 <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  Philbrook Museum transformed its fragmented IT environment into a structured, forward-looking technology strategy
+                  Philbrook Museum transformed its fragmented technology environment into a structured, forward-looking technology strategy
                 </p>
                 <button
                   onClick={() => setCurrentPage('Philbrook')}
@@ -1342,7 +1342,7 @@ const AboutPage = () => (
             <span className="text-sm font-semibold text-white">Arts & Culture</span>
           </div>
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Philbrook Museum - IT Infrastructure Assessment & Strategic Roadmap
+            Philbrook Museum - Technology Assessment & Strategic Roadmap
           </h1>
           <p className="text-xl text-white/90 leading-relaxed">
             Philbrook Museum of Art, a renowned cultural institution, has long delivered world-class exhibitions, educational programs, and community experiences. However, after more than a decade without significant IT investment, Philbrook's technology environment had become fragmented, outdated, and increasingly difficult to manage.
