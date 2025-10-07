@@ -791,7 +791,7 @@ const AboutPage = () => (
             {/* Card 3: Michael Grey */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-blue to-green rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/50">
+              <div className="w-32 h-32 bg-gradient-to-r from-[#10B981] to-[#059669] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-emerald-500/50">
                 <img
                   src={MichaelPhoto}
                   alt="Michael Grey"
@@ -808,7 +808,7 @@ const AboutPage = () => (
             {/* Card 4: Louis Coleman */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-[#0EA5E9] to-pink rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-sky-500/50">
+              <div className="w-32 h-32 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-orange-500/50">
                 <img
                   src={LouisPhoto}
                   alt="Louis Coleman"
@@ -825,7 +825,7 @@ const AboutPage = () => (
              {/* Card 5: Brandon Tramel */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-[#0EA5E9] to-red rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-sky-500/50">
+              <div className="w-32 h-32 bg-gradient-to-r from-purple-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-purple-500/50">
                 <img
                   src={BrandonPhoto}
                   alt="Brandon Tramel"
