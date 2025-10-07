@@ -774,7 +774,7 @@ const AboutPage = () => (
             {/* Card 2: Jill Crehan */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-[#0EA5E9] to-[#06B6D4] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-sky-500/50">
+              <div className="w-32 h-32 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-amber-500/50">
                 <img
                   src={JillPhoto}
                   alt="Jill Crehan"
@@ -791,7 +791,7 @@ const AboutPage = () => (
             {/* Card 3: Michael Grey */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-[#0EA5E9] to-[#06B6D4] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-sky-500/50">
+              <div className="w-32 h-32 bg-gradient-to-r from-[#0EA5E9] to-green rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-sky-500/50">
                 <img
                   src={MichaelPhoto}
                   alt="Michael Grey"
@@ -808,7 +808,7 @@ const AboutPage = () => (
             {/* Card 4: Louis Coleman */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-[#0EA5E9] to-[#06B6D4] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-sky-500/50">
+              <div className="w-32 h-32 bg-gradient-to-r from-[#0EA5E9] to-pink rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-sky-500/50">
                 <img
                   src={LouisPhoto}
                   alt="Louis Coleman"
@@ -825,7 +825,7 @@ const AboutPage = () => (
              {/* Card 5: Brandon Tramel */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-[#0EA5E9] to-[#06B6D4] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-sky-500/50">
+              <div className="w-32 h-32 bg-gradient-to-r from-[#0EA5E9] to-red rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-sky-500/50">
                 <img
                   src={BrandonPhoto}
                   alt="Brandon Tramel"
