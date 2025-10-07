@@ -757,7 +757,7 @@ const AboutPage = () => (
             {/* Card 1: Sandip Biswas */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-[#3B82F6] to-[#6366F1] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/50">
+              <div className="w-32 h-32 bg-gradient-to-r from-blue to-black rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/50">
                 <img
                   src={SandipPhoto}
                   alt="Sandip Biswas"
