@@ -712,11 +712,11 @@ const AboutPage = () => (
               <div className="w-32 h-32 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-orange-500/50">
                 <img
                   src={JohnathanPhoto}
-                  alt="Jonathan Wynn"
+                  alt="Johnathan Wynn"
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Jonathan Wynn</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Johnathan Wynn</h3>
               <p className="text-[#3B82F6] font-semibold mb-4 text-sm">VP of Business Development</p>
               <p className="text-slate-600 mb-6 text-sm">
                 Strategic business development executive specializing in client relationships and market expansion.
