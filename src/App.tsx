@@ -9,6 +9,8 @@ import JillPhoto from './assets/JillPhotoEdited.png';
 import MichaelPhoto from './assets/MichaelGreyPhoto.png';
 import LouisPhoto from './assets/LouisColemanPhoto.png';
 import BrandonPhoto from './assets/BrandonTramelPhoto.png';
+import GemarPhoto from './assets/GemarBoothePhotoEdited.png';
+import ClayPhoto from './assets/ClayHamptonPhotoEdited.png';
 import BackgroundVideo from './assets/V6.mp4';
 import {
   Menu,
@@ -738,6 +740,23 @@ const AboutPage = () => (
                 With over 25 years of experience, specializes in architecting data-driven enterprise solutions and steering digital transformations on modern, secure cloud platforms.
               </p>
             </div>
+
+            <div className="bg-white p-8 rounded-3xl shadow-lg border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 text-center">
+              {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
+              <div className="w-32 h-32 bg-gradient-to-r from-black-500 to-gray-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-gray-500/50">
+                <img
+                  src={GemarPhoto}
+                  alt="Gemar Boothe"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Gemar Boothe</h3>
+              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Chief Financial Officer</p>
+              <p className="text-slate-600 mb-6 text-sm">
+                Experienced financial executive overseeing fiscal operations, compliance, and strategic resource management.
+              </p>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -785,6 +804,23 @@ const AboutPage = () => (
               <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Enterprise Change Manager</p>
               <p className="text-slate-600 mb-6 text-sm">
                 A Prosci-certified change management expert specializing in ensuring the seamless adoption of new technologies. She excels at bridging the gap between complex solutions and the people who use them.
+              </p>
+            </div>
+
+             {/* Card 3: Clay Hampton */}
+            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
+              {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
+              <div className="w-32 h-32 bg-gradient-to-r from-[#0EA5E9] to-[#06B6D4] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-sky-500/50">
+                <img
+                  src={ClayPhoto}
+                  alt="Clay Hampton"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Clay Hampton</h3>
+              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Cyber Security Practice Lead</p>
+              <p className="text-slate-600 mb-6 text-sm">
+                Architects strategic security blueprints, blending technology and policy to build resilient defenses for our clients' digital future.
               </p>
             </div>
 
