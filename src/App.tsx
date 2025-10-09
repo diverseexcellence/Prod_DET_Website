@@ -1001,6 +1001,15 @@ const AboutPage = () => (
                 className="h-8 w-auto opacity-70 group-hover:opacity-100 transition-opacity"
               />
             </div>
+
+            {/* SAP */}
+            <div className="flex items-center justify-center p-6 bg-white rounded-2xl border-2 border-slate-200 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg"
+                alt="SAP"
+                className="h-8 w-auto opacity-70 group-hover:opacity-100 transition-opacity"
+              />
+            </div>
           </div>
         </div>
       </section>
