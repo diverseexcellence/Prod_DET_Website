@@ -743,7 +743,7 @@ const AboutPage = () => (
 
             <div className="bg-white p-8 rounded-3xl shadow-lg border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 text-center">
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-black-500 to-gray-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-gray-500/50">
+              <div className="w-32 h-32 bg-gradient-to-r from-blue-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/50">
                 <img
                   src={GemarPhoto}
                   alt="Gemar Boothe"
@@ -824,7 +824,7 @@ const AboutPage = () => (
               </p>
             </div>
 
-            {/* Card 3: Michael Grey */}
+            {/* Card 4: Michael Grey */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
               <div className="w-32 h-32 bg-gradient-to-r from-[#10B981] to-[#059669] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-emerald-500/50">
@@ -841,7 +841,7 @@ const AboutPage = () => (
               </p>
             </div>
 
-            {/* Card 4: Louis Coleman */}
+            {/* Card 5: Louis Coleman */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
               <div className="w-32 h-32 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-orange-500/50">
@@ -858,7 +858,7 @@ const AboutPage = () => (
               </p>
             </div>
 
-             {/* Card 5: Brandon Tramel */}
+             {/* Card 6: Brandon Tramel */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
               <div className="w-32 h-32 bg-gradient-to-r from-purple-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-purple-500/50">
@@ -872,6 +872,19 @@ const AboutPage = () => (
               <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Senior Software Developer</p>
               <p className="text-slate-600 mb-6 text-sm">
                 A seasoned software developer dedicated to solving client challenges by engineering elegant and efficient solutions. He specializes in bringing data-intensive applications to life, ensuring they are scalable, secure, and production-ready.
+              </p>
+            </div>
+
+            {/* Card 7: Nelli Benson - Now with Initials */}
+            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
+              {/* The circular div that used to hold the image now holds the initials */}
+              <div className="w-32 h-32 bg-gradient-to-r from-[#0EA5E9] to-[#06B6D4] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-sky-500/50">
+                <span className="text-5xl font-bold text-white tracking-wider">NB</span>
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Nelli Benson</h3>
+              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Senior Recruiter</p>
+              <p className="text-slate-600 mb-6 text-sm">
+                Strategic leader in talent acquisition, focused on discovering and attracting top-tier professionals to fuel our growth.
               </p>
             </div>
 
