@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { CAREElementaryPage, HHCHealthcarePage } from './CaseStudyPages';
 import DETLogo from './assets/DETlogoV3.png';
 import ArionnePhoto from './assets/ArionnePhotoEdited.png';
 import KevinPhoto from './assets/KevinPhotoEdited.png';
@@ -38,7 +39,9 @@ import {
   Workflow,
   Database,
   BarChart3,
-  Landmark
+  Landmark,
+  GraduationCap,
+  HeartPulse
 } from 'lucide-react';
 
 function App() {
@@ -1261,6 +1264,66 @@ const AboutPage = () => (
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
 
+            {/* CARE Elementary Case Study */}
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#EF4444] hover:shadow-2xl hover:shadow-red-500/20 transition-all duration-300 hover:-translate-y-2">
+              <div className="relative h-56 bg-gradient-to-br from-[#EF4444] to-[#DC2626] flex items-center justify-center p-8">
+                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
+                <div className="text-white text-center relative z-10">
+                  <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
+                    <GraduationCap className="h-10 w-10" />
+                  </div>
+                  <div className="inline-flex items-center px-3 py-1 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full">
+                    <span className="text-xs font-bold tracking-wider">EDUCATION</span>
+                  </div>
+                </div>
+              </div>
+              <div className="p-8">
+                <h2 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
+                  Empowering CARE Elementary's Digital Future
+                </h2>
+                <p className="text-slate-600 mb-6 text-sm leading-relaxed">
+                  Comprehensive E-rate Category 1 and 2 services transforming connectivity and network infrastructure for Miami elementary school
+                </p>
+                <button
+                  onClick={() => setCurrentPage('CAREElementary')}
+                  className="flex items-center text-[#EF4444] hover:text-[#DC2626] font-semibold group text-sm"
+                >
+                  View Case Study
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
+            </div>
+
+            {/* HHC Healthcare Case Study */}
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#14B8A6] hover:shadow-2xl hover:shadow-teal-500/20 transition-all duration-300 hover:-translate-y-2">
+              <div className="relative h-56 bg-gradient-to-br from-[#14B8A6] to-[#0D9488] flex items-center justify-center p-8">
+                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
+                <div className="text-white text-center relative z-10">
+                  <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
+                    <HeartPulse className="h-10 w-10" />
+                  </div>
+                  <div className="inline-flex items-center px-3 py-1 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full">
+                    <span className="text-xs font-bold tracking-wider">HEALTHCARE</span>
+                  </div>
+                </div>
+              </div>
+              <div className="p-8">
+                <h2 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
+                  Transforming Healthcare IT: HHC Success Story
+                </h2>
+                <p className="text-slate-600 mb-6 text-sm leading-relaxed">
+                  Expert SAP integration modernizing operations for a 5,500-employee healthcare system with complex ERP and EHR requirements
+                </p>
+                <button
+                  onClick={() => setCurrentPage('HHCHealthcare')}
+                  className="flex items-center text-[#14B8A6] hover:text-[#0D9488] font-semibold group text-sm"
+                >
+                  View Case Study
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
+            </div>
+
             {/* Philbrook Museum Case Study */}
             <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-2">
               <div className="relative h-56 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] flex items-center justify-center p-8">
@@ -1839,6 +1902,10 @@ const AboutPage = () => (
         return <ServicesPage />;
       case 'CaseStudies':
         return <CaseStudiesPage />;
+      case 'CAREElementary':
+        return <CAREElementaryPage setCurrentPage={setCurrentPage} />;
+      case 'HHCHealthcare':
+        return <HHCHealthcarePage setCurrentPage={setCurrentPage} />;
       case 'Philbrook':
         return <PhilbrookPage />;
       case 'Newfields':
