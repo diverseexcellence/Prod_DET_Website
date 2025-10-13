@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CAREElementaryPage, HHCHealthcarePage, CitizensEnergyPage, MCPHDPage, NMAPage } from './CaseStudyPages';
+import { CAREElementaryPage, HHCHealthcarePage } from './CaseStudyPages';
 import DETLogo from './assets/DETlogoV3.png';
 import ArionnePhoto from './assets/ArionnePhotoEdited.png';
 import KevinPhoto from './assets/KevinPhotoEdited.png';
@@ -41,10 +41,7 @@ import {
   BarChart3,
   Landmark,
   GraduationCap,
-  HeartPulse,
-  Lock,
-  Users,
-  Building2
+  HeartPulse
 } from 'lucide-react';
 
 function App() {
@@ -1426,96 +1423,6 @@ const AboutPage = () => (
               </div>
             </div>
 
-            {/* Citizens Energy Case Study */}
-            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#8B5CF6] hover:shadow-2xl hover:shadow-violet-500/20 transition-all duration-300 hover:-translate-y-2">
-              <div className="relative h-56 bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED] flex items-center justify-center p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
-                <div className="text-white text-center relative z-10">
-                  <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
-                    <Lock className="h-10 w-10" />
-                  </div>
-                  <div className="inline-flex items-center px-3 py-1 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full">
-                    <span className="text-xs font-bold tracking-wider">ENERGY & UTILITIES</span>
-                  </div>
-                </div>
-              </div>
-              <div className="p-8">
-                <h2 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
-                  Citizens Energy Server Security Hardening
-                </h2>
-                <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  Implementing industry-tested security baselines across 242 servers with zero downtime and 100% compliance
-                </p>
-                <button
-                  onClick={() => setCurrentPage('CitizensEnergy')}
-                  className="flex items-center text-[#8B5CF6] hover:text-[#7C3AED] font-semibold group text-sm"
-                >
-                  View Case Study
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </button>
-              </div>
-            </div>
-
-            {/* MCPHD Recovery Assist Platform Case Study */}
-            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#059669] hover:shadow-2xl hover:shadow-emerald-500/20 transition-all duration-300 hover:-translate-y-2">
-              <div className="relative h-56 bg-gradient-to-br from-[#059669] to-[#047857] flex items-center justify-center p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
-                <div className="text-white text-center relative z-10">
-                  <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
-                    <Users className="h-10 w-10" />
-                  </div>
-                  <div className="inline-flex items-center px-3 py-1 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full">
-                    <span className="text-xs font-bold tracking-wider">PUBLIC HEALTH</span>
-                  </div>
-                </div>
-              </div>
-              <div className="p-8">
-                <h2 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
-                  Recovery Assist Platform: Digital Health Innovation
-                </h2>
-                <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  UX/UI design transforming substance use disorder coordination for 100+ provider agencies in Marion County
-                </p>
-                <button
-                  onClick={() => setCurrentPage('MCPHD')}
-                  className="flex items-center text-[#059669] hover:text-[#047857] font-semibold group text-sm"
-                >
-                  View Case Study
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </button>
-              </div>
-            </div>
-
-            {/* NMA Case Study */}
-            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#0891B2] hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300 hover:-translate-y-2">
-              <div className="relative h-56 bg-gradient-to-br from-[#0891B2] to-[#0E7490] flex items-center justify-center p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
-                <div className="text-white text-center relative z-10">
-                  <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
-                    <Building2 className="h-10 w-10" />
-                  </div>
-                  <div className="inline-flex items-center px-3 py-1 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full">
-                    <span className="text-xs font-bold tracking-wider">HEALTHCARE ASSOCIATION</span>
-                  </div>
-                </div>
-              </div>
-              <div className="p-8">
-                <h2 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
-                  National Medical Association: 8-Year Transformation
-                </h2>
-                <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  Cloud infrastructure, security hardening, and culturally-inspired workspace modernization achieving 100% cloud migration
-                </p>
-                <button
-                  onClick={() => setCurrentPage('NMA')}
-                  className="flex items-center text-[#0891B2] hover:text-[#0E7490] font-semibold group text-sm"
-                >
-                  View Case Study
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </button>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
@@ -2008,12 +1915,6 @@ const AboutPage = () => (
         return <CAREElementaryPage setCurrentPage={setCurrentPage} />;
       case 'HHCHealthcare':
         return <HHCHealthcarePage setCurrentPage={setCurrentPage} />;
-      case 'CitizensEnergy':
-        return <CitizensEnergyPage setCurrentPage={setCurrentPage} />;
-      case 'MCPHD':
-        return <MCPHDPage setCurrentPage={setCurrentPage} />;
-      case 'NMA':
-        return <NMAPage setCurrentPage={setCurrentPage} />;
       case 'Philbrook':
         return <PhilbrookPage />;
       case 'Newfields':
