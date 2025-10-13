@@ -43,7 +43,6 @@ import {
   GraduationCap,
   HeartPulse,
   Lock,
-  Users,
   Building2
 } from 'lucide-react';
 
