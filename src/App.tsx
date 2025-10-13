@@ -1277,8 +1277,9 @@ const AboutPage = () => (
 
             {/* CARE Elementary Case Study */}
             <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#EF4444] hover:shadow-2xl hover:shadow-red-500/20 transition-all duration-300 hover:-translate-y-2">
-              <div className="relative h-56 bg-gradient-to-br from-[#EF4444] to-[#DC2626] flex items-center justify-center p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
+              <div className="relative h-56 flex items-center justify-center p-8 overflow-hidden">
+                <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Education" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#EF4444]/90 to-[#DC2626]/90"></div>
                 <div className="text-white text-center relative z-10">
                   <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
                     <GraduationCap className="h-10 w-10" />
@@ -1307,8 +1308,9 @@ const AboutPage = () => (
 
             {/* HHC Healthcare Case Study */}
             <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#14B8A6] hover:shadow-2xl hover:shadow-teal-500/20 transition-all duration-300 hover:-translate-y-2">
-              <div className="relative h-56 bg-gradient-to-br from-[#14B8A6] to-[#0D9488] flex items-center justify-center p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
+              <div className="relative h-56 flex items-center justify-center p-8 overflow-hidden">
+                <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Healthcare" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#14B8A6]/90 to-[#0D9488]/90"></div>
                 <div className="text-white text-center relative z-10">
                   <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
                     <HeartPulse className="h-10 w-10" />
@@ -1337,8 +1339,9 @@ const AboutPage = () => (
 
             {/* Philbrook Museum Case Study */}
             <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-2">
-              <div className="relative h-56 bg-gradient-to-br from-[#3B82F6] to-[#2563EB] flex items-center justify-center p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
+              <div className="relative h-56 flex items-center justify-center p-8 overflow-hidden">
+                <img src="https://images.pexels.com/photos/1687845/pexels-photo-1687845.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Museum" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#3B82F6]/90 to-[#2563EB]/90"></div>
                 <div className="text-white text-center relative z-10">
                   <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
                     <Building className="h-10 w-10" />
@@ -1367,8 +1370,9 @@ const AboutPage = () => (
 
             {/* Newfields Case Study */}
             <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#10B981] hover:shadow-2xl hover:shadow-emerald-500/20 transition-all duration-300 hover:-translate-y-2">
-              <div className="relative h-56 bg-gradient-to-br from-[#10B981] to-[#059669] flex items-center justify-center p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
+              <div className="relative h-56 flex items-center justify-center p-8 overflow-hidden">
+                <img src="https://images.pexels.com/photos/1106468/pexels-photo-1106468.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Arts and Culture" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#10B981]/90 to-[#059669]/90"></div>
                 <div className="text-white text-center relative z-10">
                   <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
                     <Globe className="h-10 w-10" />
@@ -1397,8 +1401,9 @@ const AboutPage = () => (
 
             {/* JR Automation Case Study */}
             <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#F59E0B] hover:shadow-2xl hover:shadow-orange-500/20 transition-all duration-300 hover:-translate-y-2">
-              <div className="relative h-56 bg-gradient-to-br from-[#F59E0B] to-[#D97706] flex items-center justify-center p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
+              <div className="relative h-56 flex items-center justify-center p-8 overflow-hidden">
+                <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Manufacturing" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#F59E0B]/90 to-[#D97706]/90"></div>
                 <div className="text-white text-center relative z-10">
                   <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
                     <Zap className="h-10 w-10" />
@@ -1427,8 +1432,9 @@ const AboutPage = () => (
 
             {/* Citizens Energy Case Study */}
             <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#8B5CF6] hover:shadow-2xl hover:shadow-violet-500/20 transition-all duration-300 hover:-translate-y-2">
-              <div className="relative h-56 bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED] flex items-center justify-center p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
+              <div className="relative h-56 flex items-center justify-center p-8 overflow-hidden">
+                <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Energy Infrastructure" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/90 to-[#7C3AED]/90"></div>
                 <div className="text-white text-center relative z-10">
                   <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
                     <Lock className="h-10 w-10" />
@@ -1457,8 +1463,9 @@ const AboutPage = () => (
 
             {/* MCPHD Recovery Assist Platform Case Study */}
             <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#059669] hover:shadow-2xl hover:shadow-emerald-500/20 transition-all duration-300 hover:-translate-y-2">
-              <div className="relative h-56 bg-gradient-to-br from-[#059669] to-[#047857] flex items-center justify-center p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
+              <div className="relative h-56 flex items-center justify-center p-8 overflow-hidden">
+                <img src="https://images.pexels.com/photos/6823568/pexels-photo-6823568.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Public Health" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#059669]/90 to-[#047857]/90"></div>
                 <div className="text-white text-center relative z-10">
                   <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
                     <Users className="h-10 w-10" />
@@ -1487,8 +1494,9 @@ const AboutPage = () => (
 
             {/* NMA Case Study */}
             <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#0891B2] hover:shadow-2xl hover:shadow-cyan-500/20 transition-all duration-300 hover:-translate-y-2">
-              <div className="relative h-56 bg-gradient-to-br from-[#0891B2] to-[#0E7490] flex items-center justify-center p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-transparent"></div>
+              <div className="relative h-56 flex items-center justify-center p-8 overflow-hidden">
+                <img src="https://images.pexels.com/photos/668298/pexels-photo-668298.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Medical Association" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#0891B2]/90 to-[#0E7490]/90"></div>
                 <div className="text-white text-center relative z-10">
                   <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
                     <Building2 className="h-10 w-10" />
