@@ -150,13 +150,6 @@ export const CAREElementaryPage = ({ setCurrentPage }: CaseStudyPageProps) => (
         </div>
       </div>
     </section>
-    <footer className="bg-slate-900 py-6">
-      <div className="max-w-6xl mx-auto px-8 text-center">
-        <p className="text-slate-400 text-sm">
-          Copyright © DE Technology 2025
-        </p>
-      </div>
-    </footer>
   </div>
 );
 
@@ -349,13 +342,6 @@ export const HHCHealthcarePage = ({ setCurrentPage }: CaseStudyPageProps) => (
         </div>
       </div>
     </section>
-    <footer className="bg-slate-900 py-6">
-      <div className="max-w-6xl mx-auto px-8 text-center">
-        <p className="text-slate-400 text-sm">
-          Copyright © DE Technology 2025
-        </p>
-      </div>
-    </footer>
   </div>
 );
 
@@ -493,13 +479,6 @@ export const CitizensEnergyPage = ({ setCurrentPage }: CaseStudyPageProps) => (
         </div>
       </div>
     </section>
-    <footer className="bg-slate-900 py-6">
-      <div className="max-w-6xl mx-auto px-8 text-center">
-        <p className="text-slate-400 text-sm">
-          Copyright © DE Technology 2025
-        </p>
-      </div>
-    </footer>
   </div>
 );
 
@@ -619,13 +598,6 @@ export const MCPHDPage = ({ setCurrentPage }: CaseStudyPageProps) => (
         </div>
       </div>
     </section>
-    <footer className="bg-slate-900 py-6">
-      <div className="max-w-6xl mx-auto px-8 text-center">
-        <p className="text-slate-400 text-sm">
-          Copyright © DE Technology 2025
-        </p>
-      </div>
-    </footer>
   </div>
 );
 
@@ -748,12 +720,5 @@ export const NMAPage = ({ setCurrentPage }: CaseStudyPageProps) => (
         </div>
       </div>
     </section>
-    <footer className="bg-slate-900 py-6">
-      <div className="max-w-6xl mx-auto px-8 text-center">
-        <p className="text-slate-400 text-sm">
-          Copyright © DE Technology 2025
-        </p>
-      </div>
-    </footer>
   </div>
 );
