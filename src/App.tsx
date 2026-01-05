@@ -13,6 +13,9 @@ import BrandonPhoto from './assets/BrandonTramelPhoto.png';
 import GemarPhoto from './assets/GemarBoothePhotoEdited.png';
 import ClayPhoto from './assets/ClayHamptonPhotoEdited.png';
 import BackgroundVideo from './assets/V6.mp4';
+import NAWBOMWBE from './assets/NAWBOMWBE.png';
+import CertifiedMWBE from './assets/CertifiedMWBE.png';
+
 import {
   Menu,
   X,
@@ -1015,6 +1018,43 @@ const AboutPage = () => (
           </div>
         </div>
       </section>
+
+      {/* Certifications Section */}
+<section className="py-20 px-8 bg-gradient-to-br from-slate-50 to-white">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-16">
+      <div className="inline-flex items-center px-4 py-2 bg-emerald-50 rounded-full mb-4">
+        <Award className="h-4 w-4 text-emerald-600 mr-2" />
+        <span className="text-sm font-semibold text-emerald-700">Certifications</span>
+      </div>
+      <h2 className="text-4xl font-bold text-slate-900 mb-4">Official Certifications</h2>
+      <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+        We are proud to be recognized as a certified diverse business partner.
+      </p>
+    </div>
+
+    <div className="flex flex-wrap justify-center gap-8 items-center">
+      {/* Certified WBE */}
+      <div className="flex items-center justify-center p-8 bg-white rounded-2xl border-2 border-slate-200 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 group min-w-[280px]">
+        <img
+          src="/path-to-your-assets/CertifiedMWBE.jpg" 
+          alt="Certified Womens Business Enterprise"
+          className="h-32 w-auto opacity-80 group-hover:opacity-100 transition-opacity object-contain"
+        />
+      </div>
+
+      {/* Certified MWBE (Logo Version) */}
+      <div className="flex items-center justify-center p-8 bg-white rounded-2xl border-2 border-slate-200 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 group min-w-[280px]">
+        <img
+          src="/path-to-your-assets/NAWBOMWBE.png"
+          alt="Certified Minority Women's Business Enterprise"
+          className="h-24 w-auto opacity-80 group-hover:opacity-100 transition-opacity object-contain"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+      
     </div>
   );
 
