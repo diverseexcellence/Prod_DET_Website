@@ -1054,9 +1054,34 @@ const AboutPage = () => (
     </div>
   </div>
 </section>
+
+{/* NAICS Codes */}
+        <section className="py-20 px-8 bg-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-slate-900 mb-4">NAICS Codes</h2>
+              <p className="text-lg text-slate-600">
+                Our certified capabilities across multiple service classifications
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {naicsCodes.map((code, index) => (
+                <div key={index} className="bg-white p-4 rounded-2xl shadow-sm border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-lg transition-all duration-300">
+                  <div className="text-sm font-mono text-[#3B82F6] mb-1 font-semibold">
+                    {code.split(' - ')[0]}
+                  </div>
+                  <div className="text-sm text-slate-600">
+                    {code.split(' - ')[1]}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       
-    </div>
-  );
+</div>
+);
 
   const ContactPage = () => {
     const [formData, setFormData] = useState({
