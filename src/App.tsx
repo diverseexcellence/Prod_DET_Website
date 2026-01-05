@@ -1037,7 +1037,7 @@ const AboutPage = () => (
       {/* Certified WBE */}
       <div className="flex items-center justify-center p-8 bg-white rounded-2xl border-2 border-slate-200 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 group min-w-[280px]">
         <img
-          src="/path-to-your-assets/CertifiedMWBE.jpg" 
+          src={CertifiedMWBE} 
           alt="Certified Womens Business Enterprise"
           className="h-32 w-auto opacity-80 group-hover:opacity-100 transition-opacity object-contain"
         />
@@ -1046,7 +1046,7 @@ const AboutPage = () => (
       {/* Certified MWBE (Logo Version) */}
       <div className="flex items-center justify-center p-8 bg-white rounded-2xl border-2 border-slate-200 hover:border-emerald-300 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 group min-w-[280px]">
         <img
-          src="/path-to-your-assets/NAWBOMWBE.png"
+          src={NAWBOMWBE}
           alt="Certified Minority Women's Business Enterprise"
           className="h-24 w-auto opacity-80 group-hover:opacity-100 transition-opacity object-contain"
         />
