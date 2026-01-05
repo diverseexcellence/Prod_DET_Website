@@ -615,6 +615,20 @@ function App() {
     </div>
   );
 
+      const naicsCodes = [
+      "541511 - Custom Computer Programming Services",
+      "541512 - Computer Systems Design Services",
+      "541513 - Computer Facilities Management Services",
+      "541519 - Other Computer Related Services",
+      "541611 - Administrative Management and General Management Consulting Services",
+      "541612 - Human Resources Consulting Services",
+      "541613 - Marketing Consulting Services",
+      "541618 - Other Management Consulting Services",
+      "541690 - Other Scientific and Technical Consulting Services",
+      "561110 - Office Administrative Services",
+      "611420 - Computer Training"
+    ];
+
 const AboutPage = () => (
     <div className="min-h-screen bg-slate-50 pt-24">
       {/* Header */}
@@ -1105,19 +1119,7 @@ const AboutPage = () => (
       });
     };
 
-    const naicsCodes = [
-      "541511 - Custom Computer Programming Services",
-      "541512 - Computer Systems Design Services",
-      "541513 - Computer Facilities Management Services",
-      "541519 - Other Computer Related Services",
-      "541611 - Administrative Management and General Management Consulting Services",
-      "541612 - Human Resources Consulting Services",
-      "541613 - Marketing Consulting Services",
-      "541618 - Other Management Consulting Services",
-      "541690 - Other Scientific and Technical Consulting Services",
-      "561110 - Office Administrative Services",
-      "611420 - Computer Training"
-    ];
+
 
     return (
       <div className="min-h-screen bg-slate-50 pt-24">
