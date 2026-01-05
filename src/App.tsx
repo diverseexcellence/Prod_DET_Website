@@ -1289,34 +1289,7 @@ const AboutPage = () => (
           </div>
         </section>
 
-        {/* NAICS Codes */}
-        <section className="py-20 px-8 bg-gradient-to-br from-slate-50 to-white">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full mb-4">
-                <Award className="h-4 w-4 text-[#3B82F6] mr-2" />
-                <span className="text-sm font-semibold text-blue-700">Certifications</span>
-              </div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-4">NAICS Codes</h2>
-              <p className="text-lg text-slate-600">
-                Our certified capabilities across multiple service classifications
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {naicsCodes.map((code, index) => (
-                <div key={index} className="bg-white p-4 rounded-2xl shadow-sm border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
-                  <div className="text-sm font-mono text-[#3B82F6] mb-1 font-semibold">
-                    {code.split(' - ')[0]}
-                  </div>
-                  <div className="text-sm text-slate-600">
-                    {code.split(' - ')[1]}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+       
       </div>
     );
   };
