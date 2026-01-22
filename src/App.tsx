@@ -2085,7 +2085,7 @@ const AboutPage = () => (
       <footer className="bg-slate-900 py-6">
         <div className="max-w-6xl mx-auto px-8 text-center">
           <p className="text-slate-400 text-sm">
-            Copyright © DE Technology 2025
+            Copyright © DE Technology 2026
           </p>
         </div>
       </footer>
