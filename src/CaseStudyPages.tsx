@@ -153,6 +153,188 @@ export const CAREElementaryPage = ({ setCurrentPage }: CaseStudyPageProps) => (
   </div>
 );
 
+export const ObsidianworksPage = ({ setCurrentPage }: CaseStudyPageProps) => (
+  <div className="min-h-screen bg-slate-50 pt-24">
+    {/* Header */}
+    <section className="py-20 px-8 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900">
+      <div className="max-w-6xl mx-auto">
+        <button
+          onClick={() => setCurrentPage('CaseStudies')}
+          className="flex items-center text-white/80 hover:text-white mb-8 group font-semibold"
+        >
+          <ChevronRight className="h-5 w-5 mr-1 rotate-180 group-hover:-translate-x-1 transition-transform" />
+          Back to Case Studies
+        </button>
+        <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full mb-6">
+          <Shield className="h-4 w-4 text-white mr-2" />
+          <span className="text-sm font-semibold text-white">Cybersecurity & Infrastructure</span>
+        </div>
+        <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          Obsidianworks: Securing Digital Sovereignty
+        </h1>
+        <p className="text-xl text-white/90 leading-relaxed max-w-3xl">
+          [cite_start]How a dynamic strategic agency achieved complete IT independence and security modernization with zero downtime, migrating from a massive global parent organization to a sovereign, agile environment[cite: 1, 2, 8].
+        </p>
+      </div>
+    </section>
+
+    {/* Challenge Section */}
+    <section className="py-16 px-8 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-8">The Challenge: Disentangling a Distributed Workforce</h2>
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="text-lg text-slate-700 mb-6">
+              [cite_start]Obsidianworks, operating with a distributed workforce across the United States (California, New York, Georgia, Tennessee, and Texas), faced the complexity of disentangling its digital operations from a heavy, enterprise-grade legacy infrastructure[cite: 4, 5, 8].
+            </p>
+            <p className="text-lg text-slate-700 mb-6">
+              The agency was burdened by a fragmented security stack consisting of redundant tools and restrictive corporate policies that hampered agility. [cite_start]The critical challenge was to migrate 19 users and terabytes of sensitive data to a sovereign environment without disrupting ongoing client campaigns[cite: 9, 10].
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <div className="bg-slate-50 p-6 rounded-2xl border-2 border-slate-200">
+              <h3 className="text-4xl font-bold text-blue-600 mb-2">19</h3>
+              <p className="text-slate-900 font-bold">Users</p>
+              [cite_start]<p className="text-slate-600 text-sm">Distributed across 4 time zones [cite: 6, 10]</p>
+            </div>
+            <div className="bg-slate-50 p-6 rounded-2xl border-2 border-slate-200">
+              <h3 className="text-4xl font-bold text-blue-600 mb-2">150+</h3>
+              <p className="text-slate-900 font-bold">GB Storage</p>
+              [cite_start]<p className="text-slate-600 text-sm">Critical file assets transferred [cite: 28]</p>
+            </div>
+            <div className="bg-slate-50 p-6 rounded-2xl border-2 border-slate-200">
+              <h3 className="text-4xl font-bold text-blue-600 mb-2">0</h3>
+              <p className="text-slate-900 font-bold">Downtime</p>
+              [cite_start]<p className="text-slate-600 text-sm">Minutes of lost productivity [cite: 2, 31]</p>
+            </div>
+            <div className="bg-slate-50 p-6 rounded-2xl border-2 border-slate-200">
+              <h3 className="text-4xl font-bold text-blue-600 mb-2">60</h3>
+              <p className="text-slate-900 font-bold">Days</p>
+              [cite_start]<p className="text-slate-600 text-sm">Total transformation timeline [cite: 16, 18]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Solution Section */}
+    <section className="py-16 px-8 bg-slate-50">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-8">The Solution: "Lift, Shift, and Modernize"</h2>
+        <p className="text-lg text-slate-700 mb-12">
+          The Diverse Excellence Technology (DET) team executed a precision strategy. [cite_start]Rather than simply replicating the bloated legacy environment, the project focused on rightsizing the technology stack for agility and security[cite: 20, 21].
+        </p>
+
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-2xl border-2 border-slate-200">
+            <div className="flex items-start">
+              <div className="bg-blue-100 text-blue-600 font-bold text-lg w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 mr-4">
+                01
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Architecture & Consolidation</h3>
+                <p className="text-slate-600">
+                  Audited the existing environment and identified 12 disparate software systems for consolidation. [cite_start]Shifted primary productivity from a restrictive Microsoft 365 tenant to a cloud-native Google Workspace environment, while retaining specific M365 licenses for finance compatibility[cite: 24, 25].
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white p-6 rounded-2xl border-2 border-slate-200">
+            <div className="flex items-start">
+              <div className="bg-blue-100 text-blue-600 font-bold text-lg w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 mr-4">
+                02
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">The "Zero-Downtime" Cutover</h3>
+                <p className="text-slate-600">
+                  Executed the migration over a strategically planned 48-hour weekend window to protect business continuity. [cite_start]This included transferring 113GB+ of email data and over 150GB of file storage, ensuring staff logged in on Monday with every file exactly where they expected it[cite: 27, 28].
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white p-6 rounded-2xl border-2 border-slate-200">
+            <div className="flex items-start">
+              <div className="bg-blue-100 text-blue-600 font-bold text-lg w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 mr-4">
+                03
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Unified Security Stack</h3>
+                <p className="text-slate-600">
+                  Replaced a fragmented security stack (CrowdStrike + Sophos + Zscaler) with a unified protection layer using Bitdefender EDR and Proofpoint Email Security. [cite_start]Implemented Endpoint Central for a "Single Pane of Glass" device management view[cite: 30, 36, 37, 39].
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Transformation Table */}
+        <div className="mt-12 overflow-hidden rounded-2xl border-2 border-slate-200">
+          <div className="grid grid-cols-2 bg-slate-100 p-4 font-bold text-slate-900">
+            <div>Legacy Corporate Environment</div>
+            <div>Modernized Independent State</div>
+          </div>
+          <div className="divide-y divide-slate-200 bg-white">
+            <div className="grid grid-cols-2 p-4">
+              <div className="text-red-500">Fragmented Security (CrowdStrike + Sophos + Zscaler)</div>
+              <div className="text-emerald-600 font-semibold">Unified Protection (Bitdefender + Proofpoint)</div>
+            </div>
+            <div className="grid grid-cols-2 p-4">
+              <div className="text-red-500">Complex Device Mgmt (Jamf + Intune + Armis)</div>
+              <div className="text-emerald-600 font-semibold">Single Pane of Glass (Endpoint Central)</div>
+            </div>
+            <div className="grid grid-cols-2 p-4">
+              <div className="text-red-500">Shared Corporate Tenant</div>
+              <div className="text-emerald-600 font-semibold">Sovereign Google Workspace & Box Tenants</div>
+            </div>
+            <div className="grid grid-cols-2 p-4">
+              <div className="text-red-500">Dependencies on Parent IT</div>
+              <div className="text-emerald-600 font-semibold">Independent Management & Support</div>
+            </div>
+          </div>
+          <div className="bg-slate-50 p-2 text-center text-xs text-slate-400">
+             [cite_start]Comparison data source [cite: 30]
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    {/* Impact Section */}
+    <section className="py-16 px-8 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">Project Impact</h2>
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="text-center">
+            <div className="text-5xl font-bold text-blue-600 mb-2">100%</div>
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Data Integrity</h3>
+            [cite_start]<p className="text-slate-600 text-sm">Complete success in data migration [cite: 31]</p>
+          </div>
+          <div className="text-center">
+            <div className="text-5xl font-bold text-blue-600 mb-2">12</div>
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Systems Consolidated</h3>
+            [cite_start]<p className="text-slate-600 text-sm">Legacy applications replaced or merged [cite: 24, 43]</p>
+          </div>
+          <div className="text-center">
+            <div className="text-5xl font-bold text-blue-600 mb-2">Zero</div>
+            <h3 className="text-xl font-bold text-slate-900 mb-2">Disruption</h3>
+            [cite_start]<p className="text-slate-600 text-sm">Productivity maintained throughout cutover [cite: 10, 31]</p>
+          </div>
+        </div>
+        <div className="p-8 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 rounded-2xl shadow-xl">
+          <p className="text-lg text-white text-center italic leading-relaxed">
+            [cite_start]"The migration achieved complete operational independence with absolute data integrity. We successfully transitioned a geographically distributed team across four time zones without a single minute of lost productivity." [cite: 31]
+          </p>
+        </div>
+        <div className="mt-8 text-center">
+           <p className="text-slate-500 text-sm font-semibold uppercase tracking-wider">Project Completed | [cite_start]January 2026 [cite: 45]</p>
+        </div>
+      </div>
+    </section>
+  </div>
+);
+
 export const HHCHealthcarePage = ({ setCurrentPage }: CaseStudyPageProps) => (
   <div className="min-h-screen bg-slate-50 pt-24">
     <section className="py-20 px-8 bg-gradient-to-br from-[#0D9488] via-[#0F766E] to-[#115E59]">
