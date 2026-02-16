@@ -188,12 +188,12 @@ export const ObsidianworksPage = ({ setCurrentPage }: CaseStudyPageProps) => (
               Obsidianworks, operating with a distributed workforce across the United States (California, New York, Georgia, Tennessee, and Texas), faced the complexity of disentangling its digital operations from a heavy, enterprise-grade legacy infrastructure.
             </p>
             <p className="text-lg text-slate-700 mb-6">
-              The agency was burdened by a fragmented security stack consisting of redundant tools and restrictive corporate policies that hampered agility. The critical challenge was to migrate 19 users and terabytes of sensitive data to a sovereign environment without disrupting ongoing client campaigns.
+              The agency was burdened by a fragmented security stack consisting of redundant tools and restrictive corporate policies that hampered agility. The critical challenge was to migrate 46 users and terabytes of sensitive data to a sovereign environment without disrupting ongoing client campaigns.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-slate-50 p-6 rounded-2xl border-2 border-slate-200">
-              <h3 className="text-4xl font-bold text-blue-600 mb-2">19</h3>
+              <h3 className="text-4xl font-bold text-blue-600 mb-2">46</h3>
               <p className="text-slate-900 font-bold">Users</p>
               <p className="text-slate-600 text-sm">Distributed across 4 time zones </p>
             </div>
