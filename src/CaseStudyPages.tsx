@@ -173,7 +173,7 @@ export const ObsidianworksPage = ({ setCurrentPage }: CaseStudyPageProps) => (
           Obsidianworks: Securing Digital Sovereignty
         </h1>
         <p className="text-xl text-white/90 leading-relaxed max-w-3xl">
-          [cite_start]How a dynamic strategic agency achieved complete IT independence and security modernization with zero downtime, migrating from a massive global parent organization to a sovereign, agile environment[cite: 1, 2, 8].
+          How a dynamic strategic agency achieved complete IT independence and security modernization with zero downtime, migrating from a massive global parent organization to a sovereign, agile environment.
         </p>
       </div>
     </section>
@@ -185,32 +185,32 @@ export const ObsidianworksPage = ({ setCurrentPage }: CaseStudyPageProps) => (
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg text-slate-700 mb-6">
-              [cite_start]Obsidianworks, operating with a distributed workforce across the United States (California, New York, Georgia, Tennessee, and Texas), faced the complexity of disentangling its digital operations from a heavy, enterprise-grade legacy infrastructure[cite: 4, 5, 8].
+              Obsidianworks, operating with a distributed workforce across the United States (California, New York, Georgia, Tennessee, and Texas), faced the complexity of disentangling its digital operations from a heavy, enterprise-grade legacy infrastructure.
             </p>
             <p className="text-lg text-slate-700 mb-6">
-              The agency was burdened by a fragmented security stack consisting of redundant tools and restrictive corporate policies that hampered agility. [cite_start]The critical challenge was to migrate 19 users and terabytes of sensitive data to a sovereign environment without disrupting ongoing client campaigns[cite: 9, 10].
+              The agency was burdened by a fragmented security stack consisting of redundant tools and restrictive corporate policies that hampered agility. The critical challenge was to migrate 19 users and terabytes of sensitive data to a sovereign environment without disrupting ongoing client campaigns.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-slate-50 p-6 rounded-2xl border-2 border-slate-200">
               <h3 className="text-4xl font-bold text-blue-600 mb-2">19</h3>
               <p className="text-slate-900 font-bold">Users</p>
-              [cite_start]<p className="text-slate-600 text-sm">Distributed across 4 time zones [cite: 6, 10]</p>
+              <p className="text-slate-600 text-sm">Distributed across 4 time zones </p>
             </div>
             <div className="bg-slate-50 p-6 rounded-2xl border-2 border-slate-200">
               <h3 className="text-4xl font-bold text-blue-600 mb-2">150+</h3>
               <p className="text-slate-900 font-bold">GB Storage</p>
-              [cite_start]<p className="text-slate-600 text-sm">Critical file assets transferred [cite: 28]</p>
+              <p className="text-slate-600 text-sm">Critical file assets transferred </p>
             </div>
             <div className="bg-slate-50 p-6 rounded-2xl border-2 border-slate-200">
               <h3 className="text-4xl font-bold text-blue-600 mb-2">0</h3>
               <p className="text-slate-900 font-bold">Downtime</p>
-              [cite_start]<p className="text-slate-600 text-sm">Minutes of lost productivity [cite: 2, 31]</p>
+              <p className="text-slate-600 text-sm">Minutes of lost productivity </p>
             </div>
             <div className="bg-slate-50 p-6 rounded-2xl border-2 border-slate-200">
               <h3 className="text-4xl font-bold text-blue-600 mb-2">60</h3>
               <p className="text-slate-900 font-bold">Days</p>
-              [cite_start]<p className="text-slate-600 text-sm">Total transformation timeline [cite: 16, 18]</p>
+              <p className="text-slate-600 text-sm">Total transformation timeline </p>
             </div>
           </div>
         </div>
@@ -222,7 +222,7 @@ export const ObsidianworksPage = ({ setCurrentPage }: CaseStudyPageProps) => (
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-slate-900 mb-8">The Solution: "Lift, Shift, and Modernize"</h2>
         <p className="text-lg text-slate-700 mb-12">
-          The Diverse Excellence Technology (DET) team executed a precision strategy. [cite_start]Rather than simply replicating the bloated legacy environment, the project focused on rightsizing the technology stack for agility and security[cite: 20, 21].
+          The Diverse Excellence Technology (DET) team executed a precision strategy. Rather than simply replicating the bloated legacy environment, the project focused on rightsizing the technology stack for agility and security.
         </p>
 
         <div className="space-y-6">
@@ -234,7 +234,7 @@ export const ObsidianworksPage = ({ setCurrentPage }: CaseStudyPageProps) => (
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Architecture & Consolidation</h3>
                 <p className="text-slate-600">
-                  Audited the existing environment and identified 12 disparate software systems for consolidation. [cite_start]Shifted primary productivity from a restrictive Microsoft 365 tenant to a cloud-native Google Workspace environment, while retaining specific M365 licenses for finance compatibility[cite: 24, 25].
+                  Audited the existing environment and identified 12 disparate software systems for consolidation. Shifted primary productivity from a restrictive Microsoft 365 tenant to a cloud-native Google Workspace environment, while retaining specific M365 licenses for finance compatibility.
                 </p>
               </div>
             </div>
@@ -248,7 +248,7 @@ export const ObsidianworksPage = ({ setCurrentPage }: CaseStudyPageProps) => (
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">The "Zero-Downtime" Cutover</h3>
                 <p className="text-slate-600">
-                  Executed the migration over a strategically planned 48-hour weekend window to protect business continuity. [cite_start]This included transferring 113GB+ of email data and over 150GB of file storage, ensuring staff logged in on Monday with every file exactly where they expected it[cite: 27, 28].
+                  Executed the migration over a strategically planned 48-hour weekend window to protect business continuity. This included transferring 113GB+ of email data and over 150GB of file storage, ensuring staff logged in on Monday with every file exactly where they expected it.
                 </p>
               </div>
             </div>
@@ -262,7 +262,7 @@ export const ObsidianworksPage = ({ setCurrentPage }: CaseStudyPageProps) => (
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Unified Security Stack</h3>
                 <p className="text-slate-600">
-                  Replaced a fragmented security stack (CrowdStrike + Sophos + Zscaler) with a unified protection layer using Bitdefender EDR and Proofpoint Email Security. [cite_start]Implemented Endpoint Central for a "Single Pane of Glass" device management view[cite: 30, 36, 37, 39].
+                  Replaced a fragmented security stack (CrowdStrike + Sophos + Zscaler) with a unified protection layer using Bitdefender EDR and Proofpoint Email Security. Implemented Endpoint Central for a "Single Pane of Glass" device management view.
                 </p>
               </div>
             </div>
@@ -294,7 +294,7 @@ export const ObsidianworksPage = ({ setCurrentPage }: CaseStudyPageProps) => (
             </div>
           </div>
           <div className="bg-slate-50 p-2 text-center text-xs text-slate-400">
-             [cite_start]Comparison data source [cite: 30]
+             Comparison data source 
           </div>
         </div>
 
@@ -309,26 +309,26 @@ export const ObsidianworksPage = ({ setCurrentPage }: CaseStudyPageProps) => (
           <div className="text-center">
             <div className="text-5xl font-bold text-blue-600 mb-2">100%</div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Data Integrity</h3>
-            [cite_start]<p className="text-slate-600 text-sm">Complete success in data migration [cite: 31]</p>
+            <p className="text-slate-600 text-sm">Complete success in data migration </p>
           </div>
           <div className="text-center">
             <div className="text-5xl font-bold text-blue-600 mb-2">12</div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Systems Consolidated</h3>
-            [cite_start]<p className="text-slate-600 text-sm">Legacy applications replaced or merged [cite: 24, 43]</p>
+            <p className="text-slate-600 text-sm">Legacy applications replaced or merged </p>
           </div>
           <div className="text-center">
             <div className="text-5xl font-bold text-blue-600 mb-2">Zero</div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">Disruption</h3>
-            [cite_start]<p className="text-slate-600 text-sm">Productivity maintained throughout cutover [cite: 10, 31]</p>
+            <p className="text-slate-600 text-sm">Productivity maintained throughout cutover </p>
           </div>
         </div>
         <div className="p-8 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 rounded-2xl shadow-xl">
           <p className="text-lg text-white text-center italic leading-relaxed">
-            [cite_start]"The migration achieved complete operational independence with absolute data integrity. We successfully transitioned a geographically distributed team across four time zones without a single minute of lost productivity." [cite: 31]
+            "The migration achieved complete operational independence with absolute data integrity. We successfully transitioned a geographically distributed team across four time zones without a single minute of lost productivity." 
           </p>
         </div>
         <div className="mt-8 text-center">
-           <p className="text-slate-500 text-sm font-semibold uppercase tracking-wider">Project Completed | [cite_start]January 2026 [cite: 45]</p>
+           <p className="text-slate-500 text-sm font-semibold uppercase tracking-wider">Project Completed | January 2026 </p>
         </div>
       </div>
     </section>
