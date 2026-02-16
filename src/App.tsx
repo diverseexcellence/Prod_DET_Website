@@ -2083,7 +2083,7 @@ const AboutPage = () => (
       case 'CaseStudies':
         return <CaseStudiesPage />;
       case 'Obsidianworks':
-        return <ObsidianworksPage />;
+        return <ObsidianworksPage setCurrentPage={setCurrentPage} />;
       case 'CAREElementary':
         return <CAREElementaryPage setCurrentPage={setCurrentPage} />;
       case 'HHCHealthcare':
