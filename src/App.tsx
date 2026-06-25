@@ -4,7 +4,7 @@ import DETLogo from './assets/DETlogoV3.png';
 import ArionnePhoto from './assets/ArionnePhotoEdited.png';
 import KevinPhoto from './assets/KevinPhotoEdited.png';
 import JohnathanPhoto from './assets/JohnathanPhotoEdited.png';
-import BernardoPhoto from './assets/BernardoPhotoEdited.png';
+import WebsterRossPhoto from './assets/WebsterRossPhoto.png';
 import SandipPhoto from './assets/SandipPhotoedited.png';
 import JillPhoto from './assets/JillPhotoEdited.png';
 import MichaelPhoto from './assets/MichaelGreyPhoto.png';
@@ -751,12 +751,12 @@ const AboutPage = () => (
               {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
               <div className="w-32 h-32 bg-gradient-to-r from-purple-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-purple-500/50">
                 <img
-                  src={BernardoPhoto}
-                  alt="Bernardo Unzueta"
+                  src={WebsterRossPhoto}
+                  alt="Webster Ross"
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Bernardo Unzueta</h3>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Webster Ross</h3>
               <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Chief Technology Officer</p>
               <p className="text-slate-600 mb-6 text-sm">
                 With over 25 years of experience, specializes in architecting data-driven enterprise solutions and steering digital transformations on modern, secure cloud platforms.
