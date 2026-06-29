@@ -12,6 +12,7 @@ import LouisPhoto from './assets/LouisColemanPhoto.png';
 import BrandonPhoto from './assets/BrandonTramelPhoto.png';
 import GemarPhoto from './assets/GemarBoothePhotoEdited.png';
 import ClayPhoto from './assets/ClayHamptonPhotoEdited.png';
+import KristaPhoto from './assets/KristaElliottPhoto.gif';
 import BackgroundVideo from './assets/V6.mp4';
 import NAWBOMWBE from './assets/NAWBOMWBE.png';
 import CertifiedMWBE from './assets/CertifiedMWBE.png';
@@ -907,6 +908,22 @@ const AboutPage = () => (
               <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Senior Recruiter</p>
               <p className="text-slate-600 mb-6 text-sm">
                 Strategic leader in talent acquisition, focused on discovering and attracting top-tier professionals to fuel our growth.
+              </p>
+            </div>
+
+            {/* Card 8: Krista Elliott */}
+            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
+              <div className="w-32 h-32 bg-gradient-to-r from-[#8B5CF6] to-[#6366F1] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-violet-500/50">
+                <img
+                  src={KristaPhoto}
+                  alt="Krista Elliott"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Krista Elliott</h3>
+              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">PMP & Prosci Change Management Professional</p>
+              <p className="text-slate-600 mb-6 text-sm">
+                Krista Elliott is a PMP and Prosci professional with more than a decade of experience leading technology, process, and workforce transformation initiatives. She partners with organizations to implement innovative solutions, improve business processes, and align people, technology, and systems to drive sustainable results.
               </p>
             </div>
 
