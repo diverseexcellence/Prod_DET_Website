@@ -1271,10 +1271,53 @@ const AboutPage = () => (
                     <div className="flex items-start">
                       <MapPin className="h-6 w-6 text-[#3B82F6] mt-1 mr-4 flex-shrink-0" />
                       <div>
-                        <div className="text-slate-600">Indianapolis, Indiana</div>
-                        <div className="text-sm text-slate-500">Headquarters</div>
+                        <div className="font-semibold text-slate-900">Headquarters</div>
+                        <div className="text-slate-600">8760 Castle Park Drive</div>
+                        <div className="text-slate-600">Indianapolis, Indiana 46256</div>
                       </div>
                     </div>
+                    <div className="flex items-start">
+                      <MapPin className="h-6 w-6 text-[#6366F1] mt-1 mr-4 flex-shrink-0" />
+                      <div>
+                        <div className="font-semibold text-slate-900">DC Office — East Division</div>
+                        <div className="text-slate-600">80 M Street SE</div>
+                        <div className="text-slate-600">Washington, DC 20003</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Google Maps — two office locations side by side */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                  <div className="rounded-2xl overflow-hidden border-2 border-blue-200 shadow-lg">
+                    <div className="bg-blue-600 text-white text-xs font-bold px-3 py-2 flex items-center gap-1">
+                      <MapPin className="h-3 w-3" /> Headquarters — Indianapolis, IN
+                    </div>
+                    <iframe
+                      title="DET Headquarters - Indianapolis"
+                      width="100%"
+                      height="260"
+                      style={{ border: 0, display: 'block' }}
+                      loading="lazy"
+                      allowFullScreen
+                      referrerPolicy="no-referrer-when-downgrade"
+                      src="https://maps.google.com/maps?q=8760+Castle+Park+Drive+Indianapolis+Indiana+46256&output=embed&z=15"
+                    />
+                  </div>
+                  <div className="rounded-2xl overflow-hidden border-2 border-indigo-200 shadow-lg">
+                    <div className="bg-indigo-600 text-white text-xs font-bold px-3 py-2 flex items-center gap-1">
+                      <MapPin className="h-3 w-3" /> DC Office — East Division
+                    </div>
+                    <iframe
+                      title="DET DC Office - Washington DC"
+                      width="100%"
+                      height="260"
+                      style={{ border: 0, display: 'block' }}
+                      loading="lazy"
+                      allowFullScreen
+                      referrerPolicy="no-referrer-when-downgrade"
+                      src="https://maps.google.com/maps?q=80+M+Street+SE+Washington+DC+20003&output=embed&z=15"
+                    />
                   </div>
                 </div>
 
