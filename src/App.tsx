@@ -18,7 +18,8 @@ import NAWBOMWBE from './assets/NAWBOMWBE.png';
 import CertifiedMWBE from './assets/CertifiedMWBE.png';
 import VeeamLogo from './assets/veeam.png';
 import ProofpointLogo from './assets/proofpoint.png';
-import RampLogo from './assets/ramp.png';
+import RampLogo from './assets/ramp_new.svg';
+import TeamViewerLogo from './assets/teamviewer_new.svg';
 import AbilaLogo from './assets/abila.png';
 import GensparkLogo from './assets/genspark.png';
 import VibeLogo from './assets/vibe.svg';
@@ -1024,6 +1025,7 @@ const AboutPage = () => (
               { src: VeeamLogo, alt: "Veeam" },
               { src: ProofpointLogo, alt: "Proofpoint" },
               { src: RampLogo, alt: "RAMP" },
+              { src: TeamViewerLogo, alt: "TeamViewer" },
               { src: AbilaLogo, alt: "Abila" },
               { src: GensparkLogo, alt: "Genspark" },
             ].map((partner) => (
