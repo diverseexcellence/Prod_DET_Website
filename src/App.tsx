@@ -16,6 +16,11 @@ import KristaPhoto from './assets/KristaElliottPhoto.gif';
 import BackgroundVideo from './assets/V6.mp4';
 import NAWBOMWBE from './assets/NAWBOMWBE.png';
 import CertifiedMWBE from './assets/CertifiedMWBE.png';
+import VeeamLogo from './assets/veeam.png';
+import ProofpointLogo from './assets/proofpoint.png';
+import RampLogo from './assets/ramp.png';
+import AbilaLogo from './assets/abila.png';
+import GensparkLogo from './assets/genspark.png';
 
 import {
   Menu,
@@ -992,60 +997,43 @@ const AboutPage = () => (
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
-            {/* Google Cloud */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-2xl border-2 border-slate-200 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
-              <img
-                src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
-                alt="Google"
-                className="h-8 w-auto opacity-70 group-hover:opacity-100 transition-opacity"
-              />
-            </div>
-
-            {/* Microsoft */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-2xl border-2 border-slate-200 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
-                alt="Microsoft"
-                className="h-8 w-auto opacity-70 group-hover:opacity-100 transition-opacity"
-              />
-            </div>
-
-            {/* AWS */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-2xl border-2 border-slate-200 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-                alt="AWS"
-                className="h-8 w-auto opacity-70 group-hover:opacity-100 transition-opacity"
-              />
-            </div>
-
-            {/* Snowflake */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-2xl border-2 border-slate-200 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Snowflake_Logo.svg"
-                alt="Snowflake"
-                className="h-8 w-auto opacity-70 group-hover:opacity-100 transition-opacity"
-              />
-            </div>
-
-            {/* Oracle */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-2xl border-2 border-slate-200 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg"
-                alt="Oracle"
-                className="h-8 w-auto opacity-70 group-hover:opacity-100 transition-opacity"
-              />
-            </div>
-
-            {/* SAP */}
-            <div className="flex items-center justify-center p-6 bg-white rounded-2xl border-2 border-slate-200 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg"
-                alt="SAP"
-                className="h-8 w-auto opacity-70 group-hover:opacity-100 transition-opacity"
-              />
-            </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5 items-center">
+            {[
+              { src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg", alt: "OpenAI" },
+              { src: "https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg", alt: "Claude" },
+              { src: "https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png", alt: "Databricks" },
+              { src: "https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg", alt: "Cisco" },
+              { src: "https://cdn.worldvectorlogo.com/logos/aruba-networks.svg", alt: "Aruba" },
+              { src: "https://upload.wikimedia.org/wikipedia/commons/6/62/Fortinet_logo.svg", alt: "Fortinet" },
+              { src: "https://cdn.worldvectorlogo.com/logos/crowdstrike-2.svg", alt: "CrowdStrike" },
+              { src: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Okta_logo.svg", alt: "Okta" },
+              { src: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Zendesk_logo.svg", alt: "Zendesk" },
+              { src: "https://upload.wikimedia.org/wikipedia/commons/5/57/Box%2C_Inc._logo.svg", alt: "Box" },
+              { src: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png", alt: "Notion" },
+              { src: "https://cdn.worldvectorlogo.com/logos/teamviewer-1.svg", alt: "TeamViewer" },
+              { src: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg", alt: "Microsoft" },
+              { src: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg", alt: "AWS" },
+              { src: "https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg", alt: "Google Cloud" },
+              { src: "https://upload.wikimedia.org/wikipedia/commons/5/57/ServiceNow_logo.svg", alt: "ServiceNow" },
+              { src: "https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg", alt: "SAP" },
+              { src: "https://cdn.worldvectorlogo.com/logos/vibe.svg", alt: "Vibe Boards" },
+              { src: VeeamLogo, alt: "Veeam" },
+              { src: ProofpointLogo, alt: "Proofpoint" },
+              { src: RampLogo, alt: "RAMP" },
+              { src: AbilaLogo, alt: "Abila" },
+              { src: GensparkLogo, alt: "Genspark" },
+            ].map((partner) => (
+              <div
+                key={partner.alt}
+                className="flex items-center justify-center p-4 bg-white rounded-2xl border-2 border-slate-200 hover:border-blue-300 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group h-[72px]"
+              >
+                <img
+                  src={partner.src}
+                  alt={partner.alt}
+                  className="max-h-8 max-w-[110px] w-auto h-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
