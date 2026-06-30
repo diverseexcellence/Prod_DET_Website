@@ -21,6 +21,7 @@ import ProofpointLogo from './assets/proofpoint.png';
 import RampLogo from './assets/ramp.png';
 import AbilaLogo from './assets/abila.png';
 import GensparkLogo from './assets/genspark.png';
+import VibeLogo from './assets/vibe.svg';
 
 import {
   Menu,
@@ -1016,7 +1017,7 @@ const AboutPage = () => (
               { src: "https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg", alt: "Google Cloud" },
               { src: "https://upload.wikimedia.org/wikipedia/commons/5/57/ServiceNow_logo.svg", alt: "ServiceNow" },
               { src: "https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg", alt: "SAP" },
-              { src: "https://cdn.worldvectorlogo.com/logos/vibe.svg", alt: "Vibe Boards" },
+              { src: VibeLogo, alt: "Vibe Boards" },
               { src: VeeamLogo, alt: "Veeam" },
               { src: ProofpointLogo, alt: "Proofpoint" },
               { src: RampLogo, alt: "RAMP" },
