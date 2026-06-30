@@ -23,6 +23,7 @@ import AbilaLogo from './assets/abila.png';
 import GensparkLogo from './assets/genspark.png';
 import VibeLogo from './assets/vibe.svg';
 import OracleLogo from './assets/oracle.svg';
+import TeamViewerLogo from './assets/teamviewer.png';
 
 import {
   Menu,
@@ -1012,7 +1013,7 @@ const AboutPage = () => (
               { src: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Zendesk_logo.svg", alt: "Zendesk" },
               { src: "https://upload.wikimedia.org/wikipedia/commons/5/57/Box%2C_Inc._logo.svg", alt: "Box" },
               { src: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png", alt: "Notion" },
-              { src: "https://cdn.worldvectorlogo.com/logos/teamviewer-1.svg", alt: "TeamViewer" },
+              { src: TeamViewerLogo, alt: "TeamViewer" },
               { src: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg", alt: "Microsoft" },
               { src: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg", alt: "AWS" },
               { src: "https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg", alt: "Google Cloud" },
