@@ -14,6 +14,7 @@ import GemarPhoto from './assets/GemarBoothePhotoEdited.png';
 import ClayPhoto from './assets/ClayHamptonPhotoEdited.png';
 import KristaPhoto from './assets/KristaElliottPhoto.gif';
 import NelliPhoto from './assets/nelli_benson.jpg';
+import RichardBraidichPhoto from './assets/RichardBraidichPhoto.png';
 import BackgroundVideo from './assets/V6.mp4';
 import NAWBOMWBE from './assets/NAWBOMWBE.png';
 import CertifiedMWBE from './assets/CertifiedMWBE.png';
@@ -937,6 +938,22 @@ const AboutPage = () => (
               <p className="text-[#3B82F6] font-semibold mb-4 text-sm">PMP & Prosci Change Management Professional</p>
               <p className="text-slate-600 mb-6 text-sm">
                 Krista Elliott is a PMP and Prosci professional with more than a decade of experience leading technology, process, and workforce transformation initiatives. She partners with organizations to implement innovative solutions, improve business processes, and align people, technology, and systems to drive sustainable results.
+              </p>
+            </div>
+
+            {/* Card 9: Richard Braidich */}
+            <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
+              <div className="w-32 h-32 bg-gradient-to-r from-[#1E3A5F] to-[#2563EB] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-900/50">
+                <img
+                  src={RichardBraidichPhoto}
+                  alt="Richard Braidich"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Richard Braidich, CISSP</h3>
+              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Cyber Security Expert & vCISO</p>
+              <p className="text-slate-600 mb-6 text-sm">
+                A seasoned CISSP with 25+ years of enterprise security leadership, Richard has served as CISO and Chief Privacy Officer for top-15 U.S. banks, global consulting firms such as Accenture, and cutting-edge Fintech platforms. He delivers virtual CISO (vCISO) services, building and maturing comprehensive security programs—spanning cloud security, PCI DSS, HIPAA, NIST compliance, and cyber risk strategy—for organizations of every size.
               </p>
             </div>
 
