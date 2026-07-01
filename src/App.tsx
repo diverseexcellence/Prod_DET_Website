@@ -13,6 +13,7 @@ import BrandonPhoto from './assets/BrandonTramelPhoto.png';
 import GemarPhoto from './assets/GemarBoothePhotoEdited.png';
 import ClayPhoto from './assets/ClayHamptonPhotoEdited.png';
 import KristaPhoto from './assets/KristaElliottPhoto.gif';
+import NelliPhoto from './assets/nelli_benson.jpg';
 import BackgroundVideo from './assets/V6.mp4';
 import NAWBOMWBE from './assets/NAWBOMWBE.png';
 import CertifiedMWBE from './assets/CertifiedMWBE.png';
@@ -907,11 +908,14 @@ const AboutPage = () => (
               </p>
             </div>
 
-            {/* Card 7: Nelli Benson - Now with Initials */}
+            {/* Card 7: Nelli Benson */}
             <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 text-center">
-              {/* The circular div that used to hold the image now holds the initials */}
-              <div className="w-32 h-32 bg-gradient-to-r from-[#0EA5E9] to-[#06B6D4] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-sky-500/50">
-                <span className="text-5xl font-bold text-white tracking-wider">NB</span>
+              <div className="w-32 h-32 rounded-full mx-auto mb-6 shadow-lg shadow-sky-500/50 overflow-hidden">
+                <img
+                  src={NelliPhoto}
+                  alt="Nelli Benson"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Nelli Benson</h3>
               <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Senior Recruiter</p>
