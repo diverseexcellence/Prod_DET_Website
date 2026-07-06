@@ -919,9 +919,9 @@ const AboutPage = () => (
                 />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Nelli Benson</h3>
-              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Senior Recruiter</p>
+              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Project Coordinator</p>
               <p className="text-slate-600 mb-6 text-sm">
-                Strategic leader in talent acquisition, focused on discovering and attracting top-tier professionals to fuel our growth.
+                Partners with the Project and Program Management team to keep initiatives on track, ensuring deliverables, timelines, and reporting are accurate and aligned with executive-level expectations.
               </p>
             </div>
 
