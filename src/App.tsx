@@ -1422,30 +1422,30 @@ const AboutPage = () => (
               </div>
             </div>
             
-            {/* CARE Elementary Case Study */}
-            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#EF4444] hover:shadow-2xl hover:shadow-red-500/20 transition-all duration-300 hover:-translate-y-2">
+            {/* CorGroup Case Study */}
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#F59E0B] hover:shadow-2xl hover:shadow-amber-500/20 transition-all duration-300 hover:-translate-y-2">
               <div className="relative h-56 flex items-center justify-center p-8 overflow-hidden">
-                <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Education" className="absolute inset-0 w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#EF4444]/90 to-[#DC2626]/90"></div>
+                <img src="https://images.pexels.com/photos/585418/pexels-photo-585418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Construction" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#92400E]/90 to-[#F59E0B]/90"></div>
                 <div className="text-white text-center relative z-10">
                   <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
-                    <GraduationCap className="h-10 w-10" />
+                    <HardHat className="h-10 w-10" />
                   </div>
                   <div className="inline-flex items-center px-3 py-1 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full">
-                    <span className="text-xs font-bold tracking-wider">EDUCATION</span>
+                    <span className="text-xs font-bold tracking-wider">CONSTRUCTION & WEB</span>
                   </div>
                 </div>
               </div>
               <div className="p-8">
                 <h2 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
-                  Empowering CARE Elementary's Digital Future
+                  CorGroup: Revamping a 40-Year Legacy in 3 Weeks
                 </h2>
                 <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  Comprehensive E-rate Category 1 and 2 services transforming connectivity and network infrastructure for Miami elementary school
+                  How DET partnered with a 40-year Indianapolis construction firm to capture their CEO's vision and deliver a modern AI-era web presence in a single sprint.
                 </p>
                 <button
-                  onClick={() => setCurrentPage('CAREElementary')}
-                  className="flex items-center text-[#EF4444] hover:text-[#DC2626] font-semibold group text-sm"
+                  onClick={() => setCurrentPage('CorGroup')}
+                  className="flex items-center text-[#F59E0B] hover:text-[#D97706] font-semibold group text-sm"
                 >
                   View Case Study
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -1670,30 +1670,30 @@ const AboutPage = () => (
               </div>
             </div>
 
-            {/* CorGroup Case Study */}
-            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#F59E0B] hover:shadow-2xl hover:shadow-amber-500/20 transition-all duration-300 hover:-translate-y-2">
+            {/* CARE Elementary Case Study */}
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#EF4444] hover:shadow-2xl hover:shadow-red-500/20 transition-all duration-300 hover:-translate-y-2">
               <div className="relative h-56 flex items-center justify-center p-8 overflow-hidden">
-                <img src="https://images.pexels.com/photos/585418/pexels-photo-585418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Construction" className="absolute inset-0 w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#92400E]/90 to-[#F59E0B]/90"></div>
+                <img src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Education" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#EF4444]/90 to-[#DC2626]/90"></div>
                 <div className="text-white text-center relative z-10">
                   <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
-                    <HardHat className="h-10 w-10" />
+                    <GraduationCap className="h-10 w-10" />
                   </div>
                   <div className="inline-flex items-center px-3 py-1 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full">
-                    <span className="text-xs font-bold tracking-wider">CONSTRUCTION & WEB</span>
+                    <span className="text-xs font-bold tracking-wider">EDUCATION</span>
                   </div>
                 </div>
               </div>
               <div className="p-8">
                 <h2 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
-                  CorGroup: Revamping a 40-Year Legacy in 3 Weeks
+                  Empowering CARE Elementary's Digital Future
                 </h2>
                 <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  How DET partnered with a 40-year Indianapolis construction firm to capture their CEO's vision and deliver a modern AI-era web presence in a single sprint.
+                  Comprehensive E-rate Category 1 and 2 services transforming connectivity and network infrastructure for Miami elementary school
                 </p>
                 <button
-                  onClick={() => setCurrentPage('CorGroup')}
-                  className="flex items-center text-[#F59E0B] hover:text-[#D97706] font-semibold group text-sm"
+                  onClick={() => setCurrentPage('CAREElementary')}
+                  className="flex items-center text-[#EF4444] hover:text-[#DC2626] font-semibold group text-sm"
                 >
                   View Case Study
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
