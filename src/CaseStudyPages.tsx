@@ -1,4 +1,4 @@
-import { ChevronRight, GraduationCap, HeartPulse, CheckCircle, Shield, TrendingUp, Building2, Users, Server, Lock } from 'lucide-react';
+import { ChevronRight, GraduationCap, HeartPulse, CheckCircle, Shield, TrendingUp, Building2, Users, Server, Lock, HardHat, Globe, Cpu, Zap, Monitor } from 'lucide-react';
 
 interface CaseStudyPageProps {
   setCurrentPage: (page: string) => void;
@@ -899,6 +899,252 @@ export const NMAPage = ({ setCurrentPage }: CaseStudyPageProps) => (
           <p className="text-lg text-slate-700 text-center">
             The National Medical Association's multi-year transformation demonstrates how thoughtful modernization can bridge technology, culture, and community—from server upgrades to full cloud adoption and a visually inspiring, art-integrated headquarters that embodies the NMA's mission of excellence, innovation, and inclusivity.
           </p>
+        </div>
+      </div>
+    </section>
+  </div>
+);
+
+export const CorGroupPage = ({ setCurrentPage }: CaseStudyPageProps) => (
+  <div className="min-h-screen bg-slate-50 pt-24">
+    {/* Header */}
+    <section className="py-20 px-8 bg-gradient-to-br from-[#92400E] via-[#B45309] to-[#F59E0B]">
+      <div className="max-w-6xl mx-auto">
+        <button
+          onClick={() => setCurrentPage('CaseStudies')}
+          className="flex items-center text-white/80 hover:text-white mb-8 group font-semibold"
+        >
+          <ChevronRight className="h-5 w-5 mr-1 rotate-180 group-hover:-translate-x-1 transition-transform" />
+          Back to Case Studies
+        </button>
+        <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full mb-6">
+          <HardHat className="h-4 w-4 text-white mr-2" />
+          <span className="text-sm font-semibold text-white">Construction & Web Development</span>
+        </div>
+        <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          CorGroup: Revamping a 40-Year Legacy in 3 Weeks
+        </h1>
+        <p className="text-xl text-white/90 leading-relaxed max-w-3xl">
+          How Diverse Excellence Technology partnered with a 40-year Indianapolis construction firm to capture the CEO's vision, modernize their digital identity, and deliver a production-ready web presence — all within a single AI-accelerated sprint.
+        </p>
+      </div>
+    </section>
+
+    {/* Stats Bar */}
+    <section className="py-12 px-8 bg-white border-b border-slate-200">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div className="text-4xl font-bold text-[#F59E0B] mb-2">3</div>
+            <div className="text-sm font-semibold text-slate-700">Week Sprint</div>
+            <div className="text-xs text-slate-500 mt-1">Concept to production</div>
+          </div>
+          <div>
+            <div className="text-4xl font-bold text-[#F59E0B] mb-2">40+</div>
+            <div className="text-sm font-semibold text-slate-700">Years in Business</div>
+            <div className="text-xs text-slate-500 mt-1">Legacy brand, modern future</div>
+          </div>
+          <div>
+            <div className="text-4xl font-bold text-[#F59E0B] mb-2">5</div>
+            <div className="text-sm font-semibold text-slate-700">Key Meetings</div>
+            <div className="text-xs text-slate-500 mt-1">On-site &amp; remote</div>
+          </div>
+          <div>
+            <div className="text-4xl font-bold text-[#F59E0B] mb-2">100%</div>
+            <div className="text-sm font-semibold text-slate-700">CEO Vision Realized</div>
+            <div className="text-xs text-slate-500 mt-1">AI-era brand identity</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* The Challenge */}
+    <section className="py-16 px-8 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-8">The Challenge: A 40-Year Brand Stuck in a Legacy Web Era</h2>
+        <p className="text-lg text-slate-700 mb-6">
+          CorGroup Construction &amp; Engineering has been a cornerstone of Indianapolis' built environment for over four decades. From underground civil infrastructure for Citizens Energy Group to joint ventures with AECOM Hunt at the Indianapolis International Airport, the firm's portfolio speaks for itself — but their digital presence did not.
+        </p>
+        <p className="text-lg text-slate-700 mb-8">
+          The existing website was hosted on Wix, cluttered with outdated copy, and failed to convey the sophistication, certifications, and breadth of services that CorGroup brings to every engagement. In a marketplace where even heavy construction firms are expected to project digital credibility, the gap between CorGroup's real-world reputation and their online presence had become a liability.
+        </p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="p-6 bg-amber-50 rounded-2xl border-2 border-amber-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">Outdated Digital Identity</h3>
+            <p className="text-slate-600 text-sm">Legacy Wix site no longer reflected 40+ years of proven project delivery, MBE certification, and multi-state licensure</p>
+          </div>
+          <div className="p-6 bg-amber-50 rounded-2xl border-2 border-amber-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">No AI-Era Positioning</h3>
+            <p className="text-slate-600 text-sm">The CEO recognized every industry — including construction — now requires an AI-forward narrative to attract partners, clients, and talent</p>
+          </div>
+          <div className="p-6 bg-amber-50 rounded-2xl border-2 border-amber-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">Speed-to-Market Pressure</h3>
+            <p className="text-slate-600 text-sm">Active bids, partnerships, and business development created urgency for a credible presence in weeks — not months</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* The Partnership Evolution */}
+    <section className="py-16 px-8 bg-slate-50">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-4">From DC Partners to Full-Service Technology Supplier</h2>
+        <p className="text-lg text-slate-700 mb-6">
+          The DET–CorGroup relationship didn't begin with a web project — it began with a shared commitment to excellence in the Washington, D.C. marketplace. The two firms first collaborated as construction partners on federal and commercial projects in the DMV area, building a working relationship grounded in trust, execution, and mutual respect.
+        </p>
+        <p className="text-lg text-slate-700 mb-8">
+          That partnership evolved dramatically. As CorGroup expanded its Indianapolis operations, DET transitioned from a project partner into a strategic technology supplier — providing IT Managed Services, Network Services, application development hosting, and ultimately web development. The relationship is a textbook example of how a technology partner can grow alongside a client's ambitions.
+        </p>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-white p-8 rounded-2xl border-2 border-amber-200 shadow-sm">
+            <div className="bg-amber-100 text-amber-700 font-bold text-sm w-10 h-10 rounded-xl flex items-center justify-center mb-4">DC</div>
+            <h3 className="text-xl font-bold text-slate-900 mb-3">Phase 1: Construction Partners</h3>
+            <p className="text-slate-600">DET and CorGroup first collaborated as construction partners on projects in the Washington, D.C. area — building a foundation of operational trust and shared delivery standards that would define the partnership for years to come.</p>
+          </div>
+          <div className="bg-white p-8 rounded-2xl border-2 border-amber-200 shadow-sm">
+            <div className="bg-amber-100 text-amber-700 font-bold text-sm w-10 h-10 rounded-xl flex items-center justify-center mb-4">IT</div>
+            <h3 className="text-xl font-bold text-slate-900 mb-3">Phase 2: Managed IT Supplier</h3>
+            <p className="text-slate-600">As CorGroup's Indianapolis footprint grew, DET became their go-to supplier for IT Managed Services and Network Services — ensuring uptime, security, and infrastructure reliability across field and office operations.</p>
+          </div>
+          <div className="bg-white p-8 rounded-2xl border-2 border-amber-200 shadow-sm">
+            <div className="bg-amber-100 text-amber-700 font-bold text-sm w-10 h-10 rounded-xl flex items-center justify-center mb-4">☁</div>
+            <h3 className="text-xl font-bold text-slate-900 mb-3">Phase 3: App Hosting &amp; Infrastructure</h3>
+            <p className="text-slate-600">DET extended its scope to include application development hosting — providing the cloud infrastructure backbone supporting CorGroup's internal systems and digital operations at scale.</p>
+          </div>
+          <div className="bg-white p-8 rounded-2xl border-2 border-amber-200 shadow-sm">
+            <div className="bg-amber-100 text-amber-700 font-bold text-sm w-10 h-10 rounded-xl flex items-center justify-center mb-4">🌐</div>
+            <h3 className="text-xl font-bold text-slate-900 mb-3">Phase 4: Web Development &amp; Deployment</h3>
+            <p className="text-slate-600">The web revamp represents the latest evolution — DET taking full ownership of CorGroup's digital identity, from design and content strategy to production deployment and DNS management.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* The Sprint */}
+    <section className="py-16 px-8 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-4">The Solution: A CEO-Led Vision Sprint</h2>
+        <p className="text-lg text-slate-700 mb-8">
+          Rather than a drawn-out agency engagement, CorGroup's CEO chose to leverage DET's AI-accelerated development capabilities for speed without sacrificing quality. The engagement was structured as an intensive 3-week sprint — lean, focused, and CEO-directed. A handful of on-site and remote meetings were all it took to align on vision, scope, and deliverables.
+        </p>
+        <div className="space-y-6">
+          <div className="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm">
+            <div className="flex items-start">
+              <div className="bg-amber-100 text-amber-700 font-bold text-lg w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 mr-4">01</div>
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Vision Capture Sessions</h3>
+                <p className="text-slate-600">DET conducted focused on-site and remote sessions directly with the CEO to extract his vision for the brand — how CorGroup should be perceived in 2026 and beyond. The CEO was direct: the site needed to project confidence, technical competency, and a forward-looking awareness that matched the firm's real-world capabilities. No fluff. No filler. Just results.</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm">
+            <div className="flex items-start">
+              <div className="bg-amber-100 text-amber-700 font-bold text-lg w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 mr-4">02</div>
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">AI-Accelerated Development</h3>
+                <p className="text-slate-600">DET leveraged AI-assisted development tooling to dramatically compress the build timeline. What would traditionally take 8–12 weeks with a conventional agency was delivered in 3 weeks — without cutting corners on design quality, mobile responsiveness, or content depth. The CEO recognized early that DET's AI capabilities were the lever that made this timeline possible, and he intentionally structured the engagement around that advantage.</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm">
+            <div className="flex items-start">
+              <div className="bg-amber-100 text-amber-700 font-bold text-lg w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 mr-4">03</div>
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Content &amp; Brand Modernization</h3>
+                <p className="text-slate-600">DET worked through the CEO's project portfolio, certifications, client roster, and service lines to craft copy that accurately represented CorGroup's full scope — including MBE certification, DOT Unified Certification, licensed civil engineering across Illinois, Indiana, Washington D.C., and Missouri, and key client relationships including Citizens Energy Group and AECOM Hunt.</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white p-6 rounded-2xl border-2 border-slate-200 shadow-sm">
+            <div className="flex items-start">
+              <div className="bg-amber-100 text-amber-700 font-bold text-lg w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 mr-4">04</div>
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Infrastructure &amp; Go-Live</h3>
+                <p className="text-slate-600">DET handled the full technical stack — from VM-hosted production deployment on cloud infrastructure to DNS management, SSL certificate provisioning via Let's Encrypt, and Caddy reverse proxy configuration. The legacy Wix site was decommissioned and corgroup.us was pointed to DET's managed infrastructure, going live with zero downtime.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Impact */}
+    <section className="py-16 px-8 bg-gradient-to-br from-amber-50 to-orange-50">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-8">Project Impact</h2>
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="text-center">
+            <div className="text-5xl font-bold text-[#F59E0B] mb-2">3</div>
+            <div className="text-lg font-semibold text-slate-700">Weeks Delivered</div>
+            <p className="text-slate-500 text-sm mt-2">Concept to live production site</p>
+          </div>
+          <div className="text-center">
+            <div className="text-5xl font-bold text-[#F59E0B] mb-2">0</div>
+            <div className="text-lg font-semibold text-slate-700">Downtime</div>
+            <p className="text-slate-500 text-sm mt-2">Seamless DNS cutover from Wix</p>
+          </div>
+          <div className="text-center">
+            <div className="text-5xl font-bold text-[#F59E0B] mb-2">4x</div>
+            <div className="text-lg font-semibold text-slate-700">Faster Than Traditional</div>
+            <p className="text-slate-500 text-sm mt-2">AI-accelerated vs. typical agency timeline</p>
+          </div>
+        </div>
+        <div className="bg-white p-8 rounded-2xl border-2 border-amber-200 shadow-sm">
+          <p className="text-slate-700 text-lg italic leading-relaxed mb-4">
+            "DET understood exactly what we needed — not just a website, but a representation of who we are and where we're going. They captured our story, our certifications, our clients, and our work in a way that a traditional agency never could have done this quickly. The fact that they could use AI to speed up the process while keeping the quality high was exactly why we knew they were the right partner."
+          </p>
+          <p className="text-sm font-semibold text-slate-500">CorGroup Leadership — Indianapolis, IN &nbsp;|&nbsp; Project Completed July 2026</p>
+        </div>
+      </div>
+    </section>
+
+    {/* Services Delivered */}
+    <section className="py-16 px-8 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-8">DET Services Delivered</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+            <div className="bg-amber-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Monitor className="h-5 w-5 text-amber-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">Web Design &amp; Development</h3>
+            <p className="text-slate-600 text-sm">Full custom site built from scratch — responsive, modern, and AI-era ready with a gallery, certifications, and client showcase</p>
+          </div>
+          <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+            <div className="bg-amber-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Globe className="h-5 w-5 text-amber-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">DNS &amp; Hosting Management</h3>
+            <p className="text-slate-600 text-sm">Full DNS cutover, SSL provisioning via Let's Encrypt, and VM-hosted production deployment on DET infrastructure</p>
+          </div>
+          <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+            <div className="bg-amber-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Server className="h-5 w-5 text-amber-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">IT Managed Services</h3>
+            <p className="text-slate-600 text-sm">Ongoing infrastructure management ensuring uptime, security, and operational continuity across CorGroup's systems</p>
+          </div>
+          <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+            <div className="bg-amber-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Cpu className="h-5 w-5 text-amber-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">AI-Accelerated Development</h3>
+            <p className="text-slate-600 text-sm">Leveraged DET's AI toolchain to compress a 12-week traditional project into a 3-week production sprint</p>
+          </div>
+          <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+            <div className="bg-amber-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Users className="h-5 w-5 text-amber-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">Network Services</h3>
+            <p className="text-slate-600 text-sm">Network infrastructure supporting field operations, office connectivity, and application hosting for CorGroup's teams</p>
+          </div>
+          <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+            <div className="bg-amber-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Zap className="h-5 w-5 text-amber-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">Brand Strategy &amp; Content</h3>
+            <p className="text-slate-600 text-sm">CEO-aligned messaging, service positioning, certification showcase, and portfolio storytelling crafted for 2026 and beyond</p>
+          </div>
         </div>
       </div>
     </section>
