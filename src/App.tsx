@@ -793,24 +793,62 @@ const AboutPage = () => (
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl shadow-lg border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 text-center">
-              <div className="w-32 h-32 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-teal-500/50">
-                <img
-                  src={SummerWoodPhoto}
-                  alt="Dr. Summer Wood"
-                  className="w-full h-full object-cover rounded-full"
-                />
-              </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Dr. Summer D. Wood</h3>
-              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Education & Leadership Strategist</p>
-              <p className="text-slate-600 mb-6 text-sm">
-                Dr. Wood is a seasoned educator and leadership development expert who brings the combined perspective of a former teacher, instructional coach, professor, and principal. She provides customized support in school transformation, literacy instruction, data-informed planning, and culturally responsive practices—equipping educators with the clarity and tools needed to deliver excellent, innovative, and equitable education for every student.
-              </p>
-              <div className="text-left text-xs text-slate-500 space-y-1 border-t border-slate-100 pt-4">
-                <p className="font-semibold text-slate-600 mb-2">Education</p>
-                <p>B.B.A., Management — Oakwood University, 2006</p>
-                <p>M.A.T. — Johns Hopkins University, 2008</p>
-                <p>Ph.D., Language, Literacy &amp; Culture — Vanderbilt University, 2015</p>
+            {/* Dr. Summer Wood — flip card */}
+            <div className="group" style={{ perspective: '1000px' }}>
+              <div
+                className="relative w-full transition-transform duration-700"
+                style={{
+                  transformStyle: 'preserve-3d',
+                  transform: 'rotateY(0deg)',
+                  minHeight: '400px',
+                }}
+                onMouseEnter={e => (e.currentTarget.style.transform = 'rotateY(180deg)')}
+                onMouseLeave={e => (e.currentTarget.style.transform = 'rotateY(0deg)')}
+              >
+                {/* FRONT */}
+                <div
+                  className="absolute inset-0 bg-white p-8 rounded-3xl shadow-lg border-2 border-slate-200 group-hover:border-[#3B82F6] group-hover:shadow-2xl group-hover:shadow-blue-500/20 text-center flex flex-col items-center justify-center"
+                  style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}
+                >
+                  <div className="w-32 h-32 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-teal-500/50">
+                    <img
+                      src={SummerWoodPhoto}
+                      alt="Dr. Summer Wood"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">Dr. Summer D. Wood</h3>
+                  <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Education &amp; Leadership Strategist</p>
+                  <p className="text-slate-600 text-sm">
+                    Dr. Wood is a seasoned educator and leadership development expert who brings the combined perspective of a former teacher, instructional coach, professor, and principal. She provides customized support in school transformation, literacy instruction, data-informed planning, and culturally responsive practices.
+                  </p>
+                </div>
+
+                {/* BACK */}
+                <div
+                  className="absolute inset-0 bg-gradient-to-br from-teal-600 to-cyan-700 p-8 rounded-3xl shadow-lg border-2 border-teal-400 text-center flex flex-col items-center justify-center"
+                  style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
+                >
+                  <h3 className="text-xl font-bold text-white mb-1">Dr. Summer D. Wood</h3>
+                  <p className="text-teal-100 font-semibold text-sm mb-6">Education &amp; Leadership Strategist</p>
+                  <div className="text-left w-full space-y-4">
+                    <p className="text-white font-bold text-sm uppercase tracking-wider border-b border-teal-400 pb-2">Education</p>
+                    <div className="space-y-3">
+                      <div>
+                        <p className="text-white font-semibold text-sm">Oakwood University</p>
+                        <p className="text-teal-100 text-xs">B.B.A., Management · 2006</p>
+                      </div>
+                      <div>
+                        <p className="text-white font-semibold text-sm">Johns Hopkins University</p>
+                        <p className="text-teal-100 text-xs">M.A.T. · 2008</p>
+                      </div>
+                      <div>
+                        <p className="text-white font-semibold text-sm">Vanderbilt University</p>
+                        <p className="text-teal-100 text-xs">Ph.D., Language, Literacy &amp; Culture · 2015</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             
