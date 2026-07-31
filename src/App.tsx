@@ -773,9 +773,11 @@ const AboutPage = () => (
                 <div className="flip-card-back flip-back-emerald p-6 shadow-lg flex flex-col items-center justify-center">
                   <h3 className="text-xl font-bold text-white mb-1 text-center">Kevin Mullin</h3>
                   <p className="text-emerald-100 font-semibold text-sm mb-6 text-center">President</p>
-                  <div className="text-left w-full">
-                    <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-emerald-300 pb-2 mb-4">Education</p>
-                    <p className="text-emerald-100 text-sm italic">Details coming soon.</p>
+                  <div className="text-left w-full space-y-4">
+                    <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-emerald-300 pb-2">Education</p>
+                    <div className="space-y-4">
+                      <div><p className="text-white font-semibold text-sm">Ball State University</p><p className="text-emerald-100 text-xs mt-0.5">B.A.</p></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -845,9 +847,11 @@ const AboutPage = () => (
                 <div className="flip-card-back flip-back-blue p-6 shadow-lg flex flex-col items-center justify-center">
                   <h3 className="text-xl font-bold text-white mb-1 text-center">Gemar Boothe</h3>
                   <p className="text-blue-100 font-semibold text-sm mb-6 text-center">Chief Financial Officer</p>
-                  <div className="text-left w-full">
-                    <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-blue-300 pb-2 mb-4">Education</p>
-                    <p className="text-blue-100 text-sm italic">Details coming soon.</p>
+                  <div className="text-left w-full space-y-4">
+                    <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-blue-300 pb-2">Education</p>
+                    <div className="space-y-4">
+                      <div><p className="text-white font-semibold text-sm">Nova Southeastern University</p><p className="text-blue-100 text-xs mt-0.5">M.B.A., Finance</p></div>
+                    </div>
                   </div>
                 </div>
               </div>
