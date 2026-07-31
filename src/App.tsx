@@ -67,6 +67,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState('Home');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [hoveredService, setHoveredService] = useState<number | null>(null);
+  const [summerFlipped, setSummerFlipped] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -793,61 +794,67 @@ const AboutPage = () => (
               </p>
             </div>
 
-            {/* Dr. Summer Wood — flip card */}
-            <div className="group" style={{ perspective: '1000px' }}>
+            {/* Dr. Summer Wood — flip card (hover on desktop, tap on mobile) */}
+            <div
+              className="cursor-pointer"
+              style={{ perspective: '1000px' }}
+              onMouseEnter={() => setSummerFlipped(true)}
+              onMouseLeave={() => setSummerFlipped(false)}
+              onClick={() => setSummerFlipped(f => !f)}
+            >
               <div
                 className="relative w-full transition-transform duration-700"
                 style={{
                   transformStyle: 'preserve-3d',
-                  transform: 'rotateY(0deg)',
-                  minHeight: '400px',
+                  transform: summerFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
+                  height: '420px',
                 }}
-                onMouseEnter={e => (e.currentTarget.style.transform = 'rotateY(180deg)')}
-                onMouseLeave={e => (e.currentTarget.style.transform = 'rotateY(0deg)')}
               >
                 {/* FRONT */}
                 <div
-                  className="absolute inset-0 bg-white p-8 rounded-3xl shadow-lg border-2 border-slate-200 group-hover:border-[#3B82F6] group-hover:shadow-2xl group-hover:shadow-blue-500/20 text-center flex flex-col items-center justify-center"
+                  className="absolute inset-0 bg-white p-6 rounded-3xl shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center overflow-hidden"
                   style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}
                 >
-                  <div className="w-32 h-32 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-teal-500/50">
+                  <div className="w-28 h-28 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-teal-500/50 flex-shrink-0">
                     <img
                       src={SummerWoodPhoto}
                       alt="Dr. Summer Wood"
                       className="w-full h-full object-cover rounded-full"
                     />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">Dr. Summer D. Wood</h3>
-                  <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Education &amp; Leadership Strategist</p>
-                  <p className="text-slate-600 text-sm">
-                    Dr. Wood is a seasoned educator and leadership development expert who brings the combined perspective of a former teacher, instructional coach, professor, and principal. She provides customized support in school transformation, literacy instruction, data-informed planning, and culturally responsive practices.
+                  <h3 className="text-lg font-bold text-slate-900 mb-1 leading-tight">Dr. Summer D. Wood</h3>
+                  <p className="text-[#3B82F6] font-semibold mb-3 text-sm">Education &amp; Leadership Strategist</p>
+                  <p className="text-slate-600 text-sm leading-relaxed">
+                    A seasoned educator and leadership development expert with the perspective of a former teacher, instructional coach, professor, and principal — bridging theory, practice, and real-world school leadership.
                   </p>
+                  <p className="text-teal-500 text-xs mt-4 font-medium">Tap to see education ›</p>
                 </div>
 
                 {/* BACK */}
                 <div
-                  className="absolute inset-0 bg-gradient-to-br from-teal-600 to-cyan-700 p-8 rounded-3xl shadow-lg border-2 border-teal-400 text-center flex flex-col items-center justify-center"
+                  className="absolute inset-0 bg-gradient-to-br from-teal-600 to-cyan-700 p-6 rounded-3xl shadow-lg border-2 border-teal-400 flex flex-col items-center justify-center overflow-hidden"
                   style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
                 >
-                  <h3 className="text-xl font-bold text-white mb-1">Dr. Summer D. Wood</h3>
-                  <p className="text-teal-100 font-semibold text-sm mb-6">Education &amp; Leadership Strategist</p>
+                  <h3 className="text-lg font-bold text-white mb-1 text-center">Dr. Summer D. Wood</h3>
+                  <p className="text-teal-100 font-semibold text-sm mb-5 text-center">Education &amp; Leadership Strategist</p>
                   <div className="text-left w-full space-y-4">
-                    <p className="text-white font-bold text-sm uppercase tracking-wider border-b border-teal-400 pb-2">Education</p>
-                    <div className="space-y-3">
+                    <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-teal-400 pb-2">Education</p>
+                    <div className="space-y-4">
                       <div>
                         <p className="text-white font-semibold text-sm">Oakwood University</p>
-                        <p className="text-teal-100 text-xs">B.B.A., Management · 2006</p>
+                        <p className="text-teal-100 text-xs mt-0.5">B.B.A., Management · 2006</p>
                       </div>
                       <div>
                         <p className="text-white font-semibold text-sm">Johns Hopkins University</p>
-                        <p className="text-teal-100 text-xs">M.A.T. · 2008</p>
+                        <p className="text-teal-100 text-xs mt-0.5">M.A.T. · 2008</p>
                       </div>
                       <div>
                         <p className="text-white font-semibold text-sm">Vanderbilt University</p>
-                        <p className="text-teal-100 text-xs">Ph.D., Language, Literacy &amp; Culture · 2015</p>
+                        <p className="text-teal-100 text-xs mt-0.5">Ph.D., Language, Literacy &amp; Culture · 2015</p>
                       </div>
                     </div>
                   </div>
+                  <p className="text-teal-200 text-xs mt-5 font-medium">Tap to flip back ‹</p>
                 </div>
               </div>
             </div>
