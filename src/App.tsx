@@ -14,6 +14,7 @@ import GemarPhoto from './assets/GemarBoothePhotoEdited.png';
 import ClayPhoto from './assets/ClayHamptonPhotoEdited.png';
 import KristaPhoto from './assets/KristaElliottPhoto.gif';
 import NelliPhoto from './assets/nelli_benson.jpg';
+import SummerWoodPhoto from './assets/SummerWoodPhotoEdited.png';
 import RichardBraidichPhoto from './assets/RichardBraidichPhoto.png';
 import BackgroundVideo from './assets/V6.mp4';
 import NAWBOMWBE from './assets/NAWBOMWBE.png';
@@ -790,6 +791,27 @@ const AboutPage = () => (
               <p className="text-slate-600 mb-6 text-sm">
                 Experienced financial executive overseeing fiscal operations, compliance, and strategic resource management.
               </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-3xl shadow-lg border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 text-center">
+              <div className="w-32 h-32 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-teal-500/50">
+                <img
+                  src={SummerWoodPhoto}
+                  alt="Dr. Summer Wood"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Dr. Summer D. Wood</h3>
+              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Education & Leadership Strategist</p>
+              <p className="text-slate-600 mb-6 text-sm">
+                Dr. Wood is a seasoned educator and leadership development expert who brings the combined perspective of a former teacher, instructional coach, professor, and principal. She provides customized support in school transformation, literacy instruction, data-informed planning, and culturally responsive practices—equipping educators with the clarity and tools needed to deliver excellent, innovative, and equitable education for every student.
+              </p>
+              <div className="text-left text-xs text-slate-500 space-y-1 border-t border-slate-100 pt-4">
+                <p className="font-semibold text-slate-600 mb-2">Education</p>
+                <p>B.B.A., Management — Oakwood University, 2006</p>
+                <p>M.A.T. — Johns Hopkins University, 2008</p>
+                <p>Ph.D., Language, Literacy &amp; Culture — Vanderbilt University, 2015</p>
+              </div>
             </div>
             
           </div>
