@@ -15,6 +15,20 @@ import ClayPhoto from './assets/ClayHamptonPhotoEdited.png';
 import KristaPhoto from './assets/KristaElliottPhoto.gif';
 import NelliPhoto from './assets/nelli_benson.jpg';
 import SummerWoodPhoto from './assets/SummerWoodPhotoEdited.png';
+import ClientNMA from './assets/client_NMA.jpg';
+import ClientObsidianworks from './assets/client_Obsidianworks.jpg';
+import ClientNewfields from './assets/client_Newfields.png';
+import ClientMCPHD from './assets/client_MCPHD.png';
+import ClientCorGroup from './assets/client_CorGroup.jpg';
+import ClientJRAutomation from './assets/client_JRAutomation.webp';
+import ClientBelieveMiddleCollege from './assets/client_BelieveMiddleCollege.png';
+import ClientBelieveSTL from './assets/client_BelieveSTL.jpg';
+import ClientBelieveSchools from './assets/client_BelieveSchools.png';
+import ClientTindley from './assets/client_Tindley.gif';
+import ClientLibertyGrove from './assets/client_LibertyGrove.jpg';
+import ClientPPSAT from './assets/client_PPSAT.jpg';
+import ClientIAA from './assets/client_IAA.webp';
+import ClientICC from './assets/client_ICC.jpg';
 import RichardBraidichPhoto from './assets/RichardBraidichPhoto.png';
 import BackgroundVideo from './assets/V6.mp4';
 import NAWBOMWBE from './assets/NAWBOMWBE.png';
@@ -1058,6 +1072,67 @@ const AboutPage = () => (
                 Our services scale with your needs, from strategic consulting to hands-on implementation and ongoing support.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Clients scrolling banner */}
+      <section className="py-16 bg-white border-y border-slate-100">
+        <div className="max-w-6xl mx-auto px-8 mb-10 text-center">
+          <div className="inline-flex items-center px-4 py-2 bg-blue-50 rounded-full mb-4">
+            <Users className="h-4 w-4 text-[#3B82F6] mr-2" />
+            <span className="text-sm font-semibold text-blue-700">Trusted By</span>
+          </div>
+          <h2 className="text-4xl font-bold text-slate-900 mb-4">Our Clients</h2>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            Organizations across public sector, education, healthcare, and enterprise trust DET to deliver results.
+          </p>
+        </div>
+        <div className="clients-wrapper">
+          <div className="clients-track">
+            {[
+              { src: ClientNMA, alt: 'NMA' },
+              { src: ClientObsidianworks, alt: 'Obsidianworks' },
+              { src: ClientNewfields, alt: 'Newfields' },
+              { src: ClientMCPHD, alt: 'Marion County Public Health Department' },
+              { src: ClientCorGroup, alt: 'CorGroup' },
+              { src: ClientJRAutomation, alt: 'JR Automation' },
+              { src: ClientBelieveMiddleCollege, alt: 'Believe Middle College' },
+              { src: ClientBelieveSTL, alt: 'Believe STL Academy' },
+              { src: ClientBelieveSchools, alt: 'Believe Schools' },
+              { src: ClientTindley, alt: 'Tindley Accelerated Schools' },
+              { src: ClientLibertyGrove, alt: 'Liberty Grove Schools' },
+              { src: ClientPPSAT, alt: 'Planned Parenthood South Atlantic' },
+              { src: ClientIAA, alt: 'Indianapolis Airport Authority' },
+              { src: ClientICC, alt: 'Indianapolis Children\'s Choir' },
+              /* duplicate set for seamless loop */
+              { src: ClientNMA, alt: 'NMA' },
+              { src: ClientObsidianworks, alt: 'Obsidianworks' },
+              { src: ClientNewfields, alt: 'Newfields' },
+              { src: ClientMCPHD, alt: 'Marion County Public Health Department' },
+              { src: ClientCorGroup, alt: 'CorGroup' },
+              { src: ClientJRAutomation, alt: 'JR Automation' },
+              { src: ClientBelieveMiddleCollege, alt: 'Believe Middle College' },
+              { src: ClientBelieveSTL, alt: 'Believe STL Academy' },
+              { src: ClientBelieveSchools, alt: 'Believe Schools' },
+              { src: ClientTindley, alt: 'Tindley Accelerated Schools' },
+              { src: ClientLibertyGrove, alt: 'Liberty Grove Schools' },
+              { src: ClientPPSAT, alt: 'Planned Parenthood South Atlantic' },
+              { src: ClientIAA, alt: 'Indianapolis Airport Authority' },
+              { src: ClientICC, alt: 'Indianapolis Children\'s Choir' },
+            ].map((client, i) => (
+              <div
+                key={i}
+                className="flex-shrink-0 mx-8 flex items-center justify-center"
+                style={{ width: '160px', height: '80px' }}
+              >
+                <img
+                  src={client.src}
+                  alt={client.alt}
+                  className="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>

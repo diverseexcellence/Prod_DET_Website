@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Our Clients scrolling banner */
+@keyframes clients-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.clients-track {
+  display: flex;
+  width: max-content;
+  animation: clients-scroll 35s linear infinite;
+}
+
+.clients-track:hover {
+  animation-play-state: paused;
+}
+
+.clients-wrapper {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
 /* Summer Wood flip card */
 .flip-card {
   perspective: 1000px;
