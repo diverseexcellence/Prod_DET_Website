@@ -751,8 +751,8 @@ const AboutPage = () => (
                   <div className="text-left w-full space-y-4">
                     <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-amber-300 pb-2">Education</p>
                     <div className="space-y-4">
-                      <div><p className="text-white font-semibold text-sm">Hampton University</p><p className="text-amber-100 text-xs mt-0.5">B.S. · 2008</p></div>
-                      <div><p className="text-white font-semibold text-sm">Indiana University Bloomington</p><p className="text-amber-100 text-xs mt-0.5">Master's Degree · 2010</p></div>
+                      <div><p className="text-white font-semibold text-sm">Hampton University</p><p className="text-amber-100 text-xs mt-0.5">B.S.</p></div>
+                      <div><p className="text-white font-semibold text-sm">Indiana University Bloomington</p><p className="text-amber-100 text-xs mt-0.5">M.A.</p></div>
                     </div>
                   </div>
                 </div>
@@ -800,8 +800,8 @@ const AboutPage = () => (
                   <div className="text-left w-full space-y-4">
                     <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-orange-300 pb-2">Education</p>
                     <div className="space-y-4">
-                      <div><p className="text-white font-semibold text-sm">Oakwood University</p><p className="text-orange-100 text-xs mt-0.5">B.S., Computer Science · 2007</p></div>
-                      <div><p className="text-white font-semibold text-sm">University of Alabama Huntsville</p><p className="text-orange-100 text-xs mt-0.5">B.S., Computer Engineering · 2007</p></div>
+                      <div><p className="text-white font-semibold text-sm">Oakwood University</p><p className="text-orange-100 text-xs mt-0.5">B.S., Computer Science</p></div>
+                      <div><p className="text-white font-semibold text-sm">University of Alabama Huntsville</p><p className="text-orange-100 text-xs mt-0.5">B.S., Computer Engineering</p></div>
                     </div>
                   </div>
                 </div>
@@ -889,15 +889,15 @@ const AboutPage = () => (
                     <div className="space-y-4">
                       <div>
                         <p className="text-white font-semibold text-sm">Oakwood University</p>
-                        <p className="text-teal-100 text-xs mt-0.5">B.B.A., Management · 2006</p>
+                        <p className="text-teal-100 text-xs mt-0.5">B.B.A., Management</p>
                       </div>
                       <div>
                         <p className="text-white font-semibold text-sm">Johns Hopkins University</p>
-                        <p className="text-teal-100 text-xs mt-0.5">M.A.T. · 2008</p>
+                        <p className="text-teal-100 text-xs mt-0.5">M.A.T.</p>
                       </div>
                       <div>
                         <p className="text-white font-semibold text-sm">Vanderbilt University</p>
-                        <p className="text-teal-100 text-xs mt-0.5">Ph.D., Language, Literacy &amp; Culture · 2015</p>
+                        <p className="text-teal-100 text-xs mt-0.5">Ph.D., Language, Literacy &amp; Culture</p>
                       </div>
                     </div>
                   </div>
