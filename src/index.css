@@ -26,31 +26,45 @@
 
 /* Summer Wood flip card */
 .flip-card {
-  perspective: 1000px;
+  perspective: 1200px;
   cursor: pointer;
+  height: 420px;
 }
 
 .flip-card-inner {
   position: relative;
   width: 100%;
-  height: 420px;
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
+/* Desktop: flip on hover */
+@media (hover: hover) {
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+  }
+}
+
+/* Mobile: flip when .flipped class is toggled via tap */
 .flip-card-inner.flipped {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 
 .flip-card-front,
 .flip-card-back {
   position: absolute;
-  inset: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 1.5rem;
+  overflow: hidden;
 }
 
 .flip-card-back {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }

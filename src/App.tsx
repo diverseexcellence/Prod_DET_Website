@@ -811,8 +811,6 @@ const AboutPage = () => (
             {/* Dr. Summer Wood — flip card (hover on desktop, tap on mobile) */}
             <div
               className="flip-card"
-              onMouseEnter={() => setSummerFlipped(true)}
-              onMouseLeave={() => setSummerFlipped(false)}
               onClick={() => setSummerFlipped(f => !f)}
             >
               <div className={`flip-card-inner${summerFlipped ? ' flipped' : ''}`}>
