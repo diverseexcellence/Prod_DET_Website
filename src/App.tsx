@@ -796,47 +796,33 @@ const AboutPage = () => (
 
             {/* Dr. Summer Wood — flip card (hover on desktop, tap on mobile) */}
             <div
-              className="cursor-pointer"
-              style={{ perspective: '1000px' }}
+              className="flip-card"
               onMouseEnter={() => setSummerFlipped(true)}
               onMouseLeave={() => setSummerFlipped(false)}
               onClick={() => setSummerFlipped(f => !f)}
             >
-              <div
-                className="relative w-full transition-transform duration-700"
-                style={{
-                  transformStyle: 'preserve-3d',
-                  transform: summerFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-                  height: '420px',
-                }}
-              >
+              <div className={`flip-card-inner${summerFlipped ? ' flipped' : ''}`}>
+
                 {/* FRONT */}
-                <div
-                  className="absolute inset-0 bg-white p-6 rounded-3xl shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center overflow-hidden"
-                  style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden' }}
-                >
-                  <div className="w-28 h-28 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-teal-500/50 flex-shrink-0">
+                <div className="flip-card-front bg-white p-6 shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center">
+                  <div className="w-32 h-32 bg-gradient-to-r from-teal-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-teal-500/50 flex-shrink-0">
                     <img
                       src={SummerWoodPhoto}
                       alt="Dr. Summer Wood"
                       className="w-full h-full object-cover rounded-full"
                     />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-1 leading-tight">Dr. Summer D. Wood</h3>
-                  <p className="text-[#3B82F6] font-semibold mb-3 text-sm">Education &amp; Leadership Strategist</p>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">Dr. Summer D. Wood</h3>
+                  <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Education &amp; Leadership Strategist</p>
                   <p className="text-slate-600 text-sm leading-relaxed">
                     A seasoned educator and leadership development expert with the perspective of a former teacher, instructional coach, professor, and principal — bridging theory, practice, and real-world school leadership.
                   </p>
-
                 </div>
 
                 {/* BACK */}
-                <div
-                  className="absolute inset-0 bg-gradient-to-br from-teal-600 to-cyan-700 p-6 rounded-3xl shadow-lg border-2 border-teal-400 flex flex-col items-center justify-center overflow-hidden"
-                  style={{ backfaceVisibility: 'hidden', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
-                >
-                  <h3 className="text-lg font-bold text-white mb-1 text-center">Dr. Summer D. Wood</h3>
-                  <p className="text-teal-100 font-semibold text-sm mb-5 text-center">Education &amp; Leadership Strategist</p>
+                <div className="flip-card-back bg-gradient-to-br from-teal-600 to-cyan-700 p-6 shadow-lg border-2 border-teal-400 flex flex-col items-center justify-center">
+                  <h3 className="text-xl font-bold text-white mb-1 text-center">Dr. Summer D. Wood</h3>
+                  <p className="text-teal-100 font-semibold text-sm mb-6 text-center">Education &amp; Leadership Strategist</p>
                   <div className="text-left w-full space-y-4">
                     <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-teal-400 pb-2">Education</p>
                     <div className="space-y-4">
@@ -854,8 +840,8 @@ const AboutPage = () => (
                       </div>
                     </div>
                   </div>
-
                 </div>
+
               </div>
             </div>
             
