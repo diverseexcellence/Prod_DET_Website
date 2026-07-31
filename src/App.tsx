@@ -827,7 +827,7 @@ const AboutPage = () => (
                   <p className="text-slate-600 text-sm leading-relaxed">
                     A seasoned educator and leadership development expert with the perspective of a former teacher, instructional coach, professor, and principal — bridging theory, practice, and real-world school leadership.
                   </p>
-                  <p className="text-teal-500 text-xs mt-4 font-medium">Tap to see education ›</p>
+
                 </div>
 
                 {/* BACK */}
@@ -854,7 +854,7 @@ const AboutPage = () => (
                       </div>
                     </div>
                   </div>
-                  <p className="text-teal-200 text-xs mt-5 font-medium">Tap to flip back ‹</p>
+
                 </div>
               </div>
             </div>
