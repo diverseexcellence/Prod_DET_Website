@@ -82,6 +82,11 @@ function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [hoveredService, setHoveredService] = useState<number | null>(null);
   const [summerFlipped, setSummerFlipped] = useState(false);
+  const [arionneFlipped, setArionneFlipped] = useState(false);
+  const [kevinFlipped, setKevinFlipped] = useState(false);
+  const [johnathanFlipped, setJohnathanFlipped] = useState(false);
+  const [websterFlipped, setWebsterFlipped] = useState(false);
+  const [gemarFlipped, setGemarFlipped] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -728,84 +733,124 @@ const AboutPage = () => (
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-3xl shadow-lg border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 text-center">
-              {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-amber-500/50">
-                <img
-                  src={ArionnePhoto}
-                  alt="Arionne Allen"
-                  className="w-full h-full object-cover rounded-full"
-                />
+
+            {/* Arionne Allen */}
+            <div className="flip-card" onClick={() => setArionneFlipped(f => !f)}>
+              <div className={`flip-card-inner${arionneFlipped ? ' flipped' : ''}`}>
+                <div className="flip-card-front bg-white p-6 shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center">
+                  <div className="w-32 h-32 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-amber-500/50 flex-shrink-0">
+                    <img src={ArionnePhoto} alt="Arionne Allen" className="w-full h-full object-cover rounded-full" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">Arionne Allen</h3>
+                  <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Chief Executive Officer</p>
+                  <p className="text-slate-600 text-sm">Visionary leader driving strategic growth and innovation with a focus on delivering exceptional client value.</p>
+                </div>
+                <div className="flip-card-back flip-back-amber p-6 shadow-lg flex flex-col items-center justify-center">
+                  <h3 className="text-xl font-bold text-white mb-1 text-center">Arionne Allen</h3>
+                  <p className="text-amber-100 font-semibold text-sm mb-6 text-center">Chief Executive Officer</p>
+                  <div className="text-left w-full space-y-4">
+                    <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-amber-300 pb-2">Education</p>
+                    <div className="space-y-4">
+                      <div><p className="text-white font-semibold text-sm">Hampton University</p><p className="text-amber-100 text-xs mt-0.5">B.S. · 2008</p></div>
+                      <div><p className="text-white font-semibold text-sm">Indiana University Bloomington</p><p className="text-amber-100 text-xs mt-0.5">Master's Degree · 2010</p></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Arionne Allen</h3>
-              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Chief Executive Officer</p>
-              <p className="text-slate-600 mb-6 text-sm">
-                Visionary leader driving strategic growth and innovation with a focus on delivering exceptional client value.
-              </p>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl shadow-lg border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 text-center">
-              {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-[#10B981] to-[#059669] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-emerald-500/50">
-                <img
-                  src={KevinPhoto}
-                  alt="Kevin Mullin"
-                  className="w-full h-full object-cover rounded-full"
-                />
+            {/* Kevin Mullin */}
+            <div className="flip-card" onClick={() => setKevinFlipped(f => !f)}>
+              <div className={`flip-card-inner${kevinFlipped ? ' flipped' : ''}`}>
+                <div className="flip-card-front bg-white p-6 shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center">
+                  <div className="w-32 h-32 bg-gradient-to-r from-[#10B981] to-[#059669] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-emerald-500/50 flex-shrink-0">
+                    <img src={KevinPhoto} alt="Kevin Mullin" className="w-full h-full object-cover rounded-full" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">Kevin Mullin</h3>
+                  <p className="text-[#3B82F6] font-semibold mb-4 text-sm">President</p>
+                  <p className="text-slate-600 text-sm">Operations leader focused on scalable service delivery and client success with extensive experience.</p>
+                </div>
+                <div className="flip-card-back flip-back-emerald p-6 shadow-lg flex flex-col items-center justify-center">
+                  <h3 className="text-xl font-bold text-white mb-1 text-center">Kevin Mullin</h3>
+                  <p className="text-emerald-100 font-semibold text-sm mb-6 text-center">President</p>
+                  <div className="text-left w-full">
+                    <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-emerald-300 pb-2 mb-4">Education</p>
+                    <p className="text-emerald-100 text-sm italic">Details coming soon.</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Kevin Mullin</h3>
-              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">President</p>
-              <p className="text-slate-600 mb-6 text-sm">
-                Operations leader focused on scalable service delivery and client success with extensive experience.
-              </p>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl shadow-lg border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 text-center">
-              {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-orange-500/50">
-                <img
-                  src={JohnathanPhoto}
-                  alt="Johnathan Wynn"
-                  className="w-full h-full object-cover rounded-full"
-                />
+            {/* Johnathan Wynn */}
+            <div className="flip-card" onClick={() => setJohnathanFlipped(f => !f)}>
+              <div className={`flip-card-inner${johnathanFlipped ? ' flipped' : ''}`}>
+                <div className="flip-card-front bg-white p-6 shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center">
+                  <div className="w-32 h-32 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-orange-500/50 flex-shrink-0">
+                    <img src={JohnathanPhoto} alt="Johnathan Wynn" className="w-full h-full object-cover rounded-full" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">Johnathan Wynn</h3>
+                  <p className="text-[#3B82F6] font-semibold mb-4 text-sm">VP of Business Development</p>
+                  <p className="text-slate-600 text-sm">Strategic business development executive specializing in client relationships and market expansion.</p>
+                </div>
+                <div className="flip-card-back flip-back-orange p-6 shadow-lg flex flex-col items-center justify-center">
+                  <h3 className="text-xl font-bold text-white mb-1 text-center">Johnathan Wynn</h3>
+                  <p className="text-orange-100 font-semibold text-sm mb-6 text-center">VP of Business Development</p>
+                  <div className="text-left w-full space-y-4">
+                    <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-orange-300 pb-2">Education</p>
+                    <div className="space-y-4">
+                      <div><p className="text-white font-semibold text-sm">Oakwood University</p><p className="text-orange-100 text-xs mt-0.5">B.S., Computer Science · 2007</p></div>
+                      <div><p className="text-white font-semibold text-sm">University of Alabama Huntsville</p><p className="text-orange-100 text-xs mt-0.5">B.S., Computer Engineering · 2007</p></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Johnathan Wynn</h3>
-              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">VP of Business Development</p>
-              <p className="text-slate-600 mb-6 text-sm">
-                Strategic business development executive specializing in client relationships and market expansion.
-              </p>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl shadow-lg border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 text-center">
-              {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-purple-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-purple-500/50">
-                <img
-                  src={WebsterRossPhoto}
-                  alt="Webster Ross"
-                  className="w-full h-full object-cover rounded-full"
-                />
+            {/* Webster Ross */}
+            <div className="flip-card" onClick={() => setWebsterFlipped(f => !f)}>
+              <div className={`flip-card-inner${websterFlipped ? ' flipped' : ''}`}>
+                <div className="flip-card-front bg-white p-6 shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center">
+                  <div className="w-32 h-32 bg-gradient-to-r from-purple-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-purple-500/50 flex-shrink-0">
+                    <img src={WebsterRossPhoto} alt="Webster Ross" className="w-full h-full object-cover rounded-full" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">Webster Ross</h3>
+                  <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Chief Technology Officer</p>
+                  <p className="text-slate-600 text-sm">With over 25 years of experience, specializes in architecting data-driven enterprise solutions and steering digital transformations on modern, secure cloud platforms.</p>
+                </div>
+                <div className="flip-card-back flip-back-purple p-6 shadow-lg flex flex-col items-center justify-center">
+                  <h3 className="text-xl font-bold text-white mb-1 text-center">Webster Ross</h3>
+                  <p className="text-purple-100 font-semibold text-sm mb-6 text-center">Chief Technology Officer</p>
+                  <div className="text-left w-full space-y-4">
+                    <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-purple-300 pb-2">Education</p>
+                    <div className="space-y-4">
+                      <div><p className="text-white font-semibold text-sm">University at Buffalo</p><p className="text-purple-100 text-xs mt-0.5">B.S., Computer Engineering</p></div>
+                      <div><p className="text-white font-semibold text-sm">Columbia University</p><p className="text-purple-100 text-xs mt-0.5">M.S., Computer Engineering</p></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Webster Ross</h3>
-              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Chief Technology Officer</p>
-              <p className="text-slate-600 mb-6 text-sm">
-                With over 25 years of experience, specializes in architecting data-driven enterprise solutions and steering digital transformations on modern, secure cloud platforms.
-              </p>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl shadow-lg border-2 border-slate-200 hover:border-[#3B82F6] hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 text-center">
-              {/* CHANGED HERE: w-24 h-24 is now w-32 h-32 */}
-              <div className="w-32 h-32 bg-gradient-to-r from-blue-500 to-blue-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/50">
-                <img
-                  src={GemarPhoto}
-                  alt="Gemar Boothe"
-                  className="w-full h-full object-cover rounded-full"
-                />
+            {/* Gemar Boothe */}
+            <div className="flip-card" onClick={() => setGemarFlipped(f => !f)}>
+              <div className={`flip-card-inner${gemarFlipped ? ' flipped' : ''}`}>
+                <div className="flip-card-front bg-white p-6 shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center">
+                  <div className="w-32 h-32 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/50 flex-shrink-0">
+                    <img src={GemarPhoto} alt="Gemar Boothe" className="w-full h-full object-cover rounded-full" />
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">Gemar Boothe</h3>
+                  <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Chief Financial Officer</p>
+                  <p className="text-slate-600 text-sm">Experienced financial executive overseeing fiscal operations, compliance, and strategic resource management.</p>
+                </div>
+                <div className="flip-card-back flip-back-blue p-6 shadow-lg flex flex-col items-center justify-center">
+                  <h3 className="text-xl font-bold text-white mb-1 text-center">Gemar Boothe</h3>
+                  <p className="text-blue-100 font-semibold text-sm mb-6 text-center">Chief Financial Officer</p>
+                  <div className="text-left w-full">
+                    <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-blue-300 pb-2 mb-4">Education</p>
+                    <p className="text-blue-100 text-sm italic">Details coming soon.</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Gemar Boothe</h3>
-              <p className="text-[#3B82F6] font-semibold mb-4 text-sm">Chief Financial Officer</p>
-              <p className="text-slate-600 mb-6 text-sm">
-                Experienced financial executive overseeing fiscal operations, compliance, and strategic resource management.
-              </p>
             </div>
 
             {/* Dr. Summer Wood — flip card (hover on desktop, tap on mobile) */}
