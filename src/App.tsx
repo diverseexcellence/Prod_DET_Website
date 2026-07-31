@@ -15,20 +15,20 @@ import ClayPhoto from './assets/ClayHamptonPhotoEdited.png';
 import KristaPhoto from './assets/KristaElliottPhoto.gif';
 import NelliPhoto from './assets/nelli_benson.jpg';
 import SummerWoodPhoto from './assets/SummerWoodPhotoEdited.png';
-import ClientNMA from './assets/client_NMA.jpg';
-import ClientObsidianworks from './assets/client_Obsidianworks.jpg';
-import ClientNewfields from './assets/client_Newfields.png';
-import ClientMCPHD from './assets/client_MCPHD.png';
-import ClientCorGroup from './assets/client_CorGroup.jpg';
-import ClientJRAutomation from './assets/client_JRAutomation.webp';
-import ClientBelieveMiddleCollege from './assets/client_BelieveMiddleCollege.png';
-import ClientBelieveSTL from './assets/client_BelieveSTL.jpg';
-import ClientBelieveSchools from './assets/client_BelieveSchools.png';
-import ClientTindley from './assets/client_Tindley.gif';
-import ClientLibertyGrove from './assets/client_LibertyGrove.jpg';
-import ClientPPSAT from './assets/client_PPSAT.jpg';
-import ClientIAA from './assets/client_IAA.webp';
-import ClientICC from './assets/client_ICC.jpg';
+import ClientNMA from './assets/client_NMA_norm.png';
+import ClientObsidianworks from './assets/client_Obsidianworks_norm.png';
+import ClientNewfields from './assets/client_Newfields_norm.png';
+import ClientMCPHD from './assets/client_MCPHD_norm.png';
+import ClientCorGroup from './assets/client_CorGroup_norm.png';
+import ClientJRAutomation from './assets/client_JRAutomation_norm.png';
+import ClientBelieveMiddleCollege from './assets/client_BelieveMiddleCollege_norm.png';
+import ClientBelieveSTL from './assets/client_BelieveSTL_norm.png';
+import ClientBelieveSchools from './assets/client_BelieveSchools_norm.png';
+import ClientTindley from './assets/client_Tindley_norm.png';
+import ClientLibertyGrove from './assets/client_LibertyGrove_norm.png';
+import ClientPPSAT from './assets/client_PPSAT_norm.png';
+import ClientIAA from './assets/client_IAA_norm.png';
+import ClientICC from './assets/client_ICC_norm.png';
 import RichardBraidichPhoto from './assets/RichardBraidichPhoto.png';
 import BackgroundVideo from './assets/V6.mp4';
 import NAWBOMWBE from './assets/NAWBOMWBE.png';
@@ -1123,13 +1123,14 @@ const AboutPage = () => (
             ].map((client, i) => (
               <div
                 key={i}
-                className="flex-shrink-0 mx-8 flex items-center justify-center"
-                style={{ width: '160px', height: '80px' }}
+                className="flex-shrink-0 mx-6 flex items-center justify-center"
+                style={{ width: '200px', height: '100px' }}
               >
                 <img
                   src={client.src}
                   alt={client.alt}
-                  className="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                  style={{ width: '200px', height: '100px', objectFit: 'contain' }}
+                  className="grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
                 />
               </div>
             ))}
