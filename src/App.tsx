@@ -25,6 +25,7 @@ import ClientBelieveMiddleCollege from './assets/client_BelieveMiddleCollege_nor
 import ClientBelieveSTL from './assets/client_BelieveSTL_norm.png';
 import ClientBelieveSchools from './assets/client_BelieveSchools_norm.png';
 import ClientTindley from './assets/client_Tindley_norm.png';
+import ClientMonarca from './assets/client_Monarca_norm.png';
 import ClientLibertyGrove from './assets/client_LibertyGrove_norm.png';
 import ClientPPSAT from './assets/client_PPSAT_norm.png';
 import ClientIAA from './assets/client_IAA_norm.png';
@@ -1152,6 +1153,7 @@ const AboutPage = () => (
               { src: ClientPPSAT, alt: 'Planned Parenthood South Atlantic' },
               { src: ClientIAA, alt: 'Indianapolis Airport Authority' },
               { src: ClientICC, alt: 'Indianapolis Children\'s Choir' },
+              { src: ClientMonarca, alt: 'Monarca Academy' },
               /* duplicate set for seamless loop */
               { src: ClientNMA, alt: 'NMA' },
               { src: ClientObsidianworks, alt: 'Obsidianworks' },
@@ -1167,6 +1169,7 @@ const AboutPage = () => (
               { src: ClientPPSAT, alt: 'Planned Parenthood South Atlantic' },
               { src: ClientIAA, alt: 'Indianapolis Airport Authority' },
               { src: ClientICC, alt: 'Indianapolis Children\'s Choir' },
+              { src: ClientMonarca, alt: 'Monarca Academy' },
             ].map((client, i) => (
               <div
                 key={i}
