@@ -32,6 +32,7 @@ import ClientIAA from './assets/client_IAA_norm.png';
 import ClientICC from './assets/client_ICC_norm.png';
 import ClientR3VI from './assets/client_R3VI_norm.png';
 import ClientPhilbrook from './assets/client_Philbrook_norm.png';
+import ClientCAREElementary from './assets/client_CAREElementary_norm.png';
 import RichardBraidichPhoto from './assets/RichardBraidichPhoto.png';
 import BackgroundVideo from './assets/V6.mp4';
 import NAWBOMWBE from './assets/NAWBOMWBE.png';
@@ -1159,6 +1160,7 @@ const AboutPage = () => (
               { src: ClientMonarca, alt: 'Monarca Academy' },
               { src: ClientR3VI, alt: 'R3VI' },
               { src: ClientPhilbrook, alt: 'Philbrook Museum of Art', scale: 1.2, rounded: true },
+              { src: ClientCAREElementary, alt: 'CARE Elementary' },
               /* duplicate set for seamless loop */
               { src: ClientNMA, alt: 'NMA', scale: 1.4 },
               { src: ClientObsidianworks, alt: 'Obsidianworks', scale: 1.4 },
@@ -1177,6 +1179,7 @@ const AboutPage = () => (
               { src: ClientMonarca, alt: 'Monarca Academy' },
               { src: ClientR3VI, alt: 'R3VI' },
               { src: ClientPhilbrook, alt: 'Philbrook Museum of Art', scale: 1.2, rounded: true },
+              { src: ClientCAREElementary, alt: 'CARE Elementary' },
             ].map((client, i) => {
               const s = (client as any).scale || 1;
               return (
