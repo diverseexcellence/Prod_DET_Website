@@ -677,7 +677,7 @@ const AboutPage = () => (
             <Users className="h-4 w-4 text-[#3B82F6] mr-2" />
             <span className="text-sm font-semibold text-blue-700">Our Story</span>
           </div>
-          <h1 className="text-5xl font-bold text-slate-900 mb-6">About DE Technology</h1>
+          <h1 className="text-5xl font-bold text-slate-900 mb-6">About Diverse Excellence</h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             A woman-owned, merit-based professional services firm built on partnership and excellence
           </p>
@@ -691,7 +691,7 @@ const AboutPage = () => (
             <div>
               <h2 className="text-4xl font-bold text-slate-900 mb-6">Who We Are</h2>
               <p className="text-lg text-slate-700 mb-6 leading-relaxed">
-                DE Technology architects transformative data solutions and AI-powered insights through a model of integrated partnership.
+                Diverse Excellence architects transformative data solutions and AI-powered insights through a model of integrated partnership.
               </p>
               <p className="text-slate-600 mb-6">
                 As a woman-owned, merit-based firm, our philosophy is to amplify your team's existing strengths. 
@@ -2091,7 +2091,7 @@ const AboutPage = () => (
             Long-Term Strategic Technology Planning and Infrastructure Modernization at Newfields
           </h1>
           <p className="text-xl text-white/90 leading-relaxed">
-            Newfields, a nationally recognized cultural institution, faced significant technology challenges stemming from years of underinvestment. Recognizing the need for both immediate modernization and long-term strategic direction, Newfields partnered with Diverse Excellence Technology (DE Tech) to lead a multi-phase initiative.
+            Newfields, a nationally recognized cultural institution, faced significant technology challenges stemming from years of underinvestment. Recognizing the need for both immediate modernization and long-term strategic direction, Newfields partnered with Diverse Excellence to lead a multi-phase initiative.
           </p>
         </div>
       </section>
@@ -2158,7 +2158,7 @@ const AboutPage = () => (
                 01
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-4">Phase 1: Infrastructure Modernization (2019-2020)</h3>
-              <p className="text-slate-700 mb-4">DE Tech implemented a modern Enterprise Infrastructure, including:</p>
+              <p className="text-slate-700 mb-4">Diverse Excellence implemented a modern Enterprise Infrastructure, including:</p>
               <ul className="space-y-2 text-slate-600 text-sm">
                 <li>• Core Network Refresh with a 10Gb backbone</li>
                 <li>• Replacement of all switching, routing, and wireless infrastructure</li>
@@ -2172,7 +2172,7 @@ const AboutPage = () => (
                 02
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-4">Phase 2: Strategic Technology Planning (2025)</h3>
-              <p className="text-slate-700 mb-4">DE Tech designed a comprehensive Technology Strategic Plan (2025-2027) built on four pillars:</p>
+              <p className="text-slate-700 mb-4">Diverse Excellence designed a comprehensive Technology Strategic Plan (2025-2027) built on four pillars:</p>
               <div className="space-y-3">
                 <div className="p-3 bg-emerald-50 rounded-xl">
                   <h4 className="font-bold text-slate-900 text-sm mb-1">Governance & Policy</h4>
@@ -2220,7 +2220,7 @@ const AboutPage = () => (
           <div className="p-8 bg-gradient-to-r from-emerald-600 to-slate-800 rounded-2xl">
             <h3 className="text-2xl font-bold text-white mb-4">Key Takeaway</h3>
             <p className="text-lg text-white leading-relaxed">
-              DE Tech's partnership with Newfields demonstrates our dual capability: delivering critical infrastructure modernization under pressure while also guiding institutions through long-term strategic planning at the C-Suite and governance level. This holistic approach positioned Newfields as a future-ready cultural institution, leveraging technology as a strategic advantage for growth and resilience.
+              Diverse Excellence's partnership with Newfields demonstrates our dual capability: delivering critical infrastructure modernization under pressure while also guiding institutions through long-term strategic planning at the C-Suite and governance level. This holistic approach positioned Newfields as a future-ready cultural institution, leveraging technology as a strategic advantage for growth and resilience.
             </p>
           </div>
         </div>
@@ -2248,7 +2248,7 @@ const AboutPage = () => (
             Guiding JR Automation's Global Software Strategy
           </h1>
           <p className="text-xl text-white/90 leading-relaxed">
-            How DE Tech helped JR Automation, a Hitachi Group Company, navigate a critical decision following its acquisition - align with Hitachi's corporate systems or explore alternatives better suited for its industry-specific manufacturing needs.
+            How Diverse Excellence helped JR Automation, a Hitachi Group Company, navigate a critical decision following its acquisition - align with Hitachi's corporate systems or explore alternatives better suited for its industry-specific manufacturing needs.
           </p>
         </div>
       </section>
@@ -2286,7 +2286,7 @@ const AboutPage = () => (
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-slate-900 mb-8">Our Approach</h2>
           <p className="text-lg text-slate-700 mb-8">
-            Diverse Excellence Technology (DE Tech) partnered with JR Automation to lead the vision mapping, evaluation, and implementation strategy. Using our proven methodologies, we:
+            Diverse Excellence partnered with JR Automation to lead the vision mapping, evaluation, and implementation strategy. Using our proven methodologies, we:
           </p>
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-2xl border-2 border-slate-200">
@@ -2331,7 +2331,7 @@ const AboutPage = () => (
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-slate-900 mb-8">Results & Cost Savings</h2>
           <p className="text-lg text-slate-700 mb-8">
-            Through our vision mapping and software evaluation, DE Tech helped JR Automation avoid significant long-term costs while still aligning with Hitachi's corporate systems.
+            Through our vision mapping and software evaluation, Diverse Excellence helped JR Automation avoid significant long-term costs while still aligning with Hitachi's corporate systems.
           </p>
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <div className="p-6 bg-orange-50 rounded-3xl border-2 border-orange-200 hover:border-orange-400 hover:shadow-xl hover:shadow-orange-500/20 transition-all duration-300">
@@ -2370,7 +2370,7 @@ const AboutPage = () => (
                 <p className="text-sm text-white/90">Industry-specific manufacturing focus, faster deployment, lower total cost of ownership</p>
               </div>
               <div>
-                <h4 className="font-bold mb-2">DE Tech Value</h4>
+                <h4 className="font-bold mb-2">Diverse Excellence Value</h4>
                 <p className="text-sm text-white/90">Independent, strategic guidance that aligned corporate standards with industry-driven innovation</p>
               </div>
             </div>
@@ -2426,7 +2426,7 @@ const AboutPage = () => (
       <footer className="bg-slate-900 py-6">
         <div className="max-w-6xl mx-auto px-8 text-center">
           <p className="text-slate-400 text-sm">
-            Copyright © DE Technology 2026
+            Copyright © Diverse Excellence 2026
           </p>
         </div>
       </footer>
