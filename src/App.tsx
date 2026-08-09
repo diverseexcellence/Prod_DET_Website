@@ -740,8 +740,8 @@ const AboutPage = () => (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
             {/* Arionne Allen */}
-            <div className="flip-card" onMouseEnter={() => setArionneFlipped(true)} onMouseLeave={() => setArionneFlipped(false)}>
-              <div className={`flip-card-inner${arionneFlipped ? ' flipped' : ''}`}>
+            <div className="flip-card">
+              <div className="flip-card-inner">
                 <div className="flip-card-front bg-white p-6 shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center">
                   <div className="w-32 h-32 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-amber-500/50 flex-shrink-0">
                     <img src={ArionnePhoto} alt="Arionne Allen" className="w-full h-full object-cover rounded-full" />
@@ -765,8 +765,8 @@ const AboutPage = () => (
             </div>
 
             {/* Kevin Mullin */}
-            <div className="flip-card" onMouseEnter={() => setKevinFlipped(true)} onMouseLeave={() => setKevinFlipped(false)}>
-              <div className={`flip-card-inner${kevinFlipped ? ' flipped' : ''}`}>
+            <div className="flip-card">
+              <div className="flip-card-inner">
                 <div className="flip-card-front bg-white p-6 shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center">
                   <div className="w-32 h-32 bg-gradient-to-r from-[#10B981] to-[#059669] rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-emerald-500/50 flex-shrink-0">
                     <img src={KevinPhoto} alt="Kevin Mullin" className="w-full h-full object-cover rounded-full" />
@@ -789,8 +789,8 @@ const AboutPage = () => (
             </div>
 
             {/* Johnathan Wynn */}
-            <div className="flip-card" onMouseEnter={() => setJohnathanFlipped(true)} onMouseLeave={() => setJohnathanFlipped(false)}>
-              <div className={`flip-card-inner${johnathanFlipped ? ' flipped' : ''}`}>
+            <div className="flip-card">
+              <div className="flip-card-inner">
                 <div className="flip-card-front bg-white p-6 shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center">
                   <div className="w-32 h-32 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-orange-500/50 flex-shrink-0">
                     <img src={JohnathanPhoto} alt="Johnathan Wynn" className="w-full h-full object-cover rounded-full" />
@@ -814,8 +814,8 @@ const AboutPage = () => (
             </div>
 
             {/* Webster Ross */}
-            <div className="flip-card" onMouseEnter={() => setWebsterFlipped(true)} onMouseLeave={() => setWebsterFlipped(false)}>
-              <div className={`flip-card-inner${websterFlipped ? ' flipped' : ''}`}>
+            <div className="flip-card">
+              <div className="flip-card-inner">
                 <div className="flip-card-front bg-white p-6 shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center">
                   <div className="w-32 h-32 bg-gradient-to-r from-purple-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-purple-500/50 flex-shrink-0">
                     <img src={WebsterRossPhoto} alt="Webster Ross" className="w-full h-full object-cover rounded-full" />
@@ -839,8 +839,8 @@ const AboutPage = () => (
             </div>
 
             {/* Gemar Boothe */}
-            <div className="flip-card" onMouseEnter={() => setGemarFlipped(true)} onMouseLeave={() => setGemarFlipped(false)}>
-              <div className={`flip-card-inner${gemarFlipped ? ' flipped' : ''}`}>
+            <div className="flip-card">
+              <div className="flip-card-inner">
                 <div className="flip-card-front bg-white p-6 shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center">
                   <div className="w-32 h-32 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg shadow-blue-500/50 flex-shrink-0">
                     <img src={GemarPhoto} alt="Gemar Boothe" className="w-full h-full object-cover rounded-full" />
@@ -865,9 +865,9 @@ const AboutPage = () => (
             {/* Dr. Summer Wood — flip card (hover on desktop, tap on mobile) */}
             <div
               className="flip-card"
-              onMouseEnter={() => setSummerFlipped(true)} onMouseLeave={() => setSummerFlipped(false)}
+             
             >
-              <div className={`flip-card-inner${summerFlipped ? ' flipped' : ''}`}>
+              <div className="flip-card-inner">
 
                 {/* FRONT */}
                 <div className="flip-card-front bg-white p-6 shadow-lg border-2 border-slate-200 text-center flex flex-col items-center justify-center">
