@@ -31,6 +31,7 @@ import ClientPPSAT from './assets/client_PPSAT_norm.png';
 import ClientIAA from './assets/client_IAA_norm.png';
 import ClientICC from './assets/client_ICC_norm.png';
 import ClientR3VI from './assets/client_R3VI_norm.png';
+import ClientPhilbrook from './assets/client_Philbrook_norm.png';
 import RichardBraidichPhoto from './assets/RichardBraidichPhoto.png';
 import BackgroundVideo from './assets/V6.mp4';
 import NAWBOMWBE from './assets/NAWBOMWBE.png';
@@ -1156,6 +1157,7 @@ const AboutPage = () => (
               { src: ClientICC, alt: 'Indianapolis Children\'s Choir' },
               { src: ClientMonarca, alt: 'Monarca Academy' },
               { src: ClientR3VI, alt: 'R3VI' },
+              { src: ClientPhilbrook, alt: 'Philbrook Museum of Art' },
               /* duplicate set for seamless loop */
               { src: ClientNMA, alt: 'NMA' },
               { src: ClientObsidianworks, alt: 'Obsidianworks' },
@@ -1173,6 +1175,7 @@ const AboutPage = () => (
               { src: ClientICC, alt: 'Indianapolis Children\'s Choir' },
               { src: ClientMonarca, alt: 'Monarca Academy' },
               { src: ClientR3VI, alt: 'R3VI' },
+              { src: ClientPhilbrook, alt: 'Philbrook Museum of Art' },
             ].map((client, i) => (
               <div
                 key={i}
