@@ -1142,8 +1142,8 @@ const AboutPage = () => (
         <div className="clients-wrapper">
           <div className="clients-track">
             {[
-              { src: ClientNMA, alt: 'NMA', scale: 1.5 },
-              { src: ClientObsidianworks, alt: 'Obsidianworks', scale: 1.4 },
+              { src: ClientNMA, alt: 'NMA', scale: 1.7 },
+              { src: ClientObsidianworks, alt: 'Obsidianworks', scale: 1.7 },
               { src: ClientNewfields, alt: 'Newfields' },
               { src: ClientMCPHD, alt: 'Marion County Public Health Department' },
               { src: ClientCorGroup, alt: 'CorGroup' },
@@ -1151,17 +1151,17 @@ const AboutPage = () => (
               { src: ClientBelieveMiddleCollege, alt: 'Believe Middle College' },
               { src: ClientBelieveSTL, alt: 'Believe STL Academy' },
               { src: ClientBelieveSchools, alt: 'Believe Schools' },
-              { src: ClientTindley, alt: 'Tindley Accelerated Schools', scale: 1.5 },
+              { src: ClientTindley, alt: 'Tindley Accelerated Schools', scale: 1.7 },
               { src: ClientLibertyGrove, alt: 'Liberty Grove Schools' },
               { src: ClientPPSAT, alt: 'Planned Parenthood South Atlantic' },
-              { src: ClientIAA, alt: 'Indianapolis Airport Authority' },
+              { src: ClientIAA, alt: 'Indianapolis Airport Authority', scale: 1.7 },
               { src: ClientICC, alt: 'Indianapolis Children\'s Choir' },
               { src: ClientMonarca, alt: 'Monarca Academy' },
               { src: ClientR3VI, alt: 'R3VI' },
               { src: ClientPhilbrook, alt: 'Philbrook Museum of Art', scale: 1.3, rounded: true },
               /* duplicate set for seamless loop */
-              { src: ClientNMA, alt: 'NMA', scale: 1.5 },
-              { src: ClientObsidianworks, alt: 'Obsidianworks', scale: 1.4 },
+              { src: ClientNMA, alt: 'NMA', scale: 1.7 },
+              { src: ClientObsidianworks, alt: 'Obsidianworks', scale: 1.7 },
               { src: ClientNewfields, alt: 'Newfields' },
               { src: ClientMCPHD, alt: 'Marion County Public Health Department' },
               { src: ClientCorGroup, alt: 'CorGroup' },
@@ -1169,28 +1169,33 @@ const AboutPage = () => (
               { src: ClientBelieveMiddleCollege, alt: 'Believe Middle College' },
               { src: ClientBelieveSTL, alt: 'Believe STL Academy' },
               { src: ClientBelieveSchools, alt: 'Believe Schools' },
-              { src: ClientTindley, alt: 'Tindley Accelerated Schools', scale: 1.5 },
+              { src: ClientTindley, alt: 'Tindley Accelerated Schools', scale: 1.7 },
               { src: ClientLibertyGrove, alt: 'Liberty Grove Schools' },
               { src: ClientPPSAT, alt: 'Planned Parenthood South Atlantic' },
-              { src: ClientIAA, alt: 'Indianapolis Airport Authority' },
+              { src: ClientIAA, alt: 'Indianapolis Airport Authority', scale: 1.7 },
               { src: ClientICC, alt: 'Indianapolis Children\'s Choir' },
               { src: ClientMonarca, alt: 'Monarca Academy' },
               { src: ClientR3VI, alt: 'R3VI' },
               { src: ClientPhilbrook, alt: 'Philbrook Museum of Art', scale: 1.3, rounded: true },
-            ].map((client, i) => (
-              <div
-                key={i}
-                className="flex-shrink-0 mx-6 flex items-center justify-center"
-                style={{ width: '200px', height: '100px' }}
-              >
-                <img
-                  src={client.src}
-                  alt={client.alt}
-                  style={{ width: `${(client.scale || 1) * 200}px`, height: `${(client.scale || 1) * 100}px`, objectFit: 'contain', borderRadius: (client as any).rounded ? '8px' : undefined }}
-                  className="grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
-                />
-              </div>
-            ))}
+            ].map((client, i) => {
+              const s = (client as any).scale || 1;
+              const w = Math.round(s * 200);
+              const h = Math.round(s * 100);
+              return (
+                <div
+                  key={i}
+                  className="flex-shrink-0 mx-4 flex items-center justify-center"
+                  style={{ width: `${w}px`, height: `${h}px` }}
+                >
+                  <img
+                    src={client.src}
+                    alt={client.alt}
+                    style={{ width: `${w}px`, height: `${h}px`, objectFit: 'contain', borderRadius: (client as any).rounded ? '8px' : undefined }}
+                    className="grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
