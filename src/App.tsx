@@ -406,13 +406,14 @@ function App() {
             <p className="text-lg text-slate-600">Trusted across diverse sectors</p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
             {[
               { name: 'Healthcare', icon: Heart, color: 'from-red-500 to-pink-500' },
               { name: 'Government', icon: Building, color: 'from-[#3B82F6] to-[#6366F1]' },
               { name: 'Non-Profit', icon: Users, color: 'from-[#8B5CF6] to-[#A78BFA]' },
               { name: 'Education', icon: Award, color: 'from-amber-500 to-orange-500' },
-              { name: 'Technology', icon: Globe, color: 'from-[#0EA5E9] to-[#06B6D4]' }
+              { name: 'Technology', icon: Globe, color: 'from-[#0EA5E9] to-[#06B6D4]' },
+              { name: 'Financial Services', icon: TrendingUp, color: 'from-emerald-500 to-green-600' }
             ].map(({ name, icon: Icon, color }) => (
               <div key={name} className="group text-center">
                 <div className={`w-20 h-20 mx-auto mb-4 bg-gradient-to-br ${color} rounded-2xl flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-all duration-300`}>
