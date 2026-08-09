@@ -1141,8 +1141,8 @@ const AboutPage = () => (
         <div className="clients-wrapper">
           <div className="clients-track">
             {[
-              { src: ClientNMA, alt: 'NMA' },
-              { src: ClientObsidianworks, alt: 'Obsidianworks' },
+              { src: ClientNMA, alt: 'NMA', scale: 1.5 },
+              { src: ClientObsidianworks, alt: 'Obsidianworks', scale: 1.4 },
               { src: ClientNewfields, alt: 'Newfields' },
               { src: ClientMCPHD, alt: 'Marion County Public Health Department' },
               { src: ClientCorGroup, alt: 'CorGroup' },
@@ -1150,7 +1150,7 @@ const AboutPage = () => (
               { src: ClientBelieveMiddleCollege, alt: 'Believe Middle College' },
               { src: ClientBelieveSTL, alt: 'Believe STL Academy' },
               { src: ClientBelieveSchools, alt: 'Believe Schools' },
-              { src: ClientTindley, alt: 'Tindley Accelerated Schools' },
+              { src: ClientTindley, alt: 'Tindley Accelerated Schools', scale: 1.5 },
               { src: ClientLibertyGrove, alt: 'Liberty Grove Schools' },
               { src: ClientPPSAT, alt: 'Planned Parenthood South Atlantic' },
               { src: ClientIAA, alt: 'Indianapolis Airport Authority' },
@@ -1159,8 +1159,8 @@ const AboutPage = () => (
               { src: ClientR3VI, alt: 'R3VI' },
               { src: ClientPhilbrook, alt: 'Philbrook Museum of Art' },
               /* duplicate set for seamless loop */
-              { src: ClientNMA, alt: 'NMA' },
-              { src: ClientObsidianworks, alt: 'Obsidianworks' },
+              { src: ClientNMA, alt: 'NMA', scale: 1.5 },
+              { src: ClientObsidianworks, alt: 'Obsidianworks', scale: 1.4 },
               { src: ClientNewfields, alt: 'Newfields' },
               { src: ClientMCPHD, alt: 'Marion County Public Health Department' },
               { src: ClientCorGroup, alt: 'CorGroup' },
@@ -1168,7 +1168,7 @@ const AboutPage = () => (
               { src: ClientBelieveMiddleCollege, alt: 'Believe Middle College' },
               { src: ClientBelieveSTL, alt: 'Believe STL Academy' },
               { src: ClientBelieveSchools, alt: 'Believe Schools' },
-              { src: ClientTindley, alt: 'Tindley Accelerated Schools' },
+              { src: ClientTindley, alt: 'Tindley Accelerated Schools', scale: 1.5 },
               { src: ClientLibertyGrove, alt: 'Liberty Grove Schools' },
               { src: ClientPPSAT, alt: 'Planned Parenthood South Atlantic' },
               { src: ClientIAA, alt: 'Indianapolis Airport Authority' },
@@ -1185,7 +1185,7 @@ const AboutPage = () => (
                 <img
                   src={client.src}
                   alt={client.alt}
-                  style={{ width: '200px', height: '100px', objectFit: 'contain' }}
+                  style={{ width: `${(client.scale || 1) * 200}px`, height: `${(client.scale || 1) * 100}px`, objectFit: 'contain' }}
                   className="grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
                 />
               </div>
