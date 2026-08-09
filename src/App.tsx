@@ -1157,7 +1157,7 @@ const AboutPage = () => (
               { src: ClientICC, alt: 'Indianapolis Children\'s Choir' },
               { src: ClientMonarca, alt: 'Monarca Academy' },
               { src: ClientR3VI, alt: 'R3VI' },
-              { src: ClientPhilbrook, alt: 'Philbrook Museum of Art' },
+              { src: ClientPhilbrook, alt: 'Philbrook Museum of Art', scale: 1.3, rounded: true },
               /* duplicate set for seamless loop */
               { src: ClientNMA, alt: 'NMA', scale: 1.5 },
               { src: ClientObsidianworks, alt: 'Obsidianworks', scale: 1.4 },
@@ -1175,7 +1175,7 @@ const AboutPage = () => (
               { src: ClientICC, alt: 'Indianapolis Children\'s Choir' },
               { src: ClientMonarca, alt: 'Monarca Academy' },
               { src: ClientR3VI, alt: 'R3VI' },
-              { src: ClientPhilbrook, alt: 'Philbrook Museum of Art' },
+              { src: ClientPhilbrook, alt: 'Philbrook Museum of Art', scale: 1.3, rounded: true },
             ].map((client, i) => (
               <div
                 key={i}
@@ -1185,7 +1185,7 @@ const AboutPage = () => (
                 <img
                   src={client.src}
                   alt={client.alt}
-                  style={{ width: `${(client.scale || 1) * 200}px`, height: `${(client.scale || 1) * 100}px`, objectFit: 'contain' }}
+                  style={{ width: `${(client.scale || 1) * 200}px`, height: `${(client.scale || 1) * 100}px`, objectFit: 'contain', borderRadius: (client as any).rounded ? '8px' : undefined }}
                   className="grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100"
                 />
               </div>
