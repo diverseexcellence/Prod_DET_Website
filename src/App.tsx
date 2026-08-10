@@ -1164,9 +1164,9 @@ const AboutPage = () => (
               { src: ClientR3VI, alt: 'R3VI' },
               { src: ClientPhilbrook, alt: 'Philbrook Museum of Art', scale: 1.2, rounded: true },
               { src: ClientCAREElementary, alt: 'CARE Elementary' },
-              { src: ClientCincinnatiChildrens, alt: "Cincinnati Children's", scale: 1.2 },
-              { src: ClientHealthHospitalCorp, alt: 'Health & Hospital Corporation', scale: 1.1 },
-              { src: ClientEskenaziHealth, alt: 'Eskenazi Health', scale: 1.2 },
+              { src: ClientCincinnatiChildrens, alt: "Cincinnati Children's", scale: 0.7 },
+              { src: ClientHealthHospitalCorp, alt: 'Health & Hospital Corporation', scale: 0.65 },
+              { src: ClientEskenaziHealth, alt: 'Eskenazi Health', scale: 0.75 },
               /* duplicate set for seamless loop */
               { src: ClientNMA, alt: 'NMA', scale: 1.4 },
               { src: ClientObsidianworks, alt: 'Obsidianworks', scale: 1.4 },
@@ -1186,9 +1186,9 @@ const AboutPage = () => (
               { src: ClientR3VI, alt: 'R3VI' },
               { src: ClientPhilbrook, alt: 'Philbrook Museum of Art', scale: 1.2, rounded: true },
               { src: ClientCAREElementary, alt: 'CARE Elementary' },
-              { src: ClientCincinnatiChildrens, alt: "Cincinnati Children's", scale: 1.2 },
-              { src: ClientHealthHospitalCorp, alt: 'Health & Hospital Corporation', scale: 1.1 },
-              { src: ClientEskenaziHealth, alt: 'Eskenazi Health', scale: 1.2 },
+              { src: ClientCincinnatiChildrens, alt: "Cincinnati Children's", scale: 0.7 },
+              { src: ClientHealthHospitalCorp, alt: 'Health & Hospital Corporation', scale: 0.65 },
+              { src: ClientEskenaziHealth, alt: 'Eskenazi Health', scale: 0.75 },
             ].map((client, i) => {
               const s = (client as any).scale || 1;
               return (
