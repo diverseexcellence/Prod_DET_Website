@@ -1140,7 +1140,7 @@ const AboutPage = () => (
           </div>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Our Clients</h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Organizations across public sector, education, healthcare, and enterprise trust DET to deliver results.
+            Organizations across public sector, private sector, education, healthcare, non-profits, and enterprise trust DET to deliver results.
           </p>
         </div>
         <div className="clients-wrapper">
