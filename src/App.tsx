@@ -1282,7 +1282,7 @@ const AboutPage = () => (
                 <img
                   src={partner.src}
                   alt={partner.alt}
-                  className={`max-h-8 max-w-[110px] w-auto h-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity${partner.alt === 'OpenAI' ? ' mix-blend-mode-multiply' : ''}`}
+                  className={`w-auto h-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity${partner.alt === 'OpenAI' ? ' max-h-10 max-w-[130px]' : ' max-h-8 max-w-[110px]'}`}
                   style={partner.alt === 'OpenAI' ? { mixBlendMode: 'multiply' } : {}}
                 />
               </div>
