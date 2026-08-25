@@ -48,6 +48,7 @@ import AbilaLogo from './assets/abila.png';
 import GensparkLogo from './assets/genspark.png';
 import VibeLogo from './assets/vibe.svg';
 import OracleLogo from './assets/oracle.svg';
+import OpenAILogo from './assets/openai.svg';
 
 
 import {
@@ -1233,7 +1234,7 @@ const AboutPage = () => (
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5 items-center">
             {[
-              { src: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg", alt: "OpenAI" },
+              { src: OpenAILogo, alt: "OpenAI" },
               { src: "https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg", alt: "Claude" },
               { src: "https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png", alt: "Databricks" },
               { src: "https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg", alt: "Cisco" },
