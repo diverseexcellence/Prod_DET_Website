@@ -49,6 +49,21 @@ import GensparkLogo from './assets/genspark.png';
 import VibeLogo from './assets/vibe.svg';
 import OracleLogo from './assets/oracle.svg';
 import OpenAILogo from './assets/openai.svg';
+import AnthropicLogo from './assets/logos/anthropic.svg';
+import DatabricksLogo from './assets/logos/databricks.png';
+import CiscoLogo from './assets/logos/cisco.svg';
+import ArubaLogo from './assets/logos/aruba.svg';
+import FortinetLogo from './assets/logos/fortinet.svg';
+import CrowdStrikeLogo from './assets/logos/crowdstrike.svg';
+import OktaLogo from './assets/logos/okta.svg';
+import ZendeskLogo from './assets/logos/zendesk.svg';
+import BoxLogo from './assets/logos/box.svg';
+import NotionLogo from './assets/logos/notion.png';
+import MicrosoftLogo from './assets/logos/microsoft.svg';
+import AWSLogo from './assets/logos/aws.svg';
+import GoogleLogo from './assets/logos/google.svg';
+import ServiceNowLogo from './assets/logos/servicenow.svg';
+import SAPLogo from './assets/logos/sap.svg';
 
 
 import {
@@ -1235,22 +1250,22 @@ const AboutPage = () => (
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5 items-center">
             {[
               { src: OpenAILogo, alt: "OpenAI" },
-              { src: "https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg", alt: "Claude" },
-              { src: "https://upload.wikimedia.org/wikipedia/commons/6/63/Databricks_Logo.png", alt: "Databricks" },
-              { src: "https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg", alt: "Cisco" },
-              { src: "https://cdn.worldvectorlogo.com/logos/aruba-networks.svg", alt: "Aruba" },
-              { src: "https://upload.wikimedia.org/wikipedia/commons/6/62/Fortinet_logo.svg", alt: "Fortinet" },
-              { src: "https://cdn.worldvectorlogo.com/logos/crowdstrike-2.svg", alt: "CrowdStrike" },
-              { src: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Okta_logo.svg", alt: "Okta" },
-              { src: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Zendesk_logo.svg", alt: "Zendesk" },
-              { src: "https://upload.wikimedia.org/wikipedia/commons/5/57/Box%2C_Inc._logo.svg", alt: "Box" },
-              { src: "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png", alt: "Notion" },
+              { src: AnthropicLogo, alt: "Claude" },
+              { src: DatabricksLogo, alt: "Databricks" },
+              { src: CiscoLogo, alt: "Cisco" },
+              { src: ArubaLogo, alt: "Aruba" },
+              { src: FortinetLogo, alt: "Fortinet" },
+              { src: CrowdStrikeLogo, alt: "CrowdStrike" },
+              { src: OktaLogo, alt: "Okta" },
+              { src: ZendeskLogo, alt: "Zendesk" },
+              { src: BoxLogo, alt: "Box" },
+              { src: NotionLogo, alt: "Notion" },
 
-              { src: "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg", alt: "Microsoft" },
-              { src: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg", alt: "AWS" },
-              { src: "https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg", alt: "Google Cloud" },
-              { src: "https://upload.wikimedia.org/wikipedia/commons/5/57/ServiceNow_logo.svg", alt: "ServiceNow" },
-              { src: "https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg", alt: "SAP" },
+              { src: MicrosoftLogo, alt: "Microsoft" },
+              { src: AWSLogo, alt: "AWS" },
+              { src: GoogleLogo, alt: "Google Cloud" },
+              { src: ServiceNowLogo, alt: "ServiceNow" },
+              { src: SAPLogo, alt: "SAP" },
               { src: VibeLogo, alt: "Vibe Boards" },
               { src: OracleLogo, alt: "Oracle" },
               { src: VeeamLogo, alt: "Veeam" },
