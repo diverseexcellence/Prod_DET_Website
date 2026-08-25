@@ -1282,7 +1282,9 @@ const AboutPage = () => (
                 <img
                   src={partner.src}
                   alt={partner.alt}
-                  className={`w-auto h-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity${partner.alt === 'OpenAI' ? ' max-h-10 max-w-[130px]' : ' max-h-8 max-w-[110px]'}`}
+                  className={`w-auto h-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity${
+                    partner.alt === 'OpenAI' || partner.alt === 'TeamViewer' ? ' max-h-10 max-w-[130px]' : ' max-h-8 max-w-[110px]'
+                  }`}
                 />
               </div>
             ))}
