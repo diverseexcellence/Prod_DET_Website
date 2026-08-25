@@ -48,7 +48,7 @@ import AbilaLogo from './assets/abila.png';
 import GensparkLogo from './assets/genspark.png';
 import VibeLogo from './assets/vibe.svg';
 import OracleLogo from './assets/oracle.svg';
-import OpenAILogo from './assets/openai.webp';
+import OpenAILogo from './assets/openai.png';
 import AnthropicLogo from './assets/logos/anthropic.svg';
 import DatabricksLogo from './assets/logos/databricks.png';
 import CiscoLogo from './assets/logos/cisco.svg';
@@ -1283,7 +1283,6 @@ const AboutPage = () => (
                   src={partner.src}
                   alt={partner.alt}
                   className={`w-auto h-auto object-contain opacity-70 group-hover:opacity-100 transition-opacity${partner.alt === 'OpenAI' ? ' max-h-10 max-w-[130px]' : ' max-h-8 max-w-[110px]'}`}
-                  style={partner.alt === 'OpenAI' ? { mixBlendMode: 'multiply' } : {}}
                 />
               </div>
             ))}
