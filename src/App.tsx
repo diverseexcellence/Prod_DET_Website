@@ -48,7 +48,7 @@ import AbilaLogo from './assets/abila.png';
 import GensparkLogo from './assets/genspark.png';
 import VibeLogo from './assets/vibe.svg';
 import OracleLogo from './assets/oracle.svg';
-import OpenAILogo from './assets/openai.svg';
+import OpenAILogo from './assets/openai.webp';
 import AnthropicLogo from './assets/logos/anthropic.svg';
 import DatabricksLogo from './assets/logos/databricks.png';
 import CiscoLogo from './assets/logos/cisco.svg';
