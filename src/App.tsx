@@ -820,13 +820,7 @@ const AboutPage = () => (
                 <div className="flip-card-back flip-back-orange p-6 shadow-lg flex flex-col items-center justify-center">
                   <h3 className="text-xl font-bold text-white mb-1 text-center">Johnathan Wynn</h3>
                   <p className="text-orange-100 font-semibold text-sm mb-6 text-center">VP of Business Development</p>
-                  <div className="text-left w-full space-y-4">
-                    <p className="text-white font-bold text-xs uppercase tracking-widest border-b border-orange-300 pb-2">Education</p>
-                    <div className="space-y-4">
-                      <div><p className="text-white font-semibold text-sm">Oakwood University</p><p className="text-orange-100 text-xs mt-0.5">B.S., Computer Science</p></div>
-                      <div><p className="text-white font-semibold text-sm">University of Alabama Huntsville</p><p className="text-orange-100 text-xs mt-0.5">B.S., Computer Engineering</p></div>
-                    </div>
-                  </div>
+                  <p className="text-white text-sm text-center leading-relaxed">Driving strategic growth and lasting client partnerships across education, healthcare, government, and enterprise technology markets.</p>
                 </div>
               </div>
             </div>
