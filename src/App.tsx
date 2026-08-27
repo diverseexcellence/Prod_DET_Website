@@ -33,7 +33,6 @@ import ClientICC from './assets/client_ICC_norm.png';
 import ClientR3VI from './assets/client_R3VI_norm.png';
 import ClientPhilbrook from './assets/client_Philbrook_norm.png';
 import ClientCAREElementary from './assets/client_CAREElementary_norm.png';
-import ClientCincinnatiChildrens from './assets/client_CincinnatiChildrens_norm.png';
 import ClientHealthHospitalCorp from './assets/client_HealthHospitalCorp_norm.png';
 import ClientEskenaziHealth from './assets/client_EskenaziHealth_norm.png';
 import RichardBraidichPhoto from './assets/RichardBraidichPhoto.png';
@@ -1180,7 +1179,6 @@ const AboutPage = () => (
               { src: ClientR3VI, alt: 'R3VI' },
               { src: ClientPhilbrook, alt: 'Philbrook Museum of Art', scale: 1.2, rounded: true },
               { src: ClientCAREElementary, alt: 'CARE Elementary' },
-              { src: ClientCincinnatiChildrens, alt: "Cincinnati Children's", scale: 0.7 },
               { src: ClientHealthHospitalCorp, alt: 'Health & Hospital Corporation', scale: 0.65 },
               { src: ClientEskenaziHealth, alt: 'Eskenazi Health', scale: 0.75 },
               /* duplicate set for seamless loop */
@@ -1202,7 +1200,6 @@ const AboutPage = () => (
               { src: ClientR3VI, alt: 'R3VI' },
               { src: ClientPhilbrook, alt: 'Philbrook Museum of Art', scale: 1.2, rounded: true },
               { src: ClientCAREElementary, alt: 'CARE Elementary' },
-              { src: ClientCincinnatiChildrens, alt: "Cincinnati Children's", scale: 0.7 },
               { src: ClientHealthHospitalCorp, alt: 'Health & Hospital Corporation', scale: 0.65 },
               { src: ClientEskenaziHealth, alt: 'Eskenazi Health', scale: 0.75 },
             ].map((client, i) => {
