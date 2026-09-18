@@ -1693,7 +1693,7 @@ const AboutPage = () => (
                   Veneration Wear: Rescuing an E-Commerce Platform
                 </h2>
                 <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  How DET untangled a fragmented e-commerce stack, migrated a live production database with zero downtime, and became the apparel brand's ongoing platform team.
+                  How DET consolidated a scaling apparel brand onto modern edge infrastructure, migrated the production database with zero downtime, and became their ongoing platform team.
                 </p>
                 <button
                   onClick={() => setCurrentPage('VenerationWear')}

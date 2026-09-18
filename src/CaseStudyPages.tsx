@@ -1171,7 +1171,7 @@ export const VenerationWearPage = ({ setCurrentPage }: CaseStudyPageProps) => (
           Veneration Wear: Rescuing and Re-Platforming a Live E-Commerce Business
         </h1>
         <p className="text-xl text-white/90 leading-relaxed max-w-3xl">
-          How Diverse Excellence Technology untangled a fragmented e-commerce platform built by a departing developer, migrated the production database with zero downtime and zero data loss, and became the brand's ongoing development, management, and hosting partner.
+          How Diverse Excellence Technology consolidated a distributed e-commerce architecture onto a modern edge-hosting platform, migrated the production database with zero downtime and zero data loss, and became the brand's ongoing development, management, and hosting partner.
         </p>
       </div>
     </section>
@@ -1207,25 +1207,25 @@ export const VenerationWearPage = ({ setCurrentPage }: CaseStudyPageProps) => (
     {/* The Challenge */}
     <section className="py-16 px-8 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-slate-900 mb-8">The Challenge: A Growing Brand on a Platform It Didn't Control</h2>
+        <h2 className="text-3xl font-bold text-slate-900 mb-8">The Challenge: A Scaling Brand That Outgrew Its Original Architecture</h2>
         <p className="text-lg text-slate-700 mb-6">
-          Veneration Wear, a growing apparel brand, had a live e-commerce site processing real orders every day — but the platform underneath it was fragile. The original developer was transitioning away, and critical pieces of the business lived in accounts the brand didn't own or couldn't access: the production database ran in the developer's personal cloud project, protected credentials couldn't be copied out of the hosting platform, and no one on the business side held the keys.
+          Veneration Wear is an established e-commerce apparel brand with a custom-built storefront processing orders around the clock — checkout, customer accounts, order management, and storefront integrations all running live, every day. Like many brands that scale quickly, its platform had grown organically: the application ran on one provider, the production database on another cloud, and integrations and credentials were spread across separate accounts.
         </p>
         <p className="text-lg text-slate-700 mb-8">
-          The risks were real and immediate. An admin page outage locked the team out of Orders for an entire business day. The database stopped accepting outside connections without warning. Storefront defects sat unresolved because nobody could safely touch the stack. The brand needed a partner who could take ownership of the platform without breaking a live store — and without a risky big-bang rebuild.
+          That distributed architecture had served the brand well through its growth phase, but it created structural risk at scale: a single point of failure in the database tier, credentials that couldn't be rotated cleanly across environments, and no isolated environment for testing changes against a revenue-generating store. Leadership recognized the moment for what it was — time to consolidate the platform under one accountable engineering partner, on modern infrastructure, without disrupting a single order.
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="p-6 bg-indigo-50 rounded-2xl border-2 border-indigo-200">
-            <h3 className="text-lg font-bold text-slate-900 mb-3">Vendor Lock-Out Risk</h3>
-            <p className="text-slate-600 text-sm">Production database, cloud credentials, and deployment access were tied to a departing developer's personal accounts — a single point of failure for the entire business</p>
+            <h3 className="text-lg font-bold text-slate-900 mb-3">Single Point of Failure</h3>
+            <p className="text-slate-600 text-sm">The production database lived in a separate cloud account from the application — one dependency outside the platform meant one outage could take order management down</p>
           </div>
           <div className="p-6 bg-indigo-50 rounded-2xl border-2 border-indigo-200">
-            <h3 className="text-lg font-bold text-slate-900 mb-3">Live Store, No Safety Net</h3>
-            <p className="text-slate-600 text-sm">Checkout, signups, and order management ran 24/7 with no verified backup and no isolated environment to test changes safely</p>
+            <h3 className="text-lg font-bold text-slate-900 mb-3">No Isolated Staging Path</h3>
+            <p className="text-slate-600 text-sm">A 24/7 revenue-generating store deserves a safe place to rehearse changes — the architecture needed a full working replica before any production work</p>
           </div>
           <div className="p-6 bg-indigo-50 rounded-2xl border-2 border-indigo-200">
-            <h3 className="text-lg font-bold text-slate-900 mb-3">Opaque, Undocumented Stack</h3>
-            <p className="text-slate-600 text-sm">No documentation of how hosting, database, storefront integrations, and forms fit together — every question required reverse engineering</p>
+            <h3 className="text-lg font-bold text-slate-900 mb-3">Fragmented Access &amp; Credentials</h3>
+            <p className="text-slate-600 text-sm">Integrations, environment settings, and secrets were spread across multiple provider accounts — consolidation required careful mapping before anything could move</p>
           </div>
         </div>
       </div>
@@ -1236,43 +1236,71 @@ export const VenerationWearPage = ({ setCurrentPage }: CaseStudyPageProps) => (
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-slate-900 mb-4">The Approach: Discovery First, Then a Bloodless Migration</h2>
         <p className="text-lg text-slate-700 mb-10 max-w-4xl">
-          DET refused to touch the live store until the full picture was documented. The engagement ran as a disciplined four-phase sequence — each phase de-risking the next, with the client approving every step in writing.
+          DET treated a live, revenue-generating store with the discipline it deserves: nothing moved until the full architecture was documented. The engagement ran as a four-phase sequence — each phase de-risking the next, with Veneration Wear leadership approving every step in writing.
         </p>
         <div className="space-y-6">
           <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
             <div className="bg-[#6366F1] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
             <div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Discovery &amp; Findings Report</h3>
-              <p className="text-slate-600">DET pulled the complete codebase, verified it builds cleanly, mapped every integration, and delivered a formal Discovery Findings Report — including the exact blockers (a non-transferable cloud credential), the reproduction of each failure, and the verified fix for every one. The client got a clear picture of what they owned, what they didn't, and a costed path to full control.</p>
+              <p className="text-slate-600">DET mapped the complete platform — application code, database tier, storefront integrations, forms, and environment configuration — verified the codebase builds cleanly, and delivered a formal Discovery Findings Report. Every architectural constraint was reproduced and confirmed with a verified fix before it went in the report. Veneration Wear received a complete blueprint of their platform and a costed, sequenced path to consolidation.</p>
             </div>
           </div>
           <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
             <div className="bg-[#6366F1] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
             <div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Isolated Working Prototype</h3>
-              <p className="text-slate-600">A fully working copy of the platform went up on DET's own hosting with its own empty database — zero connection to the live store. Homepage, content pages, admin, and contact flows were proven there first. Weekly status notes told the client exactly what worked, what was dark by design, and precisely which access item would light up each remaining feature.</p>
+              <p className="text-slate-600">A fully working replica of the platform went up in an isolated environment with its own database — zero connection to the live store. Storefront, content pages, admin, and contact flows were proven there first. Weekly status notes gave leadership a precise, no-surprises view: what was verified, what was dark by design, and exactly what would light up each remaining feature.</p>
             </div>
           </div>
           <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
             <div className="bg-[#6366F1] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
             <div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Rehearsed Zero-Downtime Migration</h3>
-              <p className="text-slate-600">The production database move was rehearsed end-to-end before the real thing. The cutover window was proposed in writing, approved by the client, and executed at dawn: completed ahead of schedule with checkout and signups never pausing, and every single record verified against the original. No code changed — only the database address.</p>
+              <p className="text-slate-600">The production database move was rehearsed end-to-end before the real thing. The cutover window was proposed in writing, approved by leadership, and executed at dawn: completed ahead of schedule with checkout and signups never pausing, and every single record verified against the original. No application code changed — only the database address.</p>
             </div>
           </div>
           <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
             <div className="bg-[#6366F1] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
             <div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Client Ownership, DET Stewardship</h3>
-              <p className="text-slate-600">The database now lives in Veneration Wear's own hosting account, on their bill, under their control — with DET holding a single named seat for support. The departing developer's personal cloud is fully out of the picture. DET continues under a managed retainer: fixing legacy storefront defects, maintaining the platform, and taking new feature work as the brand grows.</p>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">One Platform, Client-Owned, DET-Managed</h3>
+              <p className="text-slate-600">Application and database now run side-by-side in Veneration Wear's own platform account, under their control, with DET holding a single named seat for engineering support. The single point of failure is gone, credential governance is clean, and DET continues under a managed retainer — maintaining the platform, resolving storefront issues, and building new features as the brand grows.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    {/* Testimonial */}
+    {/* The Platform */}
     <section className="py-16 px-8 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-4">The Platform: Modern Edge Hosting, Built for What's Next</h2>
+        <p className="text-lg text-slate-700 mb-10 max-w-4xl">
+          DET consolidated Veneration Wear onto a modern edge-native hosting platform — the same class of infrastructure powering many of today's fastest e-commerce and AI products. It's a fundamentally different model from traditional server hosting, and it changes what a brand of this size can do.
+        </p>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">⚡ Global Edge Delivery</h3>
+            <p className="text-slate-600 text-sm">The storefront is served from a global edge network, close to every shopper — fast page loads and resilient checkout whether traffic comes from Indianapolis or overseas, with automatic scaling for product drops and seasonal spikes.</p>
+          </div>
+          <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">🔁 Preview Deployments &amp; Instant Rollback</h3>
+            <p className="text-slate-600 text-sm">Every change deploys first to its own preview URL — leadership can click and approve exactly what will ship. Production releases are atomic, and any release can be rolled back in seconds. No maintenance windows, no midnight FTP.</p>
+          </div>
+          <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">🗄 Serverless Data Tier, Side-by-Side</h3>
+            <p className="text-slate-600 text-sm">The production database now runs as a managed serverless service inside the same platform account as the application — one bill, one access model, integrated backups, and the cross-cloud single point of failure eliminated.</p>
+          </div>
+          <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">🤖 AI-Ready by Design</h3>
+            <p className="text-slate-600 text-sm">The platform is a first-class home for AI workloads — serverless functions and edge runtimes that can power product recommendations, AI shopping assistants, and personalization as Veneration Wear's roadmap grows, without re-architecting a thing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Testimonial */}
+    <section className="py-16 px-8 bg-slate-50">
       <div className="max-w-4xl mx-auto">
         <div className="bg-indigo-50 p-8 rounded-2xl border-2 border-indigo-200 shadow-sm">
           <p className="text-slate-700 text-lg italic leading-relaxed mb-4">
@@ -1293,7 +1321,7 @@ export const VenerationWearPage = ({ setCurrentPage }: CaseStudyPageProps) => (
               <Shield className="h-5 w-5 text-indigo-700" />
             </div>
             <h3 className="font-bold text-slate-900 mb-2">Platform Discovery &amp; Audit</h3>
-            <p className="text-slate-600 text-sm">Full codebase recovery, integration mapping, blocker reproduction, and a formal findings report with a costed remediation path</p>
+            <p className="text-slate-600 text-sm">Complete architecture mapping — application, data tier, integrations, and credentials — delivered as a formal findings report with a costed consolidation path</p>
           </div>
           <div className="p-6 bg-white rounded-2xl border border-slate-200">
             <div className="bg-indigo-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
@@ -1307,7 +1335,7 @@ export const VenerationWearPage = ({ setCurrentPage }: CaseStudyPageProps) => (
               <Lock className="h-5 w-5 text-indigo-700" />
             </div>
             <h3 className="font-bold text-slate-900 mb-2">Ownership &amp; Access Governance</h3>
-            <p className="text-slate-600 text-sm">Moved every asset into client-owned accounts with least-privilege DET access — eliminating the departing-developer single point of failure</p>
+            <p className="text-slate-600 text-sm">Consolidated every asset into client-owned accounts with least-privilege DET access — clean credential governance and no single point of failure</p>
           </div>
           <div className="p-6 bg-white rounded-2xl border border-slate-200">
             <div className="bg-indigo-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
@@ -1320,8 +1348,8 @@ export const VenerationWearPage = ({ setCurrentPage }: CaseStudyPageProps) => (
             <div className="bg-indigo-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
               <Globe className="h-5 w-5 text-indigo-700" />
             </div>
-            <h3 className="font-bold text-slate-900 mb-2">Managed Hosting</h3>
-            <p className="text-slate-600 text-sm">Production hosting, environment configuration, credential rotation, and deployment management for the live platform</p>
+            <h3 className="font-bold text-slate-900 mb-2">Managed Edge Hosting</h3>
+            <p className="text-slate-600 text-sm">Modern edge-platform hosting with preview deployments, instant rollback, environment configuration, and credential management for the live store</p>
           </div>
           <div className="p-6 bg-white rounded-2xl border border-slate-200">
             <div className="bg-indigo-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
