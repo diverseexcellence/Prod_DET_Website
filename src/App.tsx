@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { CAREElementaryPage, ObsidianworksPage, HHCHealthcarePage, CitizensEnergyPage, MCPHDPage, NMAPage, CorGroupPage } from './CaseStudyPages';
+import { CAREElementaryPage, ObsidianworksPage, HHCHealthcarePage, CitizensEnergyPage, MCPHDPage, NMAPage, CorGroupPage, VenerationWearPage } from './CaseStudyPages';
 import DETLogo from './assets/DETlogoV3.png';
 import ArionnePhoto from './assets/ArionnePhotoEdited.png';
 import KevinPhoto from './assets/KevinPhotoEdited.png';
@@ -35,6 +35,7 @@ import ClientPhilbrook from './assets/client_Philbrook_norm.png';
 import ClientCAREElementary from './assets/client_CAREElementary_norm.png';
 import ClientHealthHospitalCorp from './assets/client_HealthHospitalCorp_norm.png';
 import ClientEskenaziHealth from './assets/client_EskenaziHealth_norm.png';
+import ClientVenerationWear from './assets/client_VenerationWear_norm.png';
 import RichardBraidichPhoto from './assets/RichardBraidichPhoto.png';
 import BackgroundVideo from './assets/V6.mp4';
 import NAWBOMWBE from './assets/NAWBOMWBE.png';
@@ -96,7 +97,8 @@ import {
   HeartPulse,
   Lock,
   Building2,
-  HardHat
+  HardHat,
+  Server
 } from 'lucide-react';
 
 function App() {
@@ -1175,6 +1177,7 @@ const AboutPage = () => (
               { src: ClientCAREElementary, alt: 'CARE Elementary' },
               { src: ClientHealthHospitalCorp, alt: 'Health & Hospital Corporation', scale: 0.65 },
               { src: ClientEskenaziHealth, alt: 'Eskenazi Health', scale: 0.75 },
+              { src: ClientVenerationWear, alt: 'Veneration Wear' },
               /* duplicate set for seamless loop */
               { src: ClientNMA, alt: 'NMA', scale: 1.4 },
               { src: ClientObsidianworks, alt: 'Obsidianworks', scale: 1.4 },
@@ -1196,6 +1199,7 @@ const AboutPage = () => (
               { src: ClientCAREElementary, alt: 'CARE Elementary' },
               { src: ClientHealthHospitalCorp, alt: 'Health & Hospital Corporation', scale: 0.65 },
               { src: ClientEskenaziHealth, alt: 'Eskenazi Health', scale: 0.75 },
+              { src: ClientVenerationWear, alt: 'Veneration Wear' },
             ].map((client, i) => {
               const s = (client as any).scale || 1;
               return (
@@ -1663,6 +1667,37 @@ const AboutPage = () => (
                 <button
                   onClick={() => setCurrentPage('CorGroup')}
                   className="flex items-center text-[#F59E0B] hover:text-[#D97706] font-semibold group text-sm"
+                >
+                  View Case Study
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
+            </div>
+
+            {/* Veneration Wear Case Study */}
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border-2 border-slate-200 hover:border-[#6366F1] hover:shadow-2xl hover:shadow-indigo-500/20 transition-all duration-300 hover:-translate-y-2">
+              <div className="relative h-56 flex items-center justify-center p-8 overflow-hidden">
+                <img src="https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=800" alt="E-Commerce" className="absolute inset-0 w-full h-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 to-indigo-900/90"></div>
+                <div className="text-white text-center relative z-10">
+                  <div className="bg-white/20 backdrop-blur-sm w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-xl">
+                    <Server className="h-10 w-10" />
+                  </div>
+                  <div className="inline-flex items-center px-3 py-1 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full">
+                    <span className="text-xs font-bold tracking-wider">E-COMMERCE & HOSTING</span>
+                  </div>
+                </div>
+              </div>
+              <div className="p-8">
+                <h2 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
+                  Veneration Wear: Rescuing an E-Commerce Platform
+                </h2>
+                <p className="text-slate-600 mb-6 text-sm leading-relaxed">
+                  How DET untangled a fragmented e-commerce stack, migrated a live production database with zero downtime, and became the apparel brand's ongoing platform team.
+                </p>
+                <button
+                  onClick={() => setCurrentPage('VenerationWear')}
+                  className="flex items-center text-[#6366F1] hover:text-[#4F46E5] font-semibold group text-sm"
                 >
                   View Case Study
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -2420,6 +2455,8 @@ const AboutPage = () => (
         return <NMAPage setCurrentPage={setCurrentPage} />;
       case 'CorGroup':
         return <CorGroupPage setCurrentPage={setCurrentPage} />;
+      case 'VenerationWear':
+        return <VenerationWearPage setCurrentPage={setCurrentPage} />;
       case 'Philbrook':
         return <PhilbrookPage />;
       case 'Newfields':

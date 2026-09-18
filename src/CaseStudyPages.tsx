@@ -1150,3 +1150,188 @@ export const CorGroupPage = ({ setCurrentPage }: CaseStudyPageProps) => (
     </section>
   </div>
 );
+
+export const VenerationWearPage = ({ setCurrentPage }: CaseStudyPageProps) => (
+  <div className="min-h-screen bg-slate-50 pt-24">
+    {/* Header */}
+    <section className="py-20 px-8 bg-gradient-to-br from-slate-900 via-[#312E81] to-[#6366F1]">
+      <div className="max-w-6xl mx-auto">
+        <button
+          onClick={() => setCurrentPage('CaseStudies')}
+          className="flex items-center text-white/80 hover:text-white mb-8 group font-semibold"
+        >
+          <ChevronRight className="h-5 w-5 mr-1 rotate-180 group-hover:-translate-x-1 transition-transform" />
+          Back to Case Studies
+        </button>
+        <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full mb-6">
+          <Server className="h-4 w-4 text-white mr-2" />
+          <span className="text-sm font-semibold text-white">E-Commerce & Managed Hosting</span>
+        </div>
+        <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          Veneration Wear: Rescuing and Re-Platforming a Live E-Commerce Business
+        </h1>
+        <p className="text-xl text-white/90 leading-relaxed max-w-3xl">
+          How Diverse Excellence Technology untangled a fragmented e-commerce platform built by a departing developer, migrated the production database with zero downtime and zero data loss, and became the brand's ongoing development, management, and hosting partner.
+        </p>
+      </div>
+    </section>
+
+    {/* Stats Bar */}
+    <section className="py-12 px-8 bg-white border-b border-slate-200">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div className="text-4xl font-bold text-[#6366F1] mb-2">0</div>
+            <div className="text-sm font-semibold text-slate-700">Minutes of Downtime</div>
+            <div className="text-xs text-slate-500 mt-1">During production database migration</div>
+          </div>
+          <div>
+            <div className="text-4xl font-bold text-[#6366F1] mb-2">100%</div>
+            <div className="text-sm font-semibold text-slate-700">Records Verified</div>
+            <div className="text-xs text-slate-500 mt-1">Every record checked against the original</div>
+          </div>
+          <div>
+            <div className="text-4xl font-bold text-[#6366F1] mb-2">4</div>
+            <div className="text-sm font-semibold text-slate-700">Weeks: Discovery to Cutover</div>
+            <div className="text-xs text-slate-500 mt-1">Structured, low-risk sequence</div>
+          </div>
+          <div>
+            <div className="text-4xl font-bold text-[#6366F1] mb-2">1</div>
+            <div className="text-sm font-semibold text-slate-700">Accountable Platform Team</div>
+            <div className="text-xs text-slate-500 mt-1">Development, management &amp; hosting under DET</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* The Challenge */}
+    <section className="py-16 px-8 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-8">The Challenge: A Growing Brand on a Platform It Didn't Control</h2>
+        <p className="text-lg text-slate-700 mb-6">
+          Veneration Wear, a growing apparel brand, had a live e-commerce site processing real orders every day — but the platform underneath it was fragile. The original developer was transitioning away, and critical pieces of the business lived in accounts the brand didn't own or couldn't access: the production database ran in the developer's personal cloud project, protected credentials couldn't be copied out of the hosting platform, and no one on the business side held the keys.
+        </p>
+        <p className="text-lg text-slate-700 mb-8">
+          The risks were real and immediate. An admin page outage locked the team out of Orders for an entire business day. The database stopped accepting outside connections without warning. Storefront defects sat unresolved because nobody could safely touch the stack. The brand needed a partner who could take ownership of the platform without breaking a live store — and without a risky big-bang rebuild.
+        </p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="p-6 bg-indigo-50 rounded-2xl border-2 border-indigo-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">Vendor Lock-Out Risk</h3>
+            <p className="text-slate-600 text-sm">Production database, cloud credentials, and deployment access were tied to a departing developer's personal accounts — a single point of failure for the entire business</p>
+          </div>
+          <div className="p-6 bg-indigo-50 rounded-2xl border-2 border-indigo-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">Live Store, No Safety Net</h3>
+            <p className="text-slate-600 text-sm">Checkout, signups, and order management ran 24/7 with no verified backup and no isolated environment to test changes safely</p>
+          </div>
+          <div className="p-6 bg-indigo-50 rounded-2xl border-2 border-indigo-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">Opaque, Undocumented Stack</h3>
+            <p className="text-slate-600 text-sm">No documentation of how hosting, database, storefront integrations, and forms fit together — every question required reverse engineering</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* The Approach */}
+    <section className="py-16 px-8 bg-slate-50">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-4">The Approach: Discovery First, Then a Bloodless Migration</h2>
+        <p className="text-lg text-slate-700 mb-10 max-w-4xl">
+          DET refused to touch the live store until the full picture was documented. The engagement ran as a disciplined four-phase sequence — each phase de-risking the next, with the client approving every step in writing.
+        </p>
+        <div className="space-y-6">
+          <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-[#6366F1] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Discovery &amp; Findings Report</h3>
+              <p className="text-slate-600">DET pulled the complete codebase, verified it builds cleanly, mapped every integration, and delivered a formal Discovery Findings Report — including the exact blockers (a non-transferable cloud credential), the reproduction of each failure, and the verified fix for every one. The client got a clear picture of what they owned, what they didn't, and a costed path to full control.</p>
+            </div>
+          </div>
+          <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-[#6366F1] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Isolated Working Prototype</h3>
+              <p className="text-slate-600">A fully working copy of the platform went up on DET's own hosting with its own empty database — zero connection to the live store. Homepage, content pages, admin, and contact flows were proven there first. Weekly status notes told the client exactly what worked, what was dark by design, and precisely which access item would light up each remaining feature.</p>
+            </div>
+          </div>
+          <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-[#6366F1] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Rehearsed Zero-Downtime Migration</h3>
+              <p className="text-slate-600">The production database move was rehearsed end-to-end before the real thing. The cutover window was proposed in writing, approved by the client, and executed at dawn: completed ahead of schedule with checkout and signups never pausing, and every single record verified against the original. No code changed — only the database address.</p>
+            </div>
+          </div>
+          <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-[#6366F1] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Client Ownership, DET Stewardship</h3>
+              <p className="text-slate-600">The database now lives in Veneration Wear's own hosting account, on their bill, under their control — with DET holding a single named seat for support. The departing developer's personal cloud is fully out of the picture. DET continues under a managed retainer: fixing legacy storefront defects, maintaining the platform, and taking new feature work as the brand grows.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* Testimonial */}
+    <section className="py-16 px-8 bg-white">
+      <div className="max-w-4xl mx-auto">
+        <div className="bg-indigo-50 p-8 rounded-2xl border-2 border-indigo-200 shadow-sm">
+          <p className="text-slate-700 text-lg italic leading-relaxed mb-4">
+            "This is great news! Thanks for all your help."
+          </p>
+          <p className="text-sm font-semibold text-slate-500">Veneration Wear leadership, on receiving word that the production migration completed with zero downtime and every record verified &nbsp;|&nbsp; September 2026</p>
+        </div>
+      </div>
+    </section>
+
+    {/* Services Delivered */}
+    <section className="py-16 px-8 bg-slate-50">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-8">DET Services Delivered</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="p-6 bg-white rounded-2xl border border-slate-200">
+            <div className="bg-indigo-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Shield className="h-5 w-5 text-indigo-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">Platform Discovery &amp; Audit</h3>
+            <p className="text-slate-600 text-sm">Full codebase recovery, integration mapping, blocker reproduction, and a formal findings report with a costed remediation path</p>
+          </div>
+          <div className="p-6 bg-white rounded-2xl border border-slate-200">
+            <div className="bg-indigo-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Server className="h-5 w-5 text-indigo-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">Zero-Downtime Data Migration</h3>
+            <p className="text-slate-600 text-sm">Rehearsed production database move with 100% record verification — checkout and signups never paused</p>
+          </div>
+          <div className="p-6 bg-white rounded-2xl border border-slate-200">
+            <div className="bg-indigo-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Lock className="h-5 w-5 text-indigo-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">Ownership &amp; Access Governance</h3>
+            <p className="text-slate-600 text-sm">Moved every asset into client-owned accounts with least-privilege DET access — eliminating the departing-developer single point of failure</p>
+          </div>
+          <div className="p-6 bg-white rounded-2xl border border-slate-200">
+            <div className="bg-indigo-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Monitor className="h-5 w-5 text-indigo-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">E-Commerce Development</h3>
+            <p className="text-slate-600 text-sm">Ongoing storefront work — resolving legacy cart and checkout defects and building new features under the managed retainer</p>
+          </div>
+          <div className="p-6 bg-white rounded-2xl border border-slate-200">
+            <div className="bg-indigo-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Globe className="h-5 w-5 text-indigo-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">Managed Hosting</h3>
+            <p className="text-slate-600 text-sm">Production hosting, environment configuration, credential rotation, and deployment management for the live platform</p>
+          </div>
+          <div className="p-6 bg-white rounded-2xl border border-slate-200">
+            <div className="bg-indigo-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <TrendingUp className="h-5 w-5 text-indigo-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">Ongoing Platform Retainer</h3>
+            <p className="text-slate-600 text-sm">A standing DET engagement for maintenance, incident response, and roadmap work — the brand focuses on apparel, DET runs the platform</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+);
