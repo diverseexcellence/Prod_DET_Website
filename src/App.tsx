@@ -1628,10 +1628,10 @@ const AboutPage = () => (
               </div>
               <div className="p-8">
                 <h2 className="text-xl font-bold text-slate-900 mb-3 leading-tight">
-                  Multi-State Healthcare Network: Enterprise Assessment to Reporting as a Service
+                  Planned Parenthood South Atlantic: Assessment to Reporting as a Service
                 </h2>
                 <p className="text-slate-600 mb-6 text-sm leading-relaxed">
-                  How DET assessed 14 locations across four states — IT, BI, security, and AI readiness — and converted the findings into an ongoing Epic analytics partnership.
+                  How DET assessed 14 locations across four states covering IT, BI, security, and AI readiness, and converted the findings into an ongoing Epic analytics partnership.
                 </p>
                 <button
                   onClick={() => setCurrentPage('PPSAT')}

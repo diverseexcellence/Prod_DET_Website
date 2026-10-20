@@ -1381,10 +1381,10 @@ export const PPSATPage = ({ setCurrentPage }: CaseStudyPageProps) => (
           <span className="text-sm font-semibold text-white">Healthcare · Enterprise IT, BI &amp; AI Assessment</span>
         </div>
         <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-          From Enterprise Assessment to Reporting as a Service: A Multi-State Healthcare Transformation
+          Planned Parenthood South Atlantic: From Enterprise Assessment to Reporting as a Service
         </h1>
         <p className="text-xl text-white/90 leading-relaxed max-w-3xl">
-          How Diverse Excellence Technology assessed the complete technology estate of a nonprofit healthcare network spanning 14 locations across North Carolina, South Carolina, Virginia, and West Virginia — and earned an ongoing analytics partnership inside one of healthcare's most demanding data environments.
+          How Diverse Excellence Technology assessed the complete technology estate of Planned Parenthood South Atlantic (PPSAT), a nonprofit healthcare network spanning 14 locations across North Carolina, South Carolina, Virginia, and West Virginia, and how that work earned an ongoing analytics partnership inside one of healthcare's most demanding data environments.
         </p>
       </div>
     </section>
@@ -1422,15 +1422,15 @@ export const PPSATPage = ({ setCurrentPage }: CaseStudyPageProps) => (
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-slate-900 mb-8">The Challenge: A Mission-Driven Network That Outgrew Its Systems</h2>
         <p className="text-lg text-slate-700 mb-6">
-          A nonprofit healthcare network operating 14 locations across North Carolina, South Carolina, Virginia, and West Virginia had grown into a complex enterprise: multiple legal entities, an Epic electronic health record environment, enterprise CRM and ERP platforms, a lean IT team fielding thousands of tickets a year, and a workforce doing mission-critical work on systems that no longer talked to each other.
+          Planned Parenthood South Atlantic operates 14 health centers across North Carolina, South Carolina, Virginia, and West Virginia. The organization had grown into a complex enterprise: multiple legal entities, an Epic electronic health record environment, enterprise CRM and ERP platforms, a lean IT team fielding thousands of tickets a year, and a workforce doing mission-critical work on systems that no longer talked to each other.
         </p>
         <p className="text-lg text-slate-700 mb-8">
-          Leadership knew the symptoms: talented staff compensating manually for disconnected systems, reporting requests queuing behind a small analytics function, and artificial intelligence tools quietly entering the workplace faster than policy could govern them. What they needed was a single, evidence-based picture of the whole estate — and a partner who could assess a politically and operationally sensitive environment with discretion.
+          Leadership knew the symptoms: talented staff compensating manually for disconnected systems, reporting requests queuing behind a small analytics function, and artificial intelligence tools quietly entering the workplace faster than policy could govern them. What they needed was a single, evidence-based picture of the whole estate, and a partner who could assess a politically and operationally sensitive environment with discretion.
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="p-6 bg-violet-50 rounded-2xl border-2 border-violet-200">
             <h3 className="text-lg font-bold text-slate-900 mb-3">Fragmented Estate</h3>
-            <p className="text-slate-600 text-sm">Clinical, financial, donor, and HR systems operating as islands across seven legal entities — with no enterprise data strategy connecting them</p>
+            <p className="text-slate-600 text-sm">Clinical, financial, donor, and HR systems operating as islands across seven legal entities, with no enterprise data strategy connecting them</p>
           </div>
           <div className="p-6 bg-violet-50 rounded-2xl border-2 border-violet-200">
             <h3 className="text-lg font-bold text-slate-900 mb-3">Analytics Bottleneck</h3>
@@ -1438,7 +1438,7 @@ export const PPSATPage = ({ setCurrentPage }: CaseStudyPageProps) => (
           </div>
           <div className="p-6 bg-violet-50 rounded-2xl border-2 border-violet-200">
             <h3 className="text-lg font-bold text-slate-900 mb-3">Ungoverned AI Adoption</h3>
-            <p className="text-slate-600 text-sm">Staff were already adopting AI tools on their own, ahead of any policy, training, or safeguards — a compliance question that needed answers, not slogans</p>
+            <p className="text-slate-600 text-sm">Staff were already adopting AI tools on their own, ahead of any policy, training, or safeguards. This was a compliance question that needed answers, not slogans</p>
           </div>
         </div>
       </div>
@@ -1456,7 +1456,7 @@ export const PPSATPage = ({ setCurrentPage }: CaseStudyPageProps) => (
             <div className="bg-[#7C3AED] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
             <div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">Enterprise-Wide Listening</h3>
-              <p className="text-slate-600">A structured survey reached 64 of 102 staff across eight departments — a 63 percent response rate producing more than 3,800 individual data points. Combined with leadership interviews across finance, people and culture, IT, clinical analytics, and development, the evidence base captured both the quantitative scores and the lived experience of the people doing the work, at every location in all four states.</p>
+              <p className="text-slate-600">A structured survey reached 64 of 102 staff across eight departments, a 63 percent response rate producing more than 3,800 individual data points. Combined with leadership interviews across finance, people and culture, IT, clinical analytics, and development, the evidence base captured both the quantitative scores and the lived experience of the people doing the work, at every location in all four states.</p>
             </div>
           </div>
           <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
@@ -1470,14 +1470,14 @@ export const PPSATPage = ({ setCurrentPage }: CaseStudyPageProps) => (
             <div className="bg-[#7C3AED] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
             <div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">AI Readiness, Measured Honestly</h3>
-              <p className="text-slate-600">Rather than selling AI enthusiasm, DET measured AI reality: a dimension-scored readiness assessment found 38 percent of surveyed staff already using AI tools in their daily work — ahead of any governance framework. The survey also surfaced something most assessments miss: a workforce genuinely divided on AI, with sincere ethical and values-based concerns. DET's response treated both findings as first-class requirements.</p>
+              <p className="text-slate-600">Rather than selling AI enthusiasm, DET measured AI reality: a dimension-scored readiness assessment found 38 percent of surveyed staff already using AI tools in their daily work, ahead of any governance framework. The survey also surfaced something most assessments miss: a workforce genuinely divided on AI, with sincere ethical and values-based concerns. DET's response treated both findings as first-class requirements.</p>
             </div>
           </div>
           <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
             <div className="bg-[#7C3AED] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
             <div>
               <h3 className="text-xl font-bold text-slate-900 mb-2">A Roadmap Built to Be Executed</h3>
-              <p className="text-slate-600">The assessment closed with a 36-month transformation vision grounded in 30-to-60-day critical actions: an enterprise AI governance policy, a three-tier AI literacy program, analytics role restructuring to remove single points of failure, governed Power BI delivery, and a staffing roadmap with clear hiring triggers — each recommendation costed, sequenced, and assigned.</p>
+              <p className="text-slate-600">The assessment closed with a 36-month transformation vision grounded in 30-to-60-day critical actions: an enterprise AI governance policy, a three-tier AI literacy program, analytics role restructuring to remove single points of failure, governed Power BI delivery, and a staffing roadmap with clear hiring triggers. Each recommendation was costed, sequenced, and assigned.</p>
             </div>
           </div>
         </div>
@@ -1489,7 +1489,7 @@ export const PPSATPage = ({ setCurrentPage }: CaseStudyPageProps) => (
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-slate-900 mb-4">The AI Assessment: Governance Before Glamour</h2>
         <p className="text-lg text-slate-700 mb-10 max-w-4xl">
-          AI readiness work is where this assessment distinguished itself. DET's position: in a regulated healthcare environment, the first AI deliverable is not a chatbot — it is a governance framework that makes every subsequent AI decision safe.
+          AI readiness work is where this assessment distinguished itself. DET's position: in a regulated healthcare environment, the first AI deliverable is not a chatbot. It is a governance framework that makes every subsequent AI decision safe.
         </p>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
@@ -1504,7 +1504,7 @@ export const PPSATPage = ({ setCurrentPage }: CaseStudyPageProps) => (
               <Shield className="h-5 w-5 text-violet-700" />
             </div>
             <h3 className="font-bold text-slate-900 mb-2">Policy and Protection First</h3>
-            <p className="text-slate-600 text-sm">DET recommended a unified AI governance policy as a 30-day action, paired with activation of data-protection tooling the organization already licensed — classification, loss prevention, and usage monitoring — so compliant AI use became the easy path rather than the forbidden one.</p>
+            <p className="text-slate-600 text-sm">DET recommended a unified AI governance policy as a 30-day action, paired with activation of data-protection tooling the organization already licensed (classification, loss prevention, and usage monitoring) so compliant AI use became the easy path rather than the forbidden one.</p>
           </div>
           <div className="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
             <div className="bg-violet-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
@@ -1529,10 +1529,10 @@ export const PPSATPage = ({ setCurrentPage }: CaseStudyPageProps) => (
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-slate-900 mb-8">The Outcome: From Assessment to Ongoing Analytics Partnership</h2>
         <p className="text-lg text-slate-700 mb-6">
-          The strongest endorsement of an assessment is what the client does next. On the strength of the engagement, the organization executed a master Reporting Services agreement with DET — a Reporting-as-a-Service model covering clinical analytics in the Epic environment, enterprise Power BI analytics, and data governance advisory.
+          The strongest endorsement of an assessment is what the client does next. On the strength of the engagement, PPSAT executed a master Reporting Services agreement with DET: a Reporting-as-a-Service model covering clinical analytics in the Epic environment, enterprise Power BI analytics, and data governance advisory.
         </p>
         <p className="text-lg text-slate-700 mb-10">
-          DET consultants now operate inside the client's Epic analytics environment under formally executed vendor access agreements, building recurring production reports directly against the clinical data warehouse — with HIPAA, minimum-necessary access, and US-based personnel disciplines contractually embedded. Each report follows a fixed four-stage delivery structure from definition through validated handoff, and full ownership of report logic and documentation transfers to the client at delivery.
+          DET consultants now operate inside PPSAT's Epic analytics environment under formally executed vendor access agreements, building recurring production reports directly against the clinical data warehouse, with HIPAA, minimum-necessary access, and US-based personnel disciplines contractually embedded. Each report follows a fixed four-stage delivery structure from definition through validated handoff, and full ownership of report logic and documentation transfers to the client at delivery.
         </p>
         <div className="grid md:grid-cols-3 gap-6 mb-10">
           <div className="p-6 bg-white rounded-2xl border border-slate-200 text-center">
@@ -1554,7 +1554,7 @@ export const PPSATPage = ({ setCurrentPage }: CaseStudyPageProps) => (
         <div className="p-8 bg-gradient-to-br from-[#4C1D95] to-[#7C3AED] rounded-3xl text-white">
           <h3 className="text-xl font-bold mb-3">Why It Worked</h3>
           <p className="text-white/90 leading-relaxed">
-            Fourteen locations, four states, seven legal entities, nine technology domains, and one of the most sensitive data environments in healthcare — assessed with evidence discipline, scored with honesty, and reported with discretion. The assessment did not end with a document on a shelf; it converted directly into an operating analytics partnership, because the client trusted both the findings and the people who delivered them. Precision, discretion, delivery.
+            Fourteen locations, four states, seven legal entities, nine technology domains, and one of the most sensitive data environments in healthcare, assessed with evidence discipline, scored with honesty, and reported with discretion. The assessment did not end with a document on a shelf; it converted directly into an operating analytics partnership, because the client trusted both the findings and the people who delivered them. Precision, discretion, delivery.
           </p>
         </div>
       </div>
@@ -1565,7 +1565,7 @@ export const PPSATPage = ({ setCurrentPage }: CaseStudyPageProps) => (
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready for an honest picture of your technology estate?</h2>
         <p className="text-lg text-slate-600 mb-8">
-          From multi-state enterprise assessments to embedded analytics delivery, DET meets your organization where it is — and shows you exactly where it can go.
+          From multi-state enterprise assessments to embedded analytics delivery, DET meets your organization where it is and shows you exactly where it can go.
         </p>
         <button
           onClick={() => setCurrentPage('Contact')}
