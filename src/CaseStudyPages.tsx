@@ -1363,3 +1363,217 @@ export const VenerationWearPage = ({ setCurrentPage }: CaseStudyPageProps) => (
     </section>
   </div>
 );
+
+export const PPSATPage = ({ setCurrentPage }: CaseStudyPageProps) => (
+  <div className="min-h-screen bg-slate-50 pt-24">
+    {/* Header */}
+    <section className="py-20 px-8 bg-gradient-to-br from-slate-900 via-[#4C1D95] to-[#7C3AED]">
+      <div className="max-w-6xl mx-auto">
+        <button
+          onClick={() => setCurrentPage('CaseStudies')}
+          className="flex items-center text-white/80 hover:text-white mb-8 group font-semibold"
+        >
+          <ChevronRight className="h-5 w-5 mr-1 rotate-180 group-hover:-translate-x-1 transition-transform" />
+          Back to Case Studies
+        </button>
+        <div className="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full mb-6">
+          <HeartPulse className="h-4 w-4 text-white mr-2" />
+          <span className="text-sm font-semibold text-white">Healthcare · Enterprise IT, BI &amp; AI Assessment</span>
+        </div>
+        <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+          From Enterprise Assessment to Reporting as a Service: A Multi-State Healthcare Transformation
+        </h1>
+        <p className="text-xl text-white/90 leading-relaxed max-w-3xl">
+          How Diverse Excellence Technology assessed the complete technology estate of a nonprofit healthcare network spanning 14 locations across North Carolina, South Carolina, Virginia, and West Virginia — and earned an ongoing analytics partnership inside one of healthcare's most demanding data environments.
+        </p>
+      </div>
+    </section>
+
+    {/* Stats Bar */}
+    <section className="py-12 px-8 bg-white border-b border-slate-200">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div className="text-4xl font-bold text-[#7C3AED] mb-2">14</div>
+            <div className="text-sm font-semibold text-slate-700">Locations Assessed</div>
+            <div className="text-xs text-slate-500 mt-1">Across four states, seven legal entities</div>
+          </div>
+          <div>
+            <div className="text-4xl font-bold text-[#7C3AED] mb-2">63%</div>
+            <div className="text-sm font-semibold text-slate-700">Staff Participation</div>
+            <div className="text-xs text-slate-500 mt-1">64 of 102 staff across 8 departments</div>
+          </div>
+          <div>
+            <div className="text-4xl font-bold text-[#7C3AED] mb-2">3,800+</div>
+            <div className="text-sm font-semibold text-slate-700">Survey Data Points</div>
+            <div className="text-xs text-slate-500 mt-1">Quantitative + qualitative evidence base</div>
+          </div>
+          <div>
+            <div className="text-4xl font-bold text-[#7C3AED] mb-2">9</div>
+            <div className="text-sm font-semibold text-slate-700">Assessment Domains</div>
+            <div className="text-xs text-slate-500 mt-1">IT · security · BI · ERP · CRM · AI · HR · governance · staffing</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* The Challenge */}
+    <section className="py-16 px-8 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-8">The Challenge: A Mission-Driven Network That Outgrew Its Systems</h2>
+        <p className="text-lg text-slate-700 mb-6">
+          A nonprofit healthcare network operating 14 locations across North Carolina, South Carolina, Virginia, and West Virginia had grown into a complex enterprise: multiple legal entities, an Epic electronic health record environment, enterprise CRM and ERP platforms, a lean IT team fielding thousands of tickets a year, and a workforce doing mission-critical work on systems that no longer talked to each other.
+        </p>
+        <p className="text-lg text-slate-700 mb-8">
+          Leadership knew the symptoms: talented staff compensating manually for disconnected systems, reporting requests queuing behind a small analytics function, and artificial intelligence tools quietly entering the workplace faster than policy could govern them. What they needed was a single, evidence-based picture of the whole estate — and a partner who could assess a politically and operationally sensitive environment with discretion.
+        </p>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="p-6 bg-violet-50 rounded-2xl border-2 border-violet-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">Fragmented Estate</h3>
+            <p className="text-slate-600 text-sm">Clinical, financial, donor, and HR systems operating as islands across seven legal entities — with no enterprise data strategy connecting them</p>
+          </div>
+          <div className="p-6 bg-violet-50 rounded-2xl border-2 border-violet-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">Analytics Bottleneck</h3>
+            <p className="text-slate-600 text-sm">Enterprise reporting concentrated in a handful of specialists, with demand far outpacing capacity and no governed self-service path</p>
+          </div>
+          <div className="p-6 bg-violet-50 rounded-2xl border-2 border-violet-200">
+            <h3 className="text-lg font-bold text-slate-900 mb-3">Ungoverned AI Adoption</h3>
+            <p className="text-slate-600 text-sm">Staff were already adopting AI tools on their own, ahead of any policy, training, or safeguards — a compliance question that needed answers, not slogans</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* The Approach */}
+    <section className="py-16 px-8 bg-slate-50">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-4">The Approach: Evidence First, Across Every Layer of the Enterprise</h2>
+        <p className="text-lg text-slate-700 mb-10 max-w-4xl">
+          DET ran the assessment the way we run every engagement: no findings without evidence, no recommendations without owners. Over the engagement we combined structured discovery, an all-staff survey instrument, leadership interviews, and document review into a maturity-scored picture of nine technology domains.
+        </p>
+        <div className="space-y-6">
+          <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-[#7C3AED] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">1</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Enterprise-Wide Listening</h3>
+              <p className="text-slate-600">A structured survey reached 64 of 102 staff across eight departments — a 63 percent response rate producing more than 3,800 individual data points. Combined with leadership interviews across finance, people and culture, IT, clinical analytics, and development, the evidence base captured both the quantitative scores and the lived experience of the people doing the work, at every location in all four states.</p>
+            </div>
+          </div>
+          <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-[#7C3AED] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">2</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Nine-Domain Technical Assessment</h3>
+              <p className="text-slate-600">DET mapped and maturity-scored the full estate: IT operations and service delivery, security and governance posture, Epic clinical analytics, enterprise BI, ERP and financial systems, CRM, HR systems, data governance, and organizational structure. Every finding traced to a documented artifact, and every gap landed in a register with a severity, an owner, and a recommended sequence.</p>
+            </div>
+          </div>
+          <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-[#7C3AED] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">3</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">AI Readiness, Measured Honestly</h3>
+              <p className="text-slate-600">Rather than selling AI enthusiasm, DET measured AI reality: a dimension-scored readiness assessment found 38 percent of surveyed staff already using AI tools in their daily work — ahead of any governance framework. The survey also surfaced something most assessments miss: a workforce genuinely divided on AI, with sincere ethical and values-based concerns. DET's response treated both findings as first-class requirements.</p>
+            </div>
+          </div>
+          <div className="flex gap-6 items-start bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-[#7C3AED] text-white w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg flex-shrink-0">4</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">A Roadmap Built to Be Executed</h3>
+              <p className="text-slate-600">The assessment closed with a 36-month transformation vision grounded in 30-to-60-day critical actions: an enterprise AI governance policy, a three-tier AI literacy program, analytics role restructuring to remove single points of failure, governed Power BI delivery, and a staffing roadmap with clear hiring triggers — each recommendation costed, sequenced, and assigned.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* AI Assessment Deep Dive */}
+    <section className="py-16 px-8 bg-white">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-4">The AI Assessment: Governance Before Glamour</h2>
+        <p className="text-lg text-slate-700 mb-10 max-w-4xl">
+          AI readiness work is where this assessment distinguished itself. DET's position: in a regulated healthcare environment, the first AI deliverable is not a chatbot — it is a governance framework that makes every subsequent AI decision safe.
+        </p>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-violet-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Cpu className="h-5 w-5 text-violet-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">Shadow AI, Quantified</h3>
+            <p className="text-slate-600 text-sm">The survey measured actual AI adoption rather than assuming it: 38 percent of staff were already using generative AI tools in their work, with no policy, approved tooling, or data-handling guardrails. DET framed this as an active governance priority with a concrete remediation path, not a reason for alarm or a sales hook.</p>
+          </div>
+          <div className="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-violet-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Shield className="h-5 w-5 text-violet-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">Policy and Protection First</h3>
+            <p className="text-slate-600 text-sm">DET recommended a unified AI governance policy as a 30-day action, paired with activation of data-protection tooling the organization already licensed — classification, loss prevention, and usage monitoring — so compliant AI use became the easy path rather than the forbidden one.</p>
+          </div>
+          <div className="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-violet-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <Users className="h-5 w-5 text-violet-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">A Divided Workforce, Respected</h3>
+            <p className="text-slate-600 text-sm">Survey voice revealed staff with sincere ethical, environmental, and mission-based reservations about AI alongside enthusiastic adopters. DET's change framework answered with human-in-the-loop design, opt-out accommodations where feasible, and a three-tier literacy program spanning all staff, managers, and power users.</p>
+          </div>
+          <div className="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm">
+            <div className="bg-violet-100 w-10 h-10 rounded-xl flex items-center justify-center mb-4">
+              <TrendingUp className="h-5 w-5 text-violet-700" />
+            </div>
+            <h3 className="font-bold text-slate-900 mb-2">Sequenced, Not Hyped</h3>
+            <p className="text-slate-600 text-sm">The phased AI roadmap put governance and literacy ahead of deployment, and tied every future AI initiative to measurable operational value. The result: leadership can say yes to AI with confidence, because the guardrails exist before the experiments do.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* The Outcome */}
+    <section className="py-16 px-8 bg-slate-50">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-slate-900 mb-8">The Outcome: From Assessment to Ongoing Analytics Partnership</h2>
+        <p className="text-lg text-slate-700 mb-6">
+          The strongest endorsement of an assessment is what the client does next. On the strength of the engagement, the organization executed a master Reporting Services agreement with DET — a Reporting-as-a-Service model covering clinical analytics in the Epic environment, enterprise Power BI analytics, and data governance advisory.
+        </p>
+        <p className="text-lg text-slate-700 mb-10">
+          DET consultants now operate inside the client's Epic analytics environment under formally executed vendor access agreements, building recurring production reports directly against the clinical data warehouse — with HIPAA, minimum-necessary access, and US-based personnel disciplines contractually embedded. Each report follows a fixed four-stage delivery structure from definition through validated handoff, and full ownership of report logic and documentation transfers to the client at delivery.
+        </p>
+        <div className="grid md:grid-cols-3 gap-6 mb-10">
+          <div className="p-6 bg-white rounded-2xl border border-slate-200 text-center">
+            <div className="text-3xl font-bold text-[#7C3AED] mb-2">Epic</div>
+            <div className="text-sm font-semibold text-slate-700">Certified Analytics Access</div>
+            <div className="text-xs text-slate-500 mt-1">Clarity and Caboodle data warehouse roles under executed Epic access agreements</div>
+          </div>
+          <div className="p-6 bg-white rounded-2xl border border-slate-200 text-center">
+            <div className="text-3xl font-bold text-[#7C3AED] mb-2">4-Stage</div>
+            <div className="text-sm font-semibold text-slate-700">Delivery Discipline</div>
+            <div className="text-xs text-slate-500 mt-1">Definition → build → validation → ownership handoff, per report</div>
+          </div>
+          <div className="p-6 bg-white rounded-2xl border border-slate-200 text-center">
+            <div className="text-3xl font-bold text-[#7C3AED] mb-2">100%</div>
+            <div className="text-sm font-semibold text-slate-700">Client Ownership at Handoff</div>
+            <div className="text-xs text-slate-500 mt-1">Report logic, documentation, and data dictionary transfer with every delivery</div>
+          </div>
+        </div>
+        <div className="p-8 bg-gradient-to-br from-[#4C1D95] to-[#7C3AED] rounded-3xl text-white">
+          <h3 className="text-xl font-bold mb-3">Why It Worked</h3>
+          <p className="text-white/90 leading-relaxed">
+            Fourteen locations, four states, seven legal entities, nine technology domains, and one of the most sensitive data environments in healthcare — assessed with evidence discipline, scored with honesty, and reported with discretion. The assessment did not end with a document on a shelf; it converted directly into an operating analytics partnership, because the client trusted both the findings and the people who delivered them. Precision, discretion, delivery.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {/* CTA */}
+    <section className="py-16 px-8 bg-white">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-bold text-slate-900 mb-4">Ready for an honest picture of your technology estate?</h2>
+        <p className="text-lg text-slate-600 mb-8">
+          From multi-state enterprise assessments to embedded analytics delivery, DET meets your organization where it is — and shows you exactly where it can go.
+        </p>
+        <button
+          onClick={() => setCurrentPage('Contact')}
+          className="bg-[#7C3AED] text-white px-10 py-4 rounded-full hover:bg-[#6D28D9] transition-all duration-300 shadow-lg hover:shadow-xl font-semibold text-lg"
+        >
+          Start the Conversation
+        </button>
+      </div>
+    </section>
+  </div>
+);
