@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { CAREElementaryPage, ObsidianworksPage, HHCHealthcarePage, CitizensEnergyPage, MCPHDPage, NMAPage, CorGroupPage, VenerationWearPage, PPSATPage } from './CaseStudyPages';
 import { CaseStudyGate } from './CaseStudyGate';
 import DETLogo from './assets/DETlogoV3.png';
+import PartnershipHandshake from './assets/PartnershipHandshake.jpg';
 import ArionnePhoto from './assets/ArionnePhotoEdited.png';
 import KevinPhoto from './assets/KevinPhotoEdited.png';
 import JohnathanPhoto from './assets/JohnathanPhotoEdited.png';
@@ -396,7 +397,7 @@ function App() {
               <div className="relative">
                 <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
                   <img
-                    src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                    src={PartnershipHandshake}
                     alt="Partnership"
                     className="w-full h-64 object-cover rounded-xl mb-6"
                   />
