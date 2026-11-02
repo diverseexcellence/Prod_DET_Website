@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CAREElementaryPage, ObsidianworksPage, HHCHealthcarePage, CitizensEnergyPage, MCPHDPage, NMAPage, CorGroupPage, VenerationWearPage, PPSATPage } from './CaseStudyPages';
+import { CaseStudyGate } from './CaseStudyGate';
 import DETLogo from './assets/DETlogoV3.png';
 import ArionnePhoto from './assets/ArionnePhotoEdited.png';
 import KevinPhoto from './assets/KevinPhotoEdited.png';
@@ -110,6 +111,9 @@ function App() {
   const [summerFlipped, setSummerFlipped] = useState(false);
   const [arionneFlipped, setArionneFlipped] = useState(false);
   const [kevinFlipped, setKevinFlipped] = useState(false);
+  const [csUnlocked, setCsUnlocked] = useState(() => {
+    try { return sessionStorage.getItem('det_cs_ok') === '1'; } catch { return false; }
+  });
   const [johnathanFlipped, setJohnathanFlipped] = useState(false);
   const [websterFlipped, setWebsterFlipped] = useState(false);
   const [gemarFlipped, setGemarFlipped] = useState(false);
@@ -2475,25 +2479,25 @@ const AboutPage = () => (
       case 'Services':
         return <ServicesPage />;
       case 'CaseStudies':
-        return <CaseStudiesPage />;
+        return csUnlocked ? <CaseStudiesPage /> : <CaseStudyGate onUnlock={() => setCsUnlocked(true)} />;
       case 'Obsidianworks':
-        return <ObsidianworksPage setCurrentPage={setCurrentPage} />;
+        return csUnlocked ? <ObsidianworksPage setCurrentPage={setCurrentPage} /> : <CaseStudyGate onUnlock={() => setCsUnlocked(true)} />;
       case 'PPSAT':
-        return <PPSATPage setCurrentPage={setCurrentPage} />;
+        return csUnlocked ? <PPSATPage setCurrentPage={setCurrentPage} /> : <CaseStudyGate onUnlock={() => setCsUnlocked(true)} />;
       case 'CAREElementary':
-        return <CAREElementaryPage setCurrentPage={setCurrentPage} />;
+        return csUnlocked ? <CAREElementaryPage setCurrentPage={setCurrentPage} /> : <CaseStudyGate onUnlock={() => setCsUnlocked(true)} />;
       case 'HHCHealthcare':
-        return <HHCHealthcarePage setCurrentPage={setCurrentPage} />;
+        return csUnlocked ? <HHCHealthcarePage setCurrentPage={setCurrentPage} /> : <CaseStudyGate onUnlock={() => setCsUnlocked(true)} />;
       case 'CitizensEnergy':
-        return <CitizensEnergyPage setCurrentPage={setCurrentPage} />;
+        return csUnlocked ? <CitizensEnergyPage setCurrentPage={setCurrentPage} /> : <CaseStudyGate onUnlock={() => setCsUnlocked(true)} />;
       case 'MCPHD':
-        return <MCPHDPage setCurrentPage={setCurrentPage} />;
+        return csUnlocked ? <MCPHDPage setCurrentPage={setCurrentPage} /> : <CaseStudyGate onUnlock={() => setCsUnlocked(true)} />;
       case 'NMA':
-        return <NMAPage setCurrentPage={setCurrentPage} />;
+        return csUnlocked ? <NMAPage setCurrentPage={setCurrentPage} /> : <CaseStudyGate onUnlock={() => setCsUnlocked(true)} />;
       case 'CorGroup':
-        return <CorGroupPage setCurrentPage={setCurrentPage} />;
+        return csUnlocked ? <CorGroupPage setCurrentPage={setCurrentPage} /> : <CaseStudyGate onUnlock={() => setCsUnlocked(true)} />;
       case 'VenerationWear':
-        return <VenerationWearPage setCurrentPage={setCurrentPage} />;
+        return csUnlocked ? <VenerationWearPage setCurrentPage={setCurrentPage} /> : <CaseStudyGate onUnlock={() => setCsUnlocked(true)} />;
       case 'Philbrook':
         return <PhilbrookPage />;
       case 'Newfields':
