@@ -597,10 +597,17 @@ function App() {
               </div>
 
               {/* Student Information Systems (SIS) and Reporting — flip card */}
-              <div className="flip-card" style={{ height: 'auto', minHeight: '100%' }} onClick={(e) => (e.currentTarget.querySelector('.flip-card-inner') as HTMLElement)?.classList.toggle('flipped')}>
-                <div className="flip-card-inner" style={{ minHeight: '420px' }}>
-                  <div className="flip-card-front bg-emerald-50 p-8 border-2 border-emerald-200 flex flex-col">
-                    <h3 className="text-2xl font-bold text-slate-900 mb-6">Student Information Systems (SIS) and Reporting</h3>
+              <div>
+                <div className="flex items-center justify-center mb-4 -mt-2">
+                  <div className="flex items-center gap-3 bg-emerald-600 text-white px-5 py-2.5 rounded-full shadow-lg shadow-emerald-500/40 animate-pulse">
+                    <span className="text-2xl animate-bounce inline-block">⬇</span>
+                    <span className="text-sm font-bold leading-snug">Need a consult? Click to learn more about our SIS reporting services</span>
+                  </div>
+                </div>
+              <div className="flip-card" style={{ height: 'auto' }} onClick={(e) => (e.currentTarget.querySelector('.flip-card-inner') as HTMLElement)?.classList.toggle('flipped')}>
+                <div className="flip-card-inner" style={{ height: '560px' }}>
+                  <div className="flip-card-front bg-emerald-50 p-7 border-2 border-emerald-200 flex flex-col">
+                    <h3 className="text-xl font-bold text-slate-900 mb-5">Student Information Systems (SIS) and Reporting</h3>
                     <div className="space-y-4 flex-1">
                       <div className="flex items-start">
                         <GraduationCap className="h-6 w-6 text-emerald-600 mt-1 mr-3 flex-shrink-0" />
@@ -624,7 +631,7 @@ function App() {
                         </div>
                       </div>
                     </div>
-                    <div className="mt-6 text-center text-sm font-bold text-emerald-700 bg-emerald-100 rounded-full py-2.5 px-4">
+                    <div className="mt-5 text-center text-sm font-bold text-emerald-700 bg-emerald-100 rounded-full py-2.5 px-4">
                       ↻ Tap or hover to flip
                     </div>
                   </div>
@@ -642,6 +649,7 @@ function App() {
                     </button>
                   </div>
                 </div>
+              </div>
               </div>
             </div>
           </div>
