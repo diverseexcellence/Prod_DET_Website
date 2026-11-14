@@ -106,6 +106,35 @@ import {
   Megaphone
 } from 'lucide-react';
 
+function FlyUpCallout() {
+  const ref = React.useRef<HTMLDivElement>(null);
+  const [shown, setShown] = React.useState(false);
+  React.useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const io = new IntersectionObserver(
+      ([e]) => { if (e.isIntersecting) { setShown(true); io.disconnect(); } },
+      { threshold: 0.3 }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+  return (
+    <div ref={ref} className="grid lg:grid-cols-3 gap-8 mt-6">
+      <div className="hidden lg:block" />
+      <div className="hidden lg:block" />
+      <div
+        className={`flex justify-center transition-all duration-1000 ease-out ${shown ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}
+      >
+        <div className="flex items-center gap-3 bg-emerald-600 text-white px-6 py-3.5 rounded-2xl shadow-xl shadow-emerald-500/40">
+          <span className="text-2xl inline-block animate-bounce">⬆</span>
+          <span className="text-sm font-bold leading-snug max-w-[260px]">Need a consult? Click the card above to learn more about our SIS reporting services</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const [currentPage, setCurrentPage] = useState('Home');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -597,13 +626,6 @@ function App() {
               </div>
 
               {/* Student Information Systems (SIS) and Reporting — flip card */}
-              <div>
-                <div className="flex items-center justify-center mb-4 -mt-2">
-                  <div className="flex items-center gap-3 bg-emerald-600 text-white px-5 py-2.5 rounded-full shadow-lg shadow-emerald-500/40 animate-pulse">
-                    <span className="text-2xl animate-bounce inline-block">⬇</span>
-                    <span className="text-sm font-bold leading-snug">Need a consult? Click to learn more about our SIS reporting services</span>
-                  </div>
-                </div>
               <div className="flip-card" style={{ height: 'auto' }} onClick={(e) => (e.currentTarget.querySelector('.flip-card-inner') as HTMLElement)?.classList.toggle('flipped')}>
                 <div className="flip-card-inner" style={{ height: '560px' }}>
                   <div className="flip-card-front bg-emerald-50 p-7 border-2 border-emerald-200 flex flex-col">
@@ -650,8 +672,10 @@ function App() {
                   </div>
                 </div>
               </div>
-              </div>
             </div>
+
+            {/* Fly-up consult callout (points up at SIS card) */}
+            <FlyUpCallout />
           </div>
 
           {/* Project-Based Services */}
