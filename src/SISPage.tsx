@@ -108,13 +108,13 @@ export function SISPage({ setCurrentPage }: { setCurrentPage: (p: string) => voi
           <div className="absolute w-[280px] h-[280px] rounded-full bg-cyan-500/15 blur-3xl"
             style={{ top: '38%', left: '58%', transform: `translateY(${scrollY * 0.12}px)` }} />
           {/* floating data glyphs */}
-          {['📊', '🎓', '🗂', '📈', '🧮', '🏫'].map((g, i) => (
-            <span key={i} className="absolute text-3xl opacity-20 animate-bounce"
+          {[Database, GraduationCap, FileCheck2, Workflow, CalendarRange, Users].map((G, i) => (
+            <span key={i} className="absolute opacity-20 animate-bounce text-cyan-200"
               style={{
                 left: `${8 + i * 16}%`, top: `${14 + (i % 3) * 26}%`,
                 animationDuration: `${2.6 + i * 0.5}s`, animationDelay: `${i * 0.4}s`,
                 transform: `translateY(${scrollY * (0.06 + i * 0.02)}px)`,
-              }}>{g}</span>
+              }}><G className="h-9 w-9" /></span>
           ))}
         </div>
 
