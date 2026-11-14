@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { CAREElementaryPage, ObsidianworksPage, HHCHealthcarePage, CitizensEnergyPage, MCPHDPage, NMAPage, CorGroupPage, VenerationWearPage, PPSATPage } from './CaseStudyPages';
 import { CaseStudyGate } from './CaseStudyGate';
+import { SISPage } from './SISPage';
 import DETLogo from './assets/DETlogoV3.png';
 import PartnershipHandshake from './assets/PartnershipHandshake.jpg';
 import ArionnePhoto from './assets/ArionnePhotoEdited.png';
@@ -536,11 +537,11 @@ function App() {
               </div>
               <h2 className="text-4xl font-bold text-slate-900 mb-4">Managed IT Services</h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                Comprehensive IT support with tiered help desk services and proactive infrastructure management
+                Comprehensive IT support with tiered help desk services and proactive infrastructure and application management
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-3 gap-8">
               <div className="bg-indigo-50 p-8 rounded-3xl border-2 border-indigo-200 hover:border-indigo-400 hover:shadow-xl hover:shadow-indigo-500/20 transition-all duration-300">
                 <h3 className="text-2xl font-bold text-slate-900 mb-6">Tiered Help Desk Support</h3>
                 <div className="space-y-4">
@@ -591,6 +592,54 @@ function App() {
                       <div className="font-semibold text-slate-900">Security Management</div>
                       <div className="text-slate-600 text-sm">Threat detection, vulnerability assessments, compliance</div>
                     </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Student Information Systems (SIS) and Reporting — flip card */}
+              <div className="flip-card" style={{ height: 'auto', minHeight: '100%' }} onClick={(e) => (e.currentTarget.querySelector('.flip-card-inner') as HTMLElement)?.classList.toggle('flipped')}>
+                <div className="flip-card-inner" style={{ minHeight: '420px' }}>
+                  <div className="flip-card-front bg-emerald-50 p-8 border-2 border-emerald-200 flex flex-col">
+                    <h3 className="text-2xl font-bold text-slate-900 mb-6">Student Information Systems (SIS) and Reporting</h3>
+                    <div className="space-y-4 flex-1">
+                      <div className="flex items-start">
+                        <GraduationCap className="h-6 w-6 text-emerald-600 mt-1 mr-3 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold text-slate-900">PowerSchool SIS Administration</div>
+                          <div className="text-slate-600 text-sm">Configuration, enrollment, grading & attendance workflows</div>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <GraduationCap className="h-6 w-6 text-emerald-600 mt-1 mr-3 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold text-slate-900">State Reporting & Compliance</div>
+                          <div className="text-slate-600 text-sm">Indiana DEX triage, IDOE coordination, data validation</div>
+                        </div>
+                      </div>
+                      <div className="flex items-start">
+                        <GraduationCap className="h-6 w-6 text-emerald-600 mt-1 mr-3 flex-shrink-0" />
+                        <div>
+                          <div className="font-semibold text-slate-900">Integrations & Annual Cycles</div>
+                          <div className="text-slate-600 text-sm">Clever / ClassLink rostering, BOY / EOY rollover support</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-6 text-center text-sm font-bold text-emerald-700 bg-emerald-100 rounded-full py-2.5 px-4">
+                      ↻ Tap or hover to flip
+                    </div>
+                  </div>
+                  <div className="flip-card-back flip-back-emerald p-8 flex flex-col items-center justify-center text-center">
+                    <GraduationCap className="h-14 w-14 text-white mb-5" />
+                    <h3 className="text-2xl font-bold text-white mb-3">K–12 SIS &amp; Data Operations</h3>
+                    <p className="text-emerald-50 text-sm leading-relaxed mb-7">
+                      Specialized PowerSchool and Indiana data support that adds capacity without disrupting your team. Explore the full service breakdown, operating model, and video overview.
+                    </p>
+                    <button
+                      onClick={(e) => { e.stopPropagation(); setCurrentPage('SIS'); window.scrollTo(0, 0); }}
+                      className="bg-white text-emerald-700 px-8 py-3.5 rounded-full font-bold shadow-xl hover:scale-105 transition-all duration-300"
+                    >
+                      Explore SIS Services →
+                    </button>
                   </div>
                 </div>
               </div>
@@ -2479,6 +2528,8 @@ const AboutPage = () => (
         return <HomePage />;
       case 'Services':
         return <ServicesPage />;
+      case 'SIS':
+        return <SISPage setCurrentPage={setCurrentPage} />;
       case 'CaseStudies':
         return csUnlocked ? <CaseStudiesPage /> : <CaseStudyGate onUnlock={() => setCsUnlocked(true)} />;
       case 'Obsidianworks':
