@@ -160,6 +160,29 @@ export function SISPage({ setCurrentPage }: { setCurrentPage: (p: string) => voi
         </div>
       </section>
 
+      {/* ───────── VIDEO ───────── */}
+      <section className="py-20 px-8 bg-gradient-to-b from-slate-950 to-indigo-950">
+        <div className="max-w-5xl mx-auto">
+          <Reveal>
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center px-5 py-2 bg-white/10 border border-white/20 rounded-full mb-5">
+                <PlayCircle className="h-5 w-5 text-cyan-300 mr-2" />
+                <span className="text-sm font-bold tracking-widest text-cyan-200 uppercase">Watch</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-black text-white">K–12 SIS &amp; Data Operations in Action</h2>
+            </div>
+          </Reveal>
+          <Reveal delay={200} from="zoom">
+            <div className="rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/20 border border-white/15 bg-black">
+              <video controls preload="metadata" className="w-full h-auto block" poster="">
+                <source src="/sis-data-operations.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* ───────── FOUR PILLARS ───────── */}
       <section id="sis-pillars" className="py-24 px-8 bg-slate-50">
         <div className="max-w-6xl mx-auto">
@@ -316,28 +339,11 @@ export function SISPage({ setCurrentPage }: { setCurrentPage: (p: string) => voi
         </div>
       </section>
 
-      {/* ───────── VIDEO FINALE ───────── */}
-      <section className="py-24 px-8 bg-gradient-to-b from-slate-950 to-indigo-950">
+      {/* ───────── CLOSING CTA ───────── */}
+      <section className="py-20 px-8 bg-gradient-to-b from-slate-950 to-indigo-950">
         <div className="max-w-5xl mx-auto">
           <Reveal>
-            <div className="text-center mb-10">
-              <div className="inline-flex items-center px-5 py-2 bg-white/10 border border-white/20 rounded-full mb-5">
-                <PlayCircle className="h-5 w-5 text-cyan-300 mr-2" />
-                <span className="text-sm font-bold tracking-widest text-cyan-200 uppercase">Watch</span>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-black text-white">K–12 SIS &amp; Data Operations in Action</h2>
-            </div>
-          </Reveal>
-          <Reveal delay={200} from="zoom">
-            <div className="rounded-3xl overflow-hidden shadow-2xl shadow-blue-500/20 border border-white/15 bg-black">
-              <video controls preload="metadata" className="w-full h-auto block" poster="">
-                <source src="/sis-data-operations.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </Reveal>
-          <Reveal delay={350}>
-            <div className="text-center mt-14">
+            <div className="text-center">
               <button
                 onClick={() => { setCurrentPage('Contact'); window.scrollTo(0, 0); }}
                 className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-10 py-4 rounded-full font-bold text-lg shadow-2xl shadow-cyan-500/30 hover:scale-105 transition-all duration-300 mr-4"
